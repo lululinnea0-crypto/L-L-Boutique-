@@ -72,3 +72,52 @@ nav a:hover{
     background:#C2185B;
     transform:scale(1.05);
 }
+
+/* ===== CAMPAÑA ===== */
+
+.campania{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.campania h2{
+    color:#C2185B;
+    font-size:36px;
+    margin-bottom:30px;
+    font-family:'Playfair Display', serif;
+}
+
+.card-campania{
+    background:white;
+    max-width:500px;
+    margin:auto;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card-campania h3{
+    color:#E91E63;
+    margin-bottom:15px;
+}
+
+.card-campania p{
+    margin:10px 0;
+    font-size:17px;
+}
+
+.card-campania button{
+    margin-top:20px;
+    background:#E91E63;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.card-campania button:hover{
+    background:#C2185B;
+}
