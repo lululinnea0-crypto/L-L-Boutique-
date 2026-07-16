@@ -121,3 +121,71 @@ nav a:hover{
 .card-campania button:hover{
     background:#C2185B;
 }
+
+/* ===== PRODUCTOS ===== */
+
+.productos{
+    padding:60px 20px;
+}
+
+.productos h2{
+    text-align:center;
+    color:#C2185B;
+    margin-bottom:40px;
+    font-family:'Playfair Display', serif;
+}
+
+.contenedor-productos{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.producto{
+    width:280px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.producto:hover{
+    transform:translateY(-8px);
+}
+
+.producto img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.producto h3{
+    padding:15px;
+    text-align:center;
+}
+
+.precio{
+    color:#E91E63;
+    font-size:22px;
+    font-weight:bold;
+    text-align:center;
+}
+
+.producto button{
+    display:block;
+    width:90%;
+    margin:20px auto;
+    padding:12px;
+    border:none;
+    border-radius:50px;
+    background:#E91E63;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.producto button:hover{
+    background:#C2185B;
+}
