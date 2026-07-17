@@ -63,3 +63,17 @@ function reservarProducto(id){
     window.open(url, "_blank");
 
 }
+
+function abrirCarrito(){
+
+document.getElementById("carrito")
+.classList.add("abierto");
+
+}
+
+function cerrarCarrito(){
+
+document.getElementById("carrito")
+.classList.remove("abierto");
+
+}
