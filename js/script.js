@@ -82,14 +82,17 @@ let carrito = [];
 
 function agregarAlCarrito(id) {
 
+    alert("Se hizo clic. ID: " + id);
+
     const producto = productos.find(p => p.id === id);
+
+    alert(producto.nombre);
 
     carrito.push(producto);
 
     actualizarCarrito();
 
 }
-
 function actualizarCarrito() {
 
     const lista = document.getElementById("lista-carrito");
