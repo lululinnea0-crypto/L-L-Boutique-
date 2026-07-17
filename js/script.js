@@ -30,8 +30,8 @@ productos.forEach(producto => {
 
         </div>
 
-        <button onclick="reservarProducto(${producto.id})">
-    🛍️ Reservar
+        <button onclick="agregarAlCarrito(${producto.id})">
+    🛒 Agregar al carrito
 </button>
 
     </div>
@@ -75,5 +75,42 @@ function cerrarCarrito(){
 
 document.getElementById("carrito")
 .classList.remove("abierto");
+
+}
+
+let carrito = [];
+
+function agregarAlCarrito(id) {
+
+    const producto = productos.find(p => p.id === id);
+
+    carrito.push(producto);
+
+    actualizarCarrito();
+
+}
+
+function actualizarCarrito() {
+
+    const lista = document.getElementById("lista-carrito");
+    const contador = document.getElementById("contador-carrito");
+    const total = document.getElementById("total-carrito");
+
+    lista.innerHTML = "";
+
+    let suma = 0;
+
+    carrito.forEach(producto => {
+
+        suma += producto.precio;
+
+        lista.innerHTML += `
+            <p>${producto.nombre} - $${producto.precio.toLocaleString("es-AR")}</p>
+        `;
+
+    });
+
+    contador.textContent = carrito.length;
+    total.textContent = suma.toLocaleString("es-AR");
 
 }
