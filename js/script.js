@@ -47,3 +47,19 @@ function verProducto(id){
     window.location.href = "producto.html";
 
 }
+
+function reservarProducto(id){
+
+    const producto = productos.find(p => p.id === id);
+
+    const mensaje = `Hola 😊. Quiero reservar este producto:
+
+🛍️ ${producto.nombre}
+
+¿Podrías darme más información?`;
+
+    const url = `https://wa.me/5493512901763?text=${encodeURIComponent(mensaje)}`;
+
+    window.open(url, "_blank");
+
+}
