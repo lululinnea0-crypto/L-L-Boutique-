@@ -30,10 +30,20 @@ productos.forEach(producto => {
 
         </div>
 
-        <button>Reservar</button>
+        <button onclick="verProducto(${producto.id})">
+    Ver producto
+</button>
 
     </div>
 
     `;
 
 });
+
+function verProducto(id){
+
+    localStorage.setItem("productoSeleccionado", id);
+
+    window.location.href = "producto.html";
+
+}
