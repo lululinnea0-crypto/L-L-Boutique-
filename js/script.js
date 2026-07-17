@@ -30,8 +30,8 @@ productos.forEach(producto => {
 
         </div>
 
-        <button onclick="verProducto(${producto.id})">
-    Ver producto
+        <button onclick="reservarProducto(${producto.id})">
+    🛍️ Reservar
 </button>
 
     </div>
