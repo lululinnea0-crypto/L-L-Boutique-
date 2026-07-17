@@ -25,6 +25,10 @@
         <a href="#campania">Campaña</a>
         <a href="#como-comprar">Cómo comprar</a>
         <a href="#contacto">Contacto</a>
+        <div class="carrito-icono" onclick="abrirCarrito()">
+    🛒
+    <span id="contador-carrito">0</span>
+        </div>
     </nav>
 
 </header>
@@ -123,5 +127,30 @@
 <script src="js/productos.js"></script>
 <script src="js/script.js"></script>
 
+<div id="carrito" class="carrito">
+
+    <div class="carrito-header">
+        <h2>Mi carrito</h2>
+
+        <button onclick="cerrarCarrito()">✖</button>
+    </div>
+
+    <div id="productos-carrito">
+
+        <p>Tu carrito está vacío.</p>
+
+    </div>
+
+    <div class="carrito-footer">
+
+        <h3>Total: $<span id="total">0</span></h3>
+
+        <button id="finalizar-compra">
+            Finalizar compra
+        </button>
+
+    </div>
+
+</div>
 </body>
 </html>
