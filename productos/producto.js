@@ -102,3 +102,26 @@ if (producto) {
     "<h2>Producto no encontrado</h2>";
 
 }
+
+function agregarAlCarrito() {
+
+    const talle = document.getElementById("talle").value;
+    const color = document.getElementById("color").value;
+    const pago = document.querySelector('input[name="pago"]:checked').value;
+
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+    carrito.push({
+        id: producto.id,
+        nombre: producto.nombre,
+        precio: producto.precio,
+        imagen: producto.imagen,
+        talle: talle,
+        color: color,
+        pago: pago
+    });
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+
+    alert("Producto agregado al carrito 🛒");
+}
