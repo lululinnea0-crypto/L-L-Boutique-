@@ -5,9 +5,9 @@ const productos = [
         precio: 39990,
         imagen: "img/productos/cardigan.jpg",
         talles: {
-            "Negro": "XXS al L",
-            "Gris": "XXS al L",
-            "Blanco": "XXS al XL"
+            "🖤 Negro": "XXS al L",
+            "🩶 Gris": "XXS al L",
+            "🤍 Blanco": "XXS al XL"
         }
     },
 
