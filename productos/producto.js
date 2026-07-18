@@ -25,6 +25,15 @@ if (producto) {
     <p><strong>Precio:</strong> $${producto.precio.toLocaleString("es-AR")}</p>
 
     <p>${producto.descripcion}</p>
+
+<h3>Talle</h3>
+
+<select id="talle">
+    ${producto.talles.map(talle =>
+        `<option value="${talle}">${talle}</option>`
+    ).join("")}
+</select>
+
   `;
 } else {
   document.getElementById("producto").innerHTML =
