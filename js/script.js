@@ -106,9 +106,20 @@ function actualizarCarrito() {
 
         suma += producto.precio;
 
-        lista.innerHTML += `
-            <p>${producto.nombre} - $${producto.precio.toLocaleString("es-AR")}</p>
-        `;
+        const precioHoy =
+    producto.pago == "50"
+        ? producto.precio / 2
+        : producto.precio;
+
+lista.innerHTML += `
+    <div class="item-carrito">
+        <strong>${producto.nombre}</strong><br>
+        📏 Talle: ${producto.talle}<br>
+        🎨 Color: ${producto.color}<br>
+        💳 Pago: ${producto.pago == "50" ? "Reserva 50%" : "100%"}<br>
+        💲 Hoy pagás: $${precioHoy.toLocaleString("es-AR")}
+    </div>
+`;
 
     });
 
@@ -116,3 +127,5 @@ function actualizarCarrito() {
     total.textContent = suma.toLocaleString("es-AR");
 
 }
+
+actualizarCarrito();
