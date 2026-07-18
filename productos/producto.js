@@ -66,3 +66,5 @@ if (producto) {
   document.getElementById("producto").innerHTML =
     "<h2>Producto no encontrado</h2>";
 }
+<script>
+</script>
