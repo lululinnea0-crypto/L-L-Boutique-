@@ -87,6 +87,8 @@ function seleccionarTalle(talle){
 
     talleSeleccionado = talle;
 
+    alert("Talle seleccionado: " + talle);
+
 }
 
 mostrarTalles();
