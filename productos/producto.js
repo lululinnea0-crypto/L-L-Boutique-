@@ -75,7 +75,7 @@ Object.keys(producto.colores).forEach(color => {
 
 });
 
-window.seleccionarColor = function(color){
+function seleccionarColor(color){
 
     colorSeleccionado = color;
 
@@ -83,7 +83,7 @@ window.seleccionarColor = function(color){
 
 }
 
-window.seleccionarTalle = function(talle){
+function seleccionarTalle(talle){
 
     talleSeleccionado = talle;
 
