@@ -1,4 +1,3 @@
-alert("ESTOY CARGANDO SCRIPT.JS");
 const contenedor = document.getElementById("contenedor-productos");
 
 productos.forEach(producto => {
