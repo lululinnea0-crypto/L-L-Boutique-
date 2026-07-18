@@ -1,7 +1,7 @@
 // Obtener el ID del producto desde la URL
 const parametros = new URLSearchParams(window.location.search);
 const id = parametros.get("id");
-
+console.log("ID del producto:", id);
 // Base de datos de productos
 const productos = {
   1: {
