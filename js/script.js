@@ -42,9 +42,7 @@ productos.forEach(producto => {
 
 function verProducto(id){
 
-    localStorage.setItem("productoSeleccionado", id);
-
-    window.location.href = "producto.html";
+    window.location.href = "productos/producto.html?id=" + id;
 
 }
 
