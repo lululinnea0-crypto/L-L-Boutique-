@@ -3,24 +3,25 @@ function agregarAlCarrito() {
     alert("Entró a la función");
 
     const talle = document.getElementById("talle").value;
-    ...
-    
-const parametros = new URLSearchParams(window.location.search);
-const id = parametros.get("id");
+    const color = document.getElementById("color").value;
+    const pago = document.querySelector('input[name="pago"]:checked').value;
 
-const producto = productos.find(p => p.id == id);
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-if (producto) {
+    carrito.push({
+        id: producto.id,
+        nombre: producto.nombre,
+        precio: producto.precio,
+        imagen: producto.imagen,
+        talle: talle,
+        color: color,
+        pago: pago
+    });
 
-    let tallesHTML = "";
+    localStorage.setItem("carrito", JSON.stringify(carrito));
 
-    for (let talle in producto.talles) {
-        tallesHTML += `
-            <option value="${talle}">
-                ${talle}: ${producto.talles[talle]}
-            </option>
-        `;
-    }
+    alert("Producto agregado al carrito 🛒");
+}
 
     document.getElementById("producto").innerHTML = `
 
