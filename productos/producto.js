@@ -23,9 +23,13 @@ if (!producto) {
 
         <h3>Color / Talle</h3>
 
-        <select id="talle">
-            ${tallesHTML}
-        </select>
+        <h3>Color</h3>
+
+<div id="lista-colores"></div>
+
+<h3>Talle</h3>
+
+<div id="lista-talles"></div>
 
         <h3>Forma de pago</h3>
 
@@ -47,6 +51,53 @@ if (!producto) {
 
         <button onclick="agregarAlCarrito()">🛒 Agregar al carrito</button>
     `;
+    const listaColores = document.getElementById("lista-colores");
+const listaTalles = document.getElementById("lista-talles");
+
+let colorSeleccionado = Object.keys(producto.colores)[0];
+let talleSeleccionado = "";
+
+function mostrarTalles() {
+
+    listaTalles.innerHTML = "";
+
+    producto.colores[colorSeleccionado].forEach(talle => {
+
+        listaTalles.innerHTML += `
+            <button class="btn-talle" onclick="seleccionarTalle('${talle}')">
+                ${talle}
+            </button>
+        `;
+
+    });
+
+}
+
+Object.keys(producto.colores).forEach(color => {
+
+    listaColores.innerHTML += `
+        <button class="btn-color" onclick="seleccionarColor('${color}')">
+            ${color}
+        </button>
+    `;
+
+});
+
+window.seleccionarColor = function(color){
+
+    colorSeleccionado = color;
+
+    mostrarTalles();
+
+}
+
+window.seleccionarTalle = function(talle){
+
+    talleSeleccionado = talle;
+
+}
+
+mostrarTalles();
 
     document.querySelectorAll('input[name="pago"]').forEach(opcion => {
         opcion.addEventListener("change", () => {
