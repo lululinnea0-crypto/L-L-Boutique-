@@ -107,13 +107,15 @@ mostrarTalles();
 }
 
 function agregarAlCarrito() {
-alert("Entró al carrito");
-    if (talleSeleccionado === "") {
-        alert("Seleccioná un talle antes de continuar.");
-        return;
-    }
+
+    alert("Entró al carrito");
+
+    alert("Color: " + colorSeleccionado);
+    alert("Talle: " + talleSeleccionado);
 
     const pago = document.querySelector('input[name="pago"]:checked').value;
+
+    alert("Pago: " + pago);
 
     let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
@@ -128,5 +130,6 @@ alert("Entró al carrito");
     });
 
     localStorage.setItem("carrito", JSON.stringify(carrito));
+
     alert("Producto agregado al carrito 🛒");
 }
