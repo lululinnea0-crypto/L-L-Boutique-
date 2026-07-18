@@ -6,16 +6,6 @@ const parametros = new URLSearchParams(window.location.search);
 const id = parametros.get("id");
 console.log("ID del producto:", id);
 // Base de datos de productos
-const productos = {
-  1: {
-    nombre: "Cardigan Largo",
-    precio: 42000,
-    descripcion: "Cardigan largo, cómodo y elegante. Ideal para cualquier ocasión.",
-    imagen: "../img/productos/cardigan.jpg",
-    talles: ["S", "M", "L"],
-    colores: ["Negro", "Beige", "Blanco"]
-  }
-};
 
 const producto = productos[id];
 console.log("Producto encontrado:", producto);
