@@ -107,7 +107,7 @@ mostrarTalles();
 }
 
 function agregarAlCarrito() {
-
+alert("Entró al carrito");
     if (talleSeleccionado === "") {
         alert("Seleccioná un talle antes de continuar.");
         return;
