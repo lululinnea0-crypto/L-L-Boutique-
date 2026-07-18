@@ -60,7 +60,7 @@ if (producto) {
 
 <p id="pago-hoy">$42.000</p>
 
-<button>Agregar al carrito</button>
+<button onclick="agregarAlCarrito()">Agregar al carrito</button>
   `;
 } else {
   document.getElementById("producto").innerHTML =
@@ -68,3 +68,26 @@ if (producto) {
 }
 <script>
 </script>
+function agregarAlCarrito() {
+
+  const talle = document.getElementById("talle").value;
+  const color = document.getElementById("color").value;
+  const pago = document.querySelector('input[name="pago"]:checked').value;
+
+  const productoCarrito = {
+    nombre: producto.nombre,
+    precio: producto.precio,
+    imagen: producto.imagen,
+    talle: talle,
+    color: color,
+    pago: pago
+  };
+
+  let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+  carrito.push(productoCarrito);
+
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+
+  alert("Producto agregado al carrito 🛒");
+}
