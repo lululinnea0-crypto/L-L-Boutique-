@@ -1,3 +1,4 @@
+alert("ESTOY EN PRODUCTO.JS");
 console.log("producto.js cargado");
 // Obtener el ID del producto desde la URL
 const parametros = new URLSearchParams(window.location.search);
