@@ -77,7 +77,7 @@ document.getElementById("carrito")
 
 }
 
-let carrito = [];
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 function agregarAlCarrito(id) {
 
