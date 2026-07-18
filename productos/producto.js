@@ -29,10 +29,11 @@ if (producto) {
 <h3>Talle</h3>
 
 <select id="talle">
-    ${producto.talles.map(talle =>
-        `<option value="${talle}">${talle}</option>`
-    ).join("")}
-</select>
+    <h3>Talle</h3>
+
+<p>✔ S</p>
+<p>✔ M</p>
+<p>✔ L</p>
 
   `;
 } else {
