@@ -31,9 +31,6 @@ productos.forEach(producto => {
 
         </div>
 
-        <button onclick="agregarAlCarrito(${producto.id})">
-    🛒 Agregar al carrito
-</button>
 
 <a href="productos/producto.html?id=${producto.id}" class="btn-producto">
     Ver producto
