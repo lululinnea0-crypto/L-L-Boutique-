@@ -2,7 +2,8 @@ const parametros = new URLSearchParams(window.location.search);
 const id = parametros.get("id");
 
 const producto = productos.find(p => p.id == id);
-
+let colorSeleccionado = "";
+let talleSeleccionado = "";
 if (!producto) {
     document.getElementById("producto").innerHTML =
         "<h2>Producto no encontrado</h2>";
@@ -46,7 +47,7 @@ if (!producto) {
     const listaColores = document.getElementById("lista-colores");
 const listaTalles = document.getElementById("lista-talles");
 
-let colorSeleccionado = Object.keys(producto.colores)[0];
+colorSeleccionado = Object.keys(producto.colores)[0];
 let talleSeleccionado = "";
 
 function mostrarTalles() {
