@@ -106,5 +106,25 @@ mostrarTalles();
 
 function agregarAlCarrito() {
 
-    alert("Producto agregado al carrito 🛒");
+    if (talleSeleccionado === "") {
+        alert("Seleccioná un talle antes de continuar.");
+        return;
+    }
+
+    const pago = document.querySelector('input[name="pago"]:checked').value;
+
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+    carrito.push({
+        id: producto.id,
+        nombre: producto.nombre,
+        precio: producto.precio,
+        imagen: producto.imagen,
+        color: colorSeleccionado,
+        talle: talleSeleccionado,
+        pago: pago
+    });
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+
 }
