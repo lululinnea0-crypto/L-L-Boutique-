@@ -1,3 +1,10 @@
+function agregarAlCarrito() {
+
+    alert("Entró a la función");
+
+    const talle = document.getElementById("talle").value;
+    ...
+    
 const parametros = new URLSearchParams(window.location.search);
 const id = parametros.get("id");
 
