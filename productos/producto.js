@@ -1,3 +1,4 @@
+console.log("producto.js cargado");
 // Obtener el ID del producto desde la URL
 const parametros = new URLSearchParams(window.location.search);
 const id = parametros.get("id");
@@ -15,7 +16,7 @@ const productos = {
 };
 
 const producto = productos[id];
-
+console.log("Producto encontrado:", producto);
 if (producto) {
   document.getElementById("producto").innerHTML = `
     <img src="${producto.imagen}" alt="${producto.nombre}" style="max-width:300px;width:100%;">
