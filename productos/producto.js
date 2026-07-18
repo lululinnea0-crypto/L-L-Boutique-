@@ -8,20 +8,12 @@ if (!producto) {
         "<h2>Producto no encontrado</h2>";
 } else {
 
-    let tallesHTML = "";
-
-    for (let color in producto.talles) {
-        tallesHTML += `<option value="${color}">${color}: ${producto.talles[color]}</option>`;
-    }
-
     document.getElementById("producto").innerHTML = `
         <img src="../${producto.imagen}" alt="${producto.nombre}" style="max-width:300px;width:100%;">
 
         <h2>${producto.nombre}</h2>
 
         <p><strong>Precio:</strong> $${producto.precio.toLocaleString("es-AR")}</p>
-
-        <h3>Color / Talle</h3>
 
         <h3>Color</h3>
 
