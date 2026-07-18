@@ -4,11 +4,11 @@ const productos = [
         nombre: "Suéter de manga larga con cuello en V, de punto trenzado",
         precio: 39990,
         imagen: "img/productos/cardigan.jpg",
-        talles: {
-            "🖤 Negro": "XXS al L",
-            "🩶 Gris": "XXS al L",
-            "🤍 Blanco": "XXS al XL"
-        }
+        colores: {
+    "Negro": ["S", "M", "L", "XL", "XXL"],
+    "Blanco": ["XS", "S", "M", "L", "XL"],
+    "Gris": ["S", "M", "L"]
+}
     },
 
     {
@@ -16,8 +16,9 @@ const productos = [
         nombre: "Pantalón Sastrero",
         precio: 49990,
         imagen: "img/productos/pantalon.jpg",
-        talles: {
-            "🖤 Negro": "S al XL"
+        colores: {
+    "Negro": ["S", "M", "L", "XL"],
+    "Beige": ["S", "M", "L", "XL"]
         }
     }
 ];
