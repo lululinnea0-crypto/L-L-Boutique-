@@ -29,12 +29,10 @@ if (producto) {
 <h3>Talle</h3>
 
 <select id="talle">
-    <h3>Talle</h3>
-
-<p>✔ S</p>
-<p>✔ M</p>
-<p>✔ L</p>
-
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+</select>
   `;
 } else {
   document.getElementById("producto").innerHTML =
