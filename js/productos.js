@@ -1,47 +1,31 @@
 const productos = [
 
-{
-    id:1,
+    {
+        id: 1,
+        nombre: "Suéter de manga larga con cuello en V, de punto trenzado",
+        precio: 39990,
+        imagen: "img/productos/cardigan.jpg",
 
-    nombre:"Suéter de manga larga con cuello en V, de punto trenzado",
+        talles: {
+            "🖤 Negro": "XXS al L",
+            "🩶 Gris": "XXS al L",
+            "🤍 Blanco": "XXS al XL",
+            "❤️ Rojo": "XS al XL",
+            "🤎 Marrón": "XS al XL",
+            "🔵 Azul": "XXS al L"
+        }
+    },
 
-    precio:39990,
+    {
+        id: 2,
+        nombre: "Pantalón Sastrero",
+        precio: 49990,
+        imagen: "img/productos/pantalon.jpg",
 
-    imagen:"img/productos/cardigan.jpg",
-
-    talles:{
-
-        "🖤 Negro":"XXS al L",
-
-        "🩶 Gris":"XXS al L",
-
-        "🤍 Blanco":"XXS al XL",
-
-        "❤️ Rojo":"XS al XL",
-
-        "🤎 Marrón":"XS al XL",
-
-        "🔵 Azul":"XXS al L"
-
+        talles: {
+            "Negro": "S al XL",
+            "Beige": "S al XL"
+        }
     }
-
-{
-    id:2,
-    nombre:"Pantalón Sastrero",
-    precio:49990,
-    imagen:"img/productos/pantalon.jpg"
-}
 
 ];
-
-{
-    id: 1,
-    nombre: "Suéter de manga larga con cuello en V",
-    precio: 39990,
-    categoria: "Cardigans",
-    imagen: "img/productos/cardigan.jpg",
-    talles: {
-        "Negro": "XXS al L",
-        "Blanco": "XXS al XL"
-    }
-}
