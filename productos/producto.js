@@ -51,8 +51,11 @@ colorSeleccionado = Object.keys(producto.colores)[0];
 let talleSeleccionado = "";
 
 function mostrarTalles() {
+function mostrarTalles() {
 
     listaTalles.innerHTML = "";
+
+    talleSeleccionado = producto.colores[colorSeleccionado][0];
 
     producto.colores[colorSeleccionado].forEach(talle => {
 
