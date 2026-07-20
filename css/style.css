@@ -12,31 +12,53 @@ body{
     color:#333;
 }
 
-/* ===== HEADER ===== */
-
 header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px;
-    background:#ffffff;
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 15px rgba(0,0,0,.08);
 }
 
 .logo img{
-    width:120px;
+    width: 140px;
+}
+
+nav{
+    display: flex;
+    gap: 30px;
 }
 
 nav a{
-    text-decoration:none;
-    color:#C2185B;
-    font-weight:600;
-    margin-left:18px;
-    transition:.3s;
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: .3s;
 }
 
 nav a:hover{
-    color:#E91E63;
+    color: #F472B6;
+}
+
+.acciones{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.buscar{
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.carrito-icono{
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
 }
 
 /* ===== HERO ===== */
