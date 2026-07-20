@@ -720,3 +720,16 @@ label {
 .eliminar:hover{
     background:#d10958;
 }
+
+.cerrar-carrito{
+    background:none;
+    border:none;
+    font-size:28px;
+    cursor:pointer;
+    color:#F20A67;
+    font-weight:bold;
+}
+
+.cerrar-carrito:hover{
+    transform:scale(1.2);
+}
