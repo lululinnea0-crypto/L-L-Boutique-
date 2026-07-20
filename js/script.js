@@ -151,3 +151,9 @@ function abrirMenu(){
     .classList.toggle("abierto");
 
 }
+function abrirMenu() {
+
+    document.querySelector("nav")
+    .classList.toggle("abierto");
+
+}
