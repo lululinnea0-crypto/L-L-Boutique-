@@ -38,7 +38,9 @@ for (let color in producto.talles) {
 
         <p class="precio">$${producto.precio.toLocaleString("es-AR")}</p>
 
-        <div class="talles">
+        <div class="estrellas">★★★★★
+        </div>
+          <div class="talles">
 
             <h4>💞 Talles</h4>
 
