@@ -40,36 +40,43 @@ nav a:hover{
 }
 
 /* ===== HERO ===== */
-
 .hero{
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+    url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     text-align:center;
-    padding:80px 20px;
-}
-
-.hero h1{
-    font-family:'Playfair Display', serif;
-    font-size:50px;
-    color:#C2185B;
-}
-
-.hero p{
-    font-size:20px;
-    margin:20px 0;
-}
-
-.hero button{
-    background:#E91E63;
     color:white;
-    border:none;
-    padding:15px 35px;
-    border-radius:50px;
-    font-size:18px;
-    cursor:pointer;
+}
+
+.hero-contenido h1{
+    font-size:3rem;
+    font-family:'Playfair Display', serif;
+    margin-bottom:15px;
+}
+
+.hero-contenido p{
+    font-size:1.2rem;
+    margin-bottom:25px;
+}
+
+.btn-principal{
+    display:inline-block;
+    padding:14px 35px;
+    background:#F472B6;
+    color:white;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
     transition:.3s;
 }
 
-.hero button:hover{
-    background:#C2185B;
+.btn-principal:hover{
+    background:#EC4899;
     transform:scale(1.05);
 }
 
