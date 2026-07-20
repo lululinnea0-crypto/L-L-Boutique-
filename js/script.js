@@ -157,3 +157,24 @@ function cerrarMenu(){
     .classList.remove("abierto");
 
 }
+
+// ===== Slider del banner =====
+
+const slides = document.querySelectorAll(".slide");
+
+let slideActual = 0;
+
+function cambiarSlide() {
+
+    slides[slideActual].classList.remove("activo");
+
+    slideActual++;
+
+    if (slideActual >= slides.length) {
+        slideActual = 0;
+    }
+
+    slides[slideActual].classList.add("activo");
+}
+
+setInterval(cambiarSlide, 5000);
