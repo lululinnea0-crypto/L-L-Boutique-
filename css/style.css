@@ -725,11 +725,14 @@ label {
     background:none;
     border:none;
     font-size:28px;
-    cursor:pointer;
     color:#F20A67;
-    font-weight:bold;
+    cursor:pointer;
+    padding:5px;
+    z-index:1002;
 }
 
-.cerrar-carrito:hover{
-    transform:scale(1.2);
+.carrito-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
