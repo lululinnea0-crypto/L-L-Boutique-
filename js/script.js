@@ -65,6 +65,7 @@ for (let color in producto.talles) {
     `;
 
 });
+}
 
 function verProducto(id){
 
@@ -152,6 +153,23 @@ lista.innerHTML += `
 
 }
 
+mostrarProductos(productos);
+
+function filtrarProductos(categoria){
+
+    if(categoria === "todos"){
+        mostrarProductos(productos);
+        return;
+    }
+
+    const filtrados = productos.filter(producto =>
+        producto.categoria === categoria
+    );
+
+    mostrarProductos(filtrados);
+
+}
+                                                                       
 actualizarCarrito();
 
 function abrirMenu(){
