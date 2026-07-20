@@ -172,6 +172,11 @@ nav a:hover{
     width:100%;
     aspect-ratio:4/5;
     object-fit:cover;
+    transition:transform .4s ease;
+}
+
+.producto:hover img{
+    transform:scale(1.08);
 }
 
 .producto h3{
