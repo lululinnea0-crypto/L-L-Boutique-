@@ -24,8 +24,9 @@ for (let color in producto.talles) {
 
     <div class="producto">
 
-    <div class="favorito">♡</div>
-
+    <div class="favorito" onclick="toggleFavorito(this)">
+♡
+</div>
     ${producto.etiqueta ? `
     <div class="etiqueta-producto">
         ${producto.etiqueta}
