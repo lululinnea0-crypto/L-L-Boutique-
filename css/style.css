@@ -660,3 +660,11 @@ label {
     color:#F20A67;
     transform:scale(1.15);
 }
+
+.estrellas{
+    text-align:center;
+    color:#FFC107;
+    font-size:18px;
+    margin-bottom:10px;
+    letter-spacing:2px;
+}
