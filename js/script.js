@@ -151,9 +151,9 @@ function abrirMenu(){
     .classList.toggle("abierto");
 
 }
-function abrirMenu() {
+function cerrarMenu(){
 
     document.querySelector("nav")
-    .classList.toggle("abierto");
+    .classList.remove("abierto");
 
 }
