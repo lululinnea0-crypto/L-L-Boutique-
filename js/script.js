@@ -160,3 +160,19 @@ actualizarCarrito();
     border:1px solid #ddd;
     display:inline-block;
 }
+
+.etiqueta-producto{
+    position:absolute;
+    margin:15px;
+    background:#F20A67;
+    color:white;
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+    z-index:2;
+}
+
+.producto{
+    position:relative;
+}
