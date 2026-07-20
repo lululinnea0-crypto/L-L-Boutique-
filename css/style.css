@@ -20,8 +20,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-    box-shadow: 0 2px 15px rgba(0,0,0,.08);
+    padding: 8px 15px;
+    height: 60px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
 }
 
 .logo img{
@@ -360,41 +361,25 @@ font-size:12px;
 /* CELULAR */
 @media (max-width: 768px) {
 
-header {
-    flex-direction: column;
-    padding: 15px;
+header{
+    height:55px;
+    padding:8px 12px;
 }
 
-.logo img {
-    width: 120px;
+.logo img{
+    width:75px;
 }
 
-nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+.menu-btn{
+    font-size:24px;
 }
 
-nav a {
-    font-size: 14px;
+.buscar{
+    font-size:18px;
 }
 
-.carrito-icono {
-    font-size: 22px;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    background: #F20A67;
-    color: white;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
+.carrito-icono{
+    font-size:20px;
 }
 
 #contador-carrito {
