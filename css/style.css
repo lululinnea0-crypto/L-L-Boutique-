@@ -43,7 +43,7 @@ nav a:hover{
 .hero{
     height: 70vh;
     background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
-    url("../img/banner.jpg");
+    url("/L-L-Boutique-/img/banner.jpg");
     background-size: cover;
     background-position: center;
     display:flex;
