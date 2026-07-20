@@ -48,7 +48,6 @@ if (!producto) {
 const listaTalles = document.getElementById("lista-talles");
 
 colorSeleccionado = Object.keys(producto.colores)[0];
-let talleSeleccionado = "";
 
 function mostrarTalles() {
 
