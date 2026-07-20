@@ -112,8 +112,7 @@ function actualizarCarrito() {
 
     const lista = document.getElementById("lista-carrito");
     const contador = document.getElementById("contador-carrito");
-    const total = document.getElementById("total-carrito");
-
+    const total = document.getElementById("total");
     lista.innerHTML = "";
 
     let suma = 0;
@@ -145,34 +144,3 @@ lista.innerHTML += `
 }
 
 actualizarCarrito();
-
-.colores-producto{
-    display:flex;
-    justify-content:center;
-    gap:10px;
-    margin:15px 0;
-}
-
-.color-producto{
-    width:18px;
-    height:18px;
-    border-radius:50%;
-    border:1px solid #ddd;
-    display:inline-block;
-}
-
-.etiqueta-producto{
-    position:absolute;
-    margin:15px;
-    background:#F20A67;
-    color:white;
-    padding:8px 14px;
-    border-radius:20px;
-    font-size:13px;
-    font-weight:bold;
-    z-index:2;
-}
-
-.producto{
-    position:relative;
-}
