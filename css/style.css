@@ -220,7 +220,6 @@ nav a:hover{
 }
 
 .categorias{
-.categorias{
     padding:60px 20px;
     text-align:center;
 }
@@ -454,10 +453,6 @@ label {
     text-decoration:none;
     font-weight:600;
     transition:.3s;
-}
-
-.btn-producto:hover{
-    background:#d10958;
 }
 
 .btn-producto:hover{
