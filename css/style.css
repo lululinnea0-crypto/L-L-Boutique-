@@ -549,3 +549,46 @@ label {
     }
 
 }
+
+/* ===== DESTACADOS ===== */
+
+.destacados{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.destacados h2{
+    font-family:'Playfair Display', serif;
+    color:#C2185B;
+    margin-bottom:30px;
+}
+
+.destacados-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    max-width:900px;
+    margin:auto;
+}
+
+.destacado{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.destacado:hover{
+    transform:translateY(-6px);
+}
+
+.destacado img{
+    width:100%;
+    aspect-ratio:4/5;
+    object-fit:cover;
+}
+
+.destacado h3{
+    padding:18px;
+}
