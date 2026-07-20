@@ -120,7 +120,9 @@ function agregarAlCarrito() {
     alert("Pago: " + pago);
 
     let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-
+    
+alert("Talle que se va a guardar: " + talleSeleccionado);
+    
     carrito.push({
         id: producto.id,
         nombre: producto.nombre,
