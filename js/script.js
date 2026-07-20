@@ -2,15 +2,23 @@ const contenedor = document.getElementById("contenedor-productos");
 
 productos.forEach(producto => {
 
-    let tallesHTML = "";
+    let coloresHTML = "";
 
-    for (let color in producto.talles){
+for (let color in producto.talles) {
 
-        tallesHTML += `
-            <p><strong>${color}</strong>: ${producto.talles[color]}</p>
-        `;
+    let colorCSS = "#ccc";
 
-    }
+    if (color.includes("Negro")) colorCSS = "#000";
+    if (color.includes("Blanco")) colorCSS = "#fff";
+    if (color.includes("Gris")) colorCSS = "#999";
+    if (color.includes("Marrón")) colorCSS = "#8B5A2B";
+
+    coloresHTML += `
+        <span class="color-producto"
+        style="background:${colorCSS}">
+        </span>
+    `;
+}
 
     contenedor.innerHTML += `
 
@@ -26,7 +34,9 @@ productos.forEach(producto => {
 
             <h4>💞 Talles</h4>
 
-            ${tallesHTML}
+            <div class="colores-producto">
+    ${coloresHTML}
+</div>
 
         </div>
 
@@ -129,3 +139,18 @@ lista.innerHTML += `
 }
 
 actualizarCarrito();
+
+.colores-producto{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin:15px 0;
+}
+
+.color-producto{
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    border:1px solid #ddd;
+    display:inline-block;
+}
