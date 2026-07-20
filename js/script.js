@@ -183,3 +183,15 @@ function cambiarSlide() {
 }
 
 setInterval(cambiarSlide, 5000);
+
+function toggleFavorito(corazon){
+
+    if(corazon.textContent == "♡"){
+        corazon.textContent = "♥";
+        corazon.style.color = "#F20A67";
+    }else{
+        corazon.textContent = "♡";
+        corazon.style.color = "";
+    }
+
+}
