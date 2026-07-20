@@ -1,6 +1,10 @@
 const contenedor = document.getElementById("contenedor-productos");
 
-productos.forEach(producto => {
+function mostrarProductos(listaProductos){
+
+    contenedor.innerHTML = "";
+
+    listaProductos.forEach(producto => {
 
     let coloresHTML = "";
 
