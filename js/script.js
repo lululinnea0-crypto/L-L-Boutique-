@@ -144,3 +144,10 @@ lista.innerHTML += `
 }
 
 actualizarCarrito();
+
+function abrirMenu(){
+
+    document.querySelector("nav")
+    .classList.toggle("abierto");
+
+}
