@@ -24,6 +24,12 @@ for (let color in producto.talles) {
 
     <div class="producto">
 
+    ${producto.etiqueta ? `
+<div class="etiqueta-producto">
+    ${producto.etiqueta}
+</div>
+` : ""}
+
         <img src="${producto.imagen}" alt="${producto.nombre}">
 
         <h3>💌 ${producto.nombre}</h3>
