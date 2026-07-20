@@ -127,7 +127,7 @@ function actualizarCarrito() {
 
     let suma = 0;
 
-    carrito.forEach(producto => {
+    carrito.forEach((producto, index) => {
 
         suma += producto.precio;
 
@@ -137,19 +137,45 @@ function actualizarCarrito() {
         : producto.precio;
 
 lista.innerHTML += `
-    <div class="item-carrito">
-        <strong>${producto.nombre}</strong><br>
-        📏 Talle: ${producto.talle}<br>
-        🎨 Color: ${producto.color}<br>
-        💳 Pago: ${producto.pago == "50" ? "Reserva 50%" : "100%"}<br>
-        💲 Hoy pagás: $${precioHoy.toLocaleString("es-AR")}
+<div class="item-carrito">
+
+    <img src="${producto.imagen}" class="img-carrito">
+
+    <div class="info-carrito">
+
+        <h4>${producto.nombre}</h4>
+
+        <p>🎨 ${producto.color}</p>
+
+        <p>📏 ${producto.talle}</p>
+
+        <p>${producto.pago == "50" ? "💳 Reserva 50%" : "💳 Pago completo"}</p>
+
+        <strong>$${precioHoy.toLocaleString("es-AR")}</strong>
+
     </div>
+
+    <button class="eliminar" onclick="eliminarProducto(${index})">
+        ✕
+    </button>
+
+</div>
 `;
 
     });
 
     contador.textContent = carrito.length;
     total.textContent = suma.toLocaleString("es-AR");
+
+}
+
+function eliminarProducto(index){
+
+    carrito.splice(index,1);
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+
+    actualizarCarrito();
 
 }
 
