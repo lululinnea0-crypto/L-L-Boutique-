@@ -10,40 +10,68 @@ if (!producto) {
 } else {
 
     document.getElementById("producto").innerHTML = `
-        <img src="../${producto.imagen}" alt="${producto.nombre}" style="max-width:300px;width:100%;">
+<div class="producto-detalle">
 
-        <h2>${producto.nombre}</h2>
+    <img class="producto-imagen"
+        src="../${producto.imagen}"
+        alt="${producto.nombre}">
 
-        <p><strong>Precio:</strong> $${producto.precio.toLocaleString("es-AR")}</p>
+    <div class="producto-info">
 
-        <h3>Color</h3>
+        <h1>${producto.nombre}</h1>
 
-<div id="lista-colores"></div>
+        <div class="precio">
+            $${producto.precio.toLocaleString("es-AR")}
+        </div>
 
-<h3>Talle</h3>
+        <h4>COLOR</h4>
+        <div id="lista-colores" class="lista-colores"></div>
 
-<div id="lista-talles"></div>
+        <h4>TALLE</h4>
+        <div id="lista-talles" class="lista-talles"></div>
 
-        <h3>Forma de pago</h3>
+        <h4>FORMA DE PAGO</h4>
 
-        <label>
+        <label class="opcion-pago">
             <input type="radio" name="pago" value="100" checked>
-            Pagar el 100%
+            Pago completo
         </label>
 
-        <br><br>
-
-        <label>
+        <label class="opcion-pago">
             <input type="radio" name="pago" value="50">
-            Reservar con el 50%
+            Reserva con el 50%
         </label>
 
-        <h3>Hoy pagás</h3>
+        <div class="hoy-pagas">
+            <span>Hoy pagás</span>
+            <strong id="pago-hoy">
+                $${producto.precio.toLocaleString("es-AR")}
+            </strong>
+        </div>
 
-        <p id="pago-hoy">$${producto.precio.toLocaleString("es-AR")}</p>
+        <button class="btn-carrito" onclick="agregarAlCarrito()">
+            AGREGAR AL CARRITO
+        </button>
 
-        <button onclick="agregarAlCarrito()">🛒 Agregar al carrito</button>
-    `;
+        <div class="descripcion">
+
+            <h3>Descripción</h3>
+
+            <p>
+                Producto por pedido.<br><br>
+
+                📦 Cerramos pedidos el día 22 de cada mes.<br>
+
+                🚚 Entrega aproximada de 15 a 20 días desde el cierre del pedido.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+`;
+    
     const listaColores = document.getElementById("lista-colores");
 const listaTalles = document.getElementById("lista-talles");
 
