@@ -107,17 +107,18 @@ let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 function agregarAlCarrito(id) {
 
-    alert("Se hizo clic. ID: " + id);
-
     const producto = productos.find(p => p.id === id);
 
-    alert(producto.nombre);
+    if (!producto) return;
 
     carrito.push(producto);
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
 
     actualizarCarrito();
 
 }
+
 function actualizarCarrito() {
 carrito = JSON.parse(localStorage.getItem("carrito")) || [];
     const lista = document.getElementById("lista-carrito");
@@ -163,6 +164,10 @@ carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 `;
 
 });
+
+    contador.textContent = carrito.length;
+
+total.textContent = "$" + suma.toLocaleString("es-AR");
 
 }
 
