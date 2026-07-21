@@ -129,19 +129,14 @@ carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
     carrito.forEach((producto, index) => {
 
-        const precioHoy =
-    producto.pago == "50"
-        ? producto.precio / 2
-        : producto.precio;
+    const precioHoy =
+        producto.pago == "50"
+            ? producto.precio / 2
+            : producto.precio;
 
-suma += precioHoy;
+    suma += precioHoy;
 
-        const precioHoy =
-    producto.pago == "50"
-        ? producto.precio / 2
-        : producto.precio;
-
-lista.innerHTML += `
+    lista.innerHTML += `
 <div class="item-carrito">
 
     <img src="${producto.imagen}" class="img-carrito">
@@ -167,12 +162,7 @@ lista.innerHTML += `
 </div>
 `;
 
-    });
-
-    contador.textContent = carrito.length;
-    total.textContent = suma.toLocaleString("es-AR");
-
-}
+});
 
 function eliminarProducto(index){
 
