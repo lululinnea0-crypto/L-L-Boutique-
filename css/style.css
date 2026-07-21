@@ -848,3 +848,12 @@ label {
     border:none;
 
     border
+
+    .btn-color.activo,
+.btn-talle.activo{
+
+    background:#111;
+    color:#fff;
+    border-color:#111;
+
+}
