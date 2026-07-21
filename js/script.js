@@ -164,6 +164,8 @@ carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 });
 
+}
+
 function eliminarProducto(index){
 
     carrito.splice(index,1);
