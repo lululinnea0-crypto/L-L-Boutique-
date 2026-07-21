@@ -254,7 +254,7 @@ function finalizarCompra() {
         return;
     }
 
-    let mensaje = "🛍️ *Nuevo pedido L&L Boutique*%0A%0A";
+    let mensaje = "🛍️ *Nuevo pedido L&L Boutique*\n\n";
 
     let suma = 0;
 
@@ -267,15 +267,15 @@ function finalizarCompra() {
 
         suma += precio;
 
-        mensaje += `• ${producto.nombre}%0A`;
-        mensaje += `🎨 ${producto.color}%0A`;
-        mensaje += `📏 ${producto.talle}%0A`;
-        mensaje += `💳 ${producto.pago == "50" ? "Reserva 50%" : "Pago completo"}%0A`;
-        mensaje += `💰 $${precio.toLocaleString("es-AR")}%0A%0A`;
+        mensaje += `• ${producto.nombre}\n`;
+        mensaje += `🎨 ${producto.color}\n`;
+        mensaje += `📏 ${producto.talle}\n`;
+        mensaje += `💳 ${producto.pago == "50" ? "Reserva 50%" : "Pago completo"}\n`;
+        mensaje += `💰 $${precio.toLocaleString("es-AR")}\n`;
 
     });
 
-    mensaje += "--------------------%0A";
+    mensaje += "--------------------\n";
     mensaje += `💵 Total: $${suma.toLocaleString("es-AR")}`;
 
     window.open(
