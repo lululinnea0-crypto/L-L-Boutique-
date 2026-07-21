@@ -97,11 +97,25 @@ function mostrarTalles() {
 
 Object.keys(producto.colores).forEach(color => {
 
-    listaColores.innerHTML += `
-        <button class="btn-color" onclick="seleccionarColor('${color}')">
-            ${color}
-        </button>
-    `;
+    let colorCSS = "#ccc";
+
+if (color.includes("Negro")) colorCSS = "#000";
+if (color.includes("Blanco")) colorCSS = "#fff";
+if (color.includes("Gris")) colorCSS = "#999";
+if (color.includes("Marrón")) colorCSS = "#7B4A2E";
+if (color.includes("Beige")) colorCSS = "#E8D6B3";
+if (color.includes("Rosa")) colorCSS = "#F7B6D2";
+if (color.includes("Azul")) colorCSS = "#3F7DFF";
+if (color.includes("Verde")) colorCSS = "#4CAF50";
+
+listaColores.innerHTML += `
+<button
+    class="btn-color"
+    style="background:${colorCSS};"
+    title="${color}"
+    onclick="seleccionarColor('${color}')">
+</button>
+`;
 
 });
 
