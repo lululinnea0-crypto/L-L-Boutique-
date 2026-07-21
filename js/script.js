@@ -119,7 +119,7 @@ function agregarAlCarrito(id) {
 
 }
 function actualizarCarrito() {
-
+carrito = JSON.parse(localStorage.getItem("carrito")) || [];
     const lista = document.getElementById("lista-carrito");
     const contador = document.getElementById("contador-carrito");
     const total = document.getElementById("total");
