@@ -857,3 +857,23 @@ label {
     border-color:#111;
 
 }
+.btn-color{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    border:2px solid #ddd;
+    padding:0;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-color.activo{
+    transform:scale(1.15);
+    border:3px solid #111;
+}
+
+.btn-talle.activo{
+    background:#111;
+    color:#fff;
+    border-color:#111;
+    }
