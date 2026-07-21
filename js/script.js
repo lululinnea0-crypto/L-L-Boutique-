@@ -246,3 +246,41 @@ function toggleFavorito(corazon){
     }
 
 }
+
+function finalizarCompra() {
+
+    if (carrito.length === 0) {
+        alert("Tu carrito está vacío.");
+        return;
+    }
+
+    let mensaje = "🛍️ *Nuevo pedido L&L Boutique*%0A%0A";
+
+    let suma = 0;
+
+    carrito.forEach(producto => {
+
+        const precio =
+            producto.pago == "50"
+            ? producto.precio / 2
+            : producto.precio;
+
+        suma += precio;
+
+        mensaje += `• ${producto.nombre}%0A`;
+        mensaje += `🎨 ${producto.color}%0A`;
+        mensaje += `📏 ${producto.talle}%0A`;
+        mensaje += `💳 ${producto.pago == "50" ? "Reserva 50%" : "Pago completo"}%0A`;
+        mensaje += `💰 $${precio.toLocaleString("es-AR")}%0A%0A`;
+
+    });
+
+    mensaje += "--------------------%0A";
+    mensaje += `💵 Total: $${suma.toLocaleString("es-AR")}`;
+
+    window.open(
+        "https://wa.me/5493512901763?text=" + mensaje,
+        "_blank"
+    );
+
+}
