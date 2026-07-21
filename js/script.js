@@ -279,8 +279,8 @@ function finalizarCompra() {
     mensaje += `💵 Total: $${suma.toLocaleString("es-AR")}`;
 
     window.open(
-        "https://wa.me/5493512901763?text=" + mensaje,
-        "_blank"
-    );
+    "https://wa.me/5493512901763?text=" + encodeURIComponent(mensaje),
+    "_blank"
+);
 
 }
