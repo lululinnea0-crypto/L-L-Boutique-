@@ -129,7 +129,12 @@ carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
     carrito.forEach((producto, index) => {
 
-        suma += producto.precio;
+        const precioHoy =
+    producto.pago == "50"
+        ? producto.precio / 2
+        : producto.precio;
+
+suma += precioHoy;
 
         const precioHoy =
     producto.pago == "50"
