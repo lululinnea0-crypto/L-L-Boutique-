@@ -1,3 +1,6 @@
+
+
+
 const contenedor = document.getElementById("contenedor-productos");
 
 function mostrarProductos(listaProductos){
