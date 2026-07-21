@@ -109,17 +109,30 @@ function seleccionarColor(color){
 
     colorSeleccionado = color;
 
+    document.querySelectorAll(".btn-color").forEach(btn=>{
+        btn.classList.remove("activo");
+
+        if(btn.textContent.trim() === color){
+            btn.classList.add("activo");
+        }
+    });
+
     mostrarTalles();
 
 }
-
 function seleccionarTalle(talle){
 
     talleSeleccionado = talle;
 
-    alert("Talle seleccionado: " + talle);
+    document.querySelectorAll(".btn-talle").forEach(btn=>{
+        btn.classList.remove("activo");
 
-}
+        if(btn.textContent.trim() === talle){
+            btn.classList.add("activo");
+        }
+    });
+
+                                                                   }
 
 mostrarTalles();
 
