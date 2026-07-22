@@ -81,8 +81,13 @@ function mostrarTalles() {
 
     listaTalles.innerHTML = "";
 
+    if (
+    !talleSeleccionado ||
+    !producto.colores[colorSeleccionado].includes(talleSeleccionado)
+) {
     talleSeleccionado = producto.colores[colorSeleccionado][0];
-
+    }
+    
     producto.colores[colorSeleccionado].forEach(talle => {
 
     const activo = talle === talleSeleccionado ? "activo" : "";
@@ -133,7 +138,7 @@ function seleccionarColor(color){
         }
     });
 
-    mostrarTalles();
+    seleccionarColor(colorSeleccionado);
 }
 function seleccionarTalle(talle){
 
