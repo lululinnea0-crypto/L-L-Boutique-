@@ -125,16 +125,15 @@ function seleccionarColor(color){
 
     colorSeleccionado = color;
 
-    document.querySelectorAll(".btn-color").forEach(btn=>{
+    document.querySelectorAll(".btn-color").forEach(btn => {
         btn.classList.remove("activo");
 
-        if(btn.textContent.trim() === color){
+        if (btn.title === color) {
             btn.classList.add("activo");
         }
     });
 
     mostrarTalles();
-
 }
 function seleccionarTalle(talle){
 
