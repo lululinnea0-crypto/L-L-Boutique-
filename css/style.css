@@ -864,16 +864,21 @@ label {
     border:2px solid #ddd;
     padding:0;
     cursor:pointer;
-    transition:.3s;
+    transition:all .25s ease;
+}
+
+.btn-color:hover{
+    transform:scale(1.08);
 }
 
 .btn-color.activo{
-    transform:scale(1.15);
-    border:3px solid #111;
+    transform:scale(1.18);
+    border:3px solid #ff69b4;
+    box-shadow:0 0 10px rgba(255,105,180,.4);
 }
 
 .btn-talle.activo{
     background:#111;
     color:#fff;
     border-color:#111;
-    }
+}
