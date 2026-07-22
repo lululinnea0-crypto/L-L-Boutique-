@@ -171,18 +171,9 @@ mostrarTalles();
 
 function agregarAlCarrito() {
 
-    alert("Entró al carrito");
-
-    alert("Color: " + colorSeleccionado);
-    alert("Talle: " + talleSeleccionado);
-
     const pago = document.querySelector('input[name="pago"]:checked').value;
 
-    alert("Pago: " + pago);
-
     let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-    
-alert("Talle que se va a guardar: " + talleSeleccionado);
     
     carrito.push({
         id: producto.id,
@@ -196,5 +187,26 @@ alert("Talle que se va a guardar: " + talleSeleccionado);
 
     localStorage.setItem("carrito", JSON.stringify(carrito));
 
-    alert("Producto agregado al carrito 🛒");
+    mostrarNotificacion("🛒 Producto agregado al carrito");
+
+}
+
+function mostrarNotificacion(texto){
+
+    const aviso = document.createElement("div");
+
+    aviso.className = "notificacion";
+
+    aviso.textContent = texto;
+
+    document.body.appendChild(aviso);
+
+    setTimeout(() => {
+        aviso.classList.add("mostrar");
+    }, 10);
+
+    setTimeout(() => {
+        aviso.remove();
+    }, 2500);
+
 }
