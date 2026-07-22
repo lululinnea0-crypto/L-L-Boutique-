@@ -85,13 +85,15 @@ function mostrarTalles() {
 
     producto.colores[colorSeleccionado].forEach(talle => {
 
-        listaTalles.innerHTML += `
-            <button class="btn-talle" onclick="seleccionarTalle('${talle}')">
-                ${talle}
-            </button>
-        `;
+    const activo = talle === talleSeleccionado ? "activo" : "";
 
-    });
+    listaTalles.innerHTML += `
+        <button class="btn-talle ${activo}" onclick="seleccionarTalle('${talle}')">
+            ${talle}
+        </button>
+    `;
+
+});
 
 }
 
