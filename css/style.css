@@ -876,3 +876,23 @@ label {
     color:#fff;
     border-color:#111;
 }
+
+.notificacion{
+    position:fixed;
+    bottom:25px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#111;
+    color:#fff;
+    padding:15px 25px;
+    border-radius:50px;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+    opacity:0;
+    transition:.3s;
+    z-index:9999;
+}
+
+.notificacion.mostrar{
+    opacity:1;
+    bottom:40px;
+}
