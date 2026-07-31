@@ -15,6 +15,7 @@ const productos = [
     {
         id: 2,
         nombre: "Pantalón Sastrero",
+        categoria: "pantalones",
         precio: 49990,
         imagen: "img/productos/pantalon.jpg",
         etiqueta: "🔥 MÁS VENDIDO",
