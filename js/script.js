@@ -1,6 +1,3 @@
-
-
-
 const contenedor = document.getElementById("contenedor-productos");
 
 function mostrarProductos(listaProductos){
@@ -137,8 +134,6 @@ function agregarAlCarrito(id) {
     localStorage.setItem("carrito", JSON.stringify(carrito));
 
     actualizarCarrito();
-
-}
 
 function actualizarCarrito() {
 carrito = JSON.parse(localStorage.getItem("carrito")) || [];
