@@ -222,17 +222,6 @@ function filtrarProductos(categoria){
                                                                        
 actualizarCarrito();
 
-function abrirMenu(){
-
-    document.querySelector("nav")
-    .classList.toggle("abierto");
-
-}
-function cerrarMenu(){
-
-    document.querySelector("nav")
-    .classList.remove("abierto");
-
 }
 
 // ===== Slider del banner =====
