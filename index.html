@@ -15,21 +15,13 @@
 
 <header>
 
+    <div class="menu-btn" onclick="abrirMenu()">
+        ☰
+    </div>
+
     <div class="logo">
         <img src="img/logo.png" alt="L&L Boutique">
     </div>
-    <div class="menu-btn" onclick="abrirMenu()">
-    ☰
-    </div>
-    <nav>
-
-    <a href="#productos" onclick="cerrarMenu()">Productos</a>
-
-    <a href="#campania" onclick="cerrarMenu()">Campaña</a>
-
-    <a href="#contacto" onclick="cerrarMenu()">Contacto</a>
-
-    </nav>
 
     <div class="acciones">
 
@@ -41,6 +33,44 @@
     </div>
 
 </header>
+
+<nav id="menu-lateral" class="menu-lateral">
+
+    <div class="cerrar-menu" onclick="cerrarMenu()">
+        ✕
+    </div>
+
+    <a href="index.html">🏠 Inicio</a>
+
+    <div class="categoria-titulo" onclick="toggleCategorias()">
+        🛍️ Categorías ▼
+    </div>
+
+    <div id="lista-categorias" class="lista-categorias">
+
+        <a href="#">🧥 Abrigos</a>
+        <a href="#">👕 Remeras</a>
+        <a href="#">✨ Tops</a>
+        <a href="#">👖 Pantalones</a>
+        <a href="#">🧶 Suéteres</a>
+        <a href="#">🧥 Camperas</a>
+        <a href="#">🩷 Cardigans</a>
+        <a href="#">👕 Buzos</a>
+        <a href="#">🏃 Ropa deportiva</a>
+        <a href="#">💖 Lencería</a>
+        <a href="#">🤍 Bodys</a>
+
+    </div>
+
+    <a href="#">📦 Cómo comprar</a>
+
+    <a href="#">💳 Medios de pago</a>
+
+    <a href="#">🚚 Envíos</a>
+
+    <a href="#">📱 Contacto</a>
+
+</nav>
     <section class="hero">
 
     <div class="slider">
