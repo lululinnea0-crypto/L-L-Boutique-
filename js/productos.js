@@ -2,6 +2,7 @@ const productos = [
   {
     id: 1,
     nombre: "Suéter de manga larga con cuello en V, de punto trenzado",
+    categoria: "sueters",
     precio: 39990,
     imagen: "img/productos/cardigan.jpg",
     etiqueta: "✨ NUEVO",
