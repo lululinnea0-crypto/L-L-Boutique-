@@ -287,3 +287,15 @@ function finalizarCompra() {
 );
 
 }
+
+function abrirMenu(){
+    document.getElementById("menu-lateral").classList.add("abierto");
+}
+
+function cerrarMenu(){
+    document.getElementById("menu-lateral").classList.remove("abierto");
+}
+
+function toggleCategorias(){
+    document.getElementById("lista-categorias").classList.toggle("abierta");
+}
