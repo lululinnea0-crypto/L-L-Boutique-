@@ -70,6 +70,24 @@ for (let color in producto.talles) {
 });
 }
 
+function filtrarCategoria(categoria){
+
+    const filtrados = productos.filter(producto => producto.categoria === categoria);
+
+    mostrarProductos(filtrados);
+
+    cerrarMenu();
+
+}
+
+function mostrarTodos(){
+
+    mostrarProductos(productos);
+
+    cerrarMenu();
+
+}
+
 function verProducto(id){
 
     window.location.href = "productos/producto.html?id=" + id;
