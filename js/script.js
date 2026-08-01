@@ -69,7 +69,13 @@ for (let color in producto.talles) {
 
 function filtrarCategoria(categoria){
 
-    const filtrados = productos.filter(producto => producto.categoria === categoria);
+    alert("Categoría: " + categoria);
+
+    const filtrados = productos.filter(producto =>
+        producto.categoria === categoria
+    );
+
+    alert("Encontrados: " + filtrados.length);
 
     mostrarProductos(filtrados);
 
