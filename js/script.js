@@ -135,6 +135,8 @@ function agregarAlCarrito(id) {
 
     actualizarCarrito();
 
+}
+
 function actualizarCarrito() {
 carrito = JSON.parse(localStorage.getItem("carrito")) || [];
     console.log(carrito);
