@@ -1,70 +1,67 @@
 const contenedor = document.getElementById("contenedor-productos");
 
-function mostrarProductos(listaProductos){
+function mostrarProductos(listaProductos) {
 
     contenedor.innerHTML = "";
 
     listaProductos.forEach(producto => {
 
-    let coloresHTML = "";
+        let coloresHTML = "";
 
-for (let color in producto.talles) {
+        for (let color in producto.colores) {
 
-    let colorCSS = "#ccc";
+            let colorCSS = "#ccc";
 
-    if (color.includes("Negro")) colorCSS = "#000";
-    if (color.includes("Blanco")) colorCSS = "#fff";
-    if (color.includes("Gris")) colorCSS = "#999";
-    if (color.includes("Marrón")) colorCSS = "#8B5A2B";
+            if (color.includes("Negro")) colorCSS = "#000";
+            if (color.includes("Blanco")) colorCSS = "#fff";
+            if (color.includes("Gris")) colorCSS = "#999";
+            if (color.includes("Marrón")) colorCSS = "#8B5A2B";
+            if (color.includes("Beige")) colorCSS = "#E8D6B3";
 
-    coloresHTML += `
-        <span class="color-producto"
-        style="background:${colorCSS}">
-        </span>
-    `;
-}
+            coloresHTML += `
+                <span class="color-producto"
+                    style="background:${colorCSS}">
+                </span>
+            `;
+        }
 
-    contenedor.innerHTML += `
+        contenedor.innerHTML += `
+            <div class="producto">
 
-    <div class="producto">
+                <div class="favorito" onclick="toggleFavorito(this)">
+                    ♡
+                </div>
 
-    <div class="favorito" onclick="toggleFavorito(this)">
-♡
-</div>
-    ${producto.etiqueta ? `
-    <div class="etiqueta-producto">
-        ${producto.etiqueta}
-    </div>
-    ` : ""}
+                ${producto.etiqueta ? `
+                    <div class="etiqueta-producto">
+                        ${producto.etiqueta}
+                    </div>
+                ` : ""}
 
-        <img src="${producto.imagen}" alt="${producto.nombre}">
+                <img src="${producto.imagen}" alt="${producto.nombre}">
 
-        <h3>💌 ${producto.nombre}</h3>
+                <h3>💌 ${producto.nombre}</h3>
 
-        <p class="precio">$${producto.precio.toLocaleString("es-AR")}</p>
+                <p class="precio">
+                    $${producto.precio.toLocaleString("es-AR")}
+                </p>
 
-        <div class="estrellas">★★★★★
-        </div>
-          <div class="talles">
+                <div class="estrellas">
+                    ★★★★★
+                </div>
 
-            <h4>💞 Talles</h4>
+                <div class="colores-producto">
+                    ${coloresHTML}
+                </div>
 
-            <div class="colores-producto">
-    ${coloresHTML}
-</div>
+                <a href="productos/producto.html?id=${producto.id}" class="btn-producto">
+                    Ver producto
+                </a>
 
-        </div>
+            </div>
+        `;
+    });
 
-
-<a href="productos/producto.html?id=${producto.id}" class="btn-producto">
-    Ver producto
-</a>
-
-    </div>
-
-    `;
-
-});
 }
 
 function filtrarCategoria(categoria){
