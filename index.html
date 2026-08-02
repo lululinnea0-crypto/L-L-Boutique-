@@ -1,256 +1,316 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L&L Boutique</title>
 
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<title>L&L Boutique</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
+
 
 <body>
 
+
 <header>
 
-    <div class="menu-btn" onclick="abrirMenu()">
-        ☰
-    </div>
 
-    <div class="logo">
-        <img src="img/logo.png" alt="L&L Boutique">
-    </div>
+<div class="menu-btn" onclick="abrirMenu()">
+☰
+</div>
 
-    <div class="acciones">
 
-        <div class="carrito-icono" onclick="abrirCarrito()">
-            🛒
-            <span id="contador-carrito">0</span>
-        </div>
+<div class="logo">
 
-    </div>
+<img src="img/logo.png" alt="L&L Boutique">
+
+</div>
+
+
+<div class="acciones">
+
+<div class="carrito-icono" onclick="abrirCarrito()">
+
+🛒
+
+<span id="contador-carrito">0</span>
+
+</div>
+
+</div>
+
 
 </header>
 
+
+
 <nav id="menu-lateral" class="menu-lateral">
 
-    <div class="cerrar-menu" onclick="cerrarMenu()">
-        ✕
-    </div>
 
-    <a href="javascript:void(0)" onclick="mostrarTodos(); return false;">🏠 Inicio</a>
+<div class="cerrar-menu" onclick="cerrarMenu()">
+✕
+</div>
 
-    <div class="categoria-titulo" onclick="toggleCategorias()">
-        🛍️ Categorías ▼
-    </div>
 
-    <div id="lista-categorias" class="lista-categorias">
+<a href="index.html">
+🏠 Inicio
+</a>
 
-    <a href="categorias/categoria.html?categoria=sueters">Suéters</a>
 
-<a href="categorias/categoria.html?categoria=abrigos">Abrigos</a>
+<div class="categoria-titulo" onclick="toggleCategorias()">
+🛍️ Categorías ▼
+</div>
 
-<a href="categorias/categoria.html?categoria=cardigans">Cardigans</a>
 
-<a href="categorias/categoria.html?categoria=remeras">Remeras</a>
+<div id="lista-categorias" class="lista-categorias">
 
-<a href="categorias/categoria.html?categoria=buzos">Buzos</a>
 
-<a href="categorias/categoria.html?categoria=pantalones">Pantalones</a>
+<a href="categorias/categoria.html?categoria=sueters">
+Suéters
+</a>
 
-<a href="categorias/categoria.html?categoria=camperas">Camperas</a>
+<a href="categorias/categoria.html?categoria=abrigos">
+Abrigos
+</a>
 
-<a href="categorias/categoria.html?categoria=deportiva">Vestimenta deportiva</a>
+<a href="categorias/categoria.html?categoria=cardigans">
+Cardigans
+</a>
 
-<a href="categorias/categoria.html?categoria=tops">Tops</a>
+<a href="categorias/categoria.html?categoria=remeras">
+Remeras
+</a>
 
-<a href="categorias/categoria.html?categoria=bodys">Bodys</a>
+<a href="categorias/categoria.html?categoria=pantalones">
+Pantalones
+</a>
 
-<a href="categorias/categoria.html?categoria=vestidos">Vestidos y faldas</a>
+<a href="categorias/categoria.html?categoria=vestidos">
+Vestidos
+</a>
 
-<a href="categorias/categoria.html?categoria=lenceria">Lencería</a>
 
-<a href="categorias/categoria.html?categoria=maquillaje">Maquillaje</a>
+</div>
 
-<a href="categorias/categoria.html?categoria=perfumes">Perfumes</a>
 
-<a href="categorias/categoria.html?categoria=cabello">Cuidado de cabello</a>
+<a href="#compra">
+🛒 Cómo comprar
+</a>
 
-<a href="categorias/categoria.html?categoria=piel">Cuidado de piel</a>
 
-<a href="javascript:void(0)" onclick="abrirCatalogoNatura(); return false;">🌿 Natura</a>
+<a href="#envios">
+🚚 Envíos
+</a>
 
-<a href="javascript:void(0)" onclick="abrirCatalogoAvon(); return false;">💋 Avon</a>
 
-    </div>
-    
-    <a href="#">📦 Cómo comprar</a>
+<a href="#contacto">
+📱 Contacto
+</a>
 
-    <a href="#">💳 Medios de pago</a>
-
-    <a href="#">🚚 Envíos</a>
-
-    <a href="#">📱 Contacto</a>
 
 </nav>
-    <section class="hero">
 
-    <div class="slider">
 
-    <div class="slide slide1 activo">
-        <h1>Nueva Campaña ✨</h1>
-        <p>Moda por encargo • Que esperas para reservar</p>
-        <a href="#productos" class="btn-principal">Comprar ahora</a>
-    </div>
 
-<div class="slide slide2">
-        <h1>💳 Reservá con el 50%</h1>
-        <p>Asegurá tu prenda antes del cierre de campaña.</p>
-        <a href="#campania" class="btn-principal">Ver campaña</a>
-    </div>
 
-    <div class="slide slide3">
-        <h1>📦 Entrega de 10 a 15 días</h1>
-        <p>Una vez cerrada la campaña, hacemos el pedido al proveedor.</p>
-        <a href="#productos" class="btn-principal">Ver productos</a>
-    </div>
 
-    </div>
+<section class="hero">
 
-    </section>
-    <section class="buscador">
 
-    <input
-        type="text"
-        id="buscar"
-        placeholder="🔍 Buscar productos..."
-    >
+<div class="slide activo">
 
-    </section>
 
-<section class="destacados">
+<h1>
+✨ Nueva Campaña
+</h1>
 
-    <h2>✨ Elegidos para esta campaña</h2>
 
-    <div class="destacados-grid">
+<p>
+Moda por encargo • Reservá tu prenda con el 50%
+</p>
 
-        <div class="destacado">
-            <img src="img/productos/cardigan.jpg" alt="Cardigan">
-            <h3>Cardigan Largo</h3>
-        </div>
 
-        <div class="destacado">
-            <img src="img/productos/pantalon.jpg" alt="Pantalón">
-            <h3>Pantalón Sastrero</h3>
-        </div>
+<a href="#destacados" class="btn-principal">
+Ver productos
+</a>
 
-    </div>
-
-</section>
-    
-<section class="categorias">
-
-<h2>Categorías</h2>
-
-<div class="lista-categorias">
-
-<button>🧥 Cardigans</button>
-
-<button>👖 Pantalones</button>
-
-<button>👗 Vestidos</button>
-
-<button>👚 Remeras</button>
-
-<button>👜 Accesorios</button>
 
 </div>
 
+
 </section>
-    
-    <section class="campania">
-
-    <h2>✨ Campaña Actual</h2>
-
-    <div class="card-campania">
-
-        <h3>Pedidos Abiertos</h3>
-
-        <p>📅 Cierre de campaña: <strong>22 de agosto</strong></p>
-
-        <p>💳 Reserva con el 50% de seña.</p>
-
-        <p>📦 Entrega estimada: 10 a 15 días.</p>
 
 
 
-    </div>
 
-    </section>
 
-    <section class="categorias">
+<section class="destacados" id="destacados">
 
-    <div class="lista-categorias">
 
-        <button onclick="filtrarProductos('todos')">
-            🔥 Todos
-        </button>
+<h2>
+✨ Productos destacados
+</h2>
 
-        <button onclick="filtrarProductos('nuevo')">
-            ✨ Nuevo
-        </button>
 
-        <button onclick="filtrarProductos('mas-vendido')">
-            💖 Más vendidos
-        </button>
-
-    </div>
-
-    </section>
-    
-    <section class="productos">
-
-    <h2>Novedades ✨</h2>
-
-    <div class="contenedor-productos" id="contenedor-productos">
-
-    </div>
-
-    </section>
-    
-
-<div id="carrito" class="carrito">
-
-    <div class="carrito-header">
-
-    <h2>🛒 Carrito</h2>
-
-        <button onclick="cerrarCarrito()">✖</button>
-    </div>
-
-    <div id="lista-carrito">
-
-    <p>Tu carrito está vacío.</p>
-
-    </div>
-
-    <div class="carrito-footer">
-
-        <h3>Total: $<span id="total">0</span></h3>
-
-        <button onclick="finalizarCompra()">Finalizar compra por WhatsApp</button>
-
-    </div>
+<div id="productos-destacados" class="contenedor-productos">
 
 </div>
+
+
+</section>
+
+
+
+
+
+<section class="informacion" id="compra">
+
+
+<h2>
+🛍️ Cómo comprar
+</h2>
+
+
+<div class="info-card">
+
+
+<p>
+1️⃣ Elegí tu producto, color y talle.
+</p>
+
+
+<p>
+2️⃣ Reservá con el 50%.
+</p>
+
+
+<p>
+3️⃣ Cerramos la campaña y hacemos el pedido al proveedor.
+</p>
+
+
+<p>
+4️⃣ Recibís tu compra en 10 a 15 días.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="informacion">
+
+
+<h2>
+💳 Medios de pago
+</h2>
+
+
+<div class="info-card">
+
+
+<p>
+✔ Mercado Pago
+</p>
+
+
+<p>
+✔ Transferencia bancaria
+</p>
+
+
+<p>
+✔ Pago del 50% para reservar
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="informacion" id="envios">
+
+
+<h2>
+🚚 Envíos
+</h2>
+
+
+<div class="info-card">
+
+
+<p>
+Realizamos envíos a todo el país.
+</p>
+
+
+<p>
+Consultá costos según tu localidad.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<footer id="contacto">
+
+
+<h3>
+L&L Boutique
+</h3>
+
+
+<p>
+Moda online • Córdoba
+</p>
+
+
+<p>
+📱 WhatsApp: 3512901763
+</p>
+
+
+</footer>
+
+
+
+
 
 <div id="contenedor-carrito"></div>
 
+
+
+
+
 <script src="js/productos.js"></script>
+
 <script src="js/script.js"></script>
-<script src="../js/carrito.js"></script>
-    
+
+<script src="js/carrito.js"></script>
+
+
 </body>
+
 </html>
