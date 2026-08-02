@@ -24,12 +24,12 @@ const productos = [
     // ==========================
     {
         id: 50,
-        nombre: "Kaiak Clásico",
+        nombre: "KAIAK SONAR EDT MASC 100ML LTM",
         categoria: "perfumes",
         precio: 28990,
 
-        carpeta: "Kaiak Clasico",
-        cantidadImagenes: 3,
+        carpeta: "KAIAK SONAR EDT MASC 100ML LTM",
+        cantidadImagenes: 1,
 
         tipo: "stock",
 
