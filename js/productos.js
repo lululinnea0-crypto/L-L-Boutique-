@@ -10,6 +10,10 @@ const productos = [
         precio: 33000,
 
         carpeta: "Sueter Cheshire",
+        "../img/productos/sueters/Sueter Cheshire/1.jpg"
+        "../img/productos/sueters/Sueter Cheshire/2.jpg"
+        "../img/productos/sueters/Sueter Cheshire/3.jpg"
+
         cantidadImagenes: 3,
 
         tipo: "pedido",
