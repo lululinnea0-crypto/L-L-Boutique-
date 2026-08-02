@@ -1,29 +1,43 @@
 const productos = [
-  {
-    id: 1,
-    nombre: "Suéter de manga larga con cuello en V, de punto trenzado",
-    categoria: "sueters",
-    precio: 39990,
-    imagen: "img/productos/cardigan.jpg",
-    etiqueta: "✨ NUEVO",
-    colores: {
-        "🖤 Negro": ["XXS","XS","S","M","L"],
-        "🩶 Gris": ["XXS","XS","S","M","L"],
-        "🤍 Blanco": ["XXS","XS","S","M","L","XL"]
-    }
-},
+
+    // ==========================
+    // MODA
+    // ==========================
 
     {
-        id: 2,
-        nombre: "Pantalón Sastrero",
-        categoria: "pantalones",
-        precio: 49990,
-        imagen: "img/productos/pantalon.jpg",
-        etiqueta: "🔥 MÁS VENDIDO",
-        colores: {
-    "Negro": ["S", "M", "L", "XL"],
-    "Beige": ["S", "M", "L", "XL"]
-        }
-    }
-];
+        id: 1,
+        nombre: "Suéter de manga larga con cuello en V",
+        categoria: "sueters",
+        marca: "L&L Boutique",
+        precio: 39990,
+        imagen: "img/productos/sueters/sueter-cuello-v/1.jpg",
+        descripcion: "Suéter tejido premium.",
+        etiqueta: "✨ Nuevo",
 
+        colores:{
+            "🖤 Negro":["XS","S","M","L","XL"],
+            "🤍 Blanco":["XS","S","M","L"],
+            "🩶 Gris":["S","M","L"]
+        },
+
+        destacado:true
+    },
+
+    {
+        id:2,
+        nombre:"Pantalón Sastrero",
+        categoria:"pantalones",
+        marca:"L&L Boutique",
+        precio:49990,
+        imagen:"img/productos/pantalones/pantalon-sastrero/1.jpg",
+        descripcion:"Pantalón de vestir.",
+
+        colores:{
+            "🖤 Negro":["S","M","L","XL"],
+            "🤎 Beige":["S","M","L"]
+        },
+
+        destacado:true
+    }
+
+];
