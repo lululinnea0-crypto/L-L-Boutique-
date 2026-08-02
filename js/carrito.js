@@ -196,7 +196,7 @@ function finalizarCompra(){
     }
 
 
-    let mensaje = "🛍️ *Nuevo pedido L&L Boutique*%0A%0A";
+    let mensaje = "🛍️ *Nuevo pedido L&L Boutique*\n\n";
 
     let total = 0;
 
@@ -204,37 +204,37 @@ function finalizarCompra(){
     carrito.forEach(producto => {
 
 
-        mensaje += `🧥 ${producto.nombre}%0A`;
+        mensaje += `🧥 ${producto.nombre}\n`;
 
 
         if(producto.color){
 
-            mensaje += `🎨 Color: ${producto.color}%0A`;
+            mensaje += `🎨 Color: ${producto.color}\n`;
 
         }
 
 
         if(producto.talle){
 
-            mensaje += `📏 Talle: ${producto.talle}%0A`;
+            mensaje += `📏 Talle: ${producto.talle}\n`;
 
         }
 
 
         if(producto.pago === "50"){
 
-            mensaje += `💳 Reserva 50%%0A`;
+            mensaje += "💳 Reserva 50%\n";
 
-        }else{
+        } else {
 
-            mensaje += `💳 Pago completo%0A`;
+            mensaje += "💳 Pago completo\n";
 
         }
 
 
-        mensaje += `💰 $${producto.precio.toLocaleString("es-AR")}%0A`;
+        mensaje += `💰 $${producto.precio.toLocaleString("es-AR")}\n`;
 
-        mensaje += "--------------------%0A";
+        mensaje += "--------------------\n";
 
 
         total += producto.precio;
@@ -243,15 +243,16 @@ function finalizarCompra(){
     });
 
 
-    mensaje += `%0A💵 *Total: $${total.toLocaleString("es-AR")}*`;
+    mensaje += `\n💵 *Total: $${total.toLocaleString("es-AR")}*`;
 
 
-    const url = 
-    "https://wa.me/5493512901763?text=" + mensaje;
+    const mensajeFinal = encodeURIComponent(mensaje);
 
 
-    window.open(url,"_blank");
+    window.open(
+        `https://wa.me/5493512901763?text=${mensajeFinal}`,
+        "_blank"
+    );
 
 }
-
 actualizarCarrito();
