@@ -1,50 +1,202 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Producto | L&L Boutique</title>
 
-    <link rel="stylesheet" href="../css/style.css">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>L&L Boutique</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header>
 
-    <a href="javascript:history.back()">← Volver</a>
-    
-    <button class="btn-carrito" onclick="abrirCarrito()">
-🛒 <span id="contador-carrito">0</span>
-    </button>
+<div class="menu-btn" onclick="abrirMenu()">
+☰
+</div>
+
+<div class="logo">
+
+<a href="../index.html">
+
+<img src="../img/logo.png" alt="L&L Boutique">
+
+</a>
+
+</div>
+
+<div class="acciones">
+
+<div class="carrito-icono" onclick="abrirCarrito()">
+
+🛒
+
+<span id="contador-carrito">0</span>
+
+</div>
+
+</div>
 
 </header>
 
-<main class="producto-completo">
+<!-- MENÚ -->
 
-    <div id="galeria-principal"></div>
+<nav id="menu-lateral" class="menu-lateral">
 
-    <div id="miniaturas"></div>
+<div class="cerrar-menu" onclick="cerrarMenu()">
+✕
+</div>
 
-    <h1 id="nombre-producto"></h1>
+<a href="../index.html">🏠 Inicio</a>
 
-    <p id="precio-producto"></p>
+<div class="categoria-titulo" onclick="toggleCategorias()">
 
-    <div id="colores"></div>
+🛍️ Categorías ▼
 
-    <div id="talles"></div>
+</div>
 
-    <div id="info-pedido"></div>
+<div id="lista-categorias" class="lista-categorias">
 
-    <div id="opciones-pago"></div>
+<a href="../categorias/categoria.html?categoria=sueters">Suéters</a>
 
-    <button id="btn-carrito">
-        🛒 Agregar al carrito
-    </button>
+<a href="../categorias/categoria.html?categoria=cardigans">Cardigans</a>
+
+<a href="../categorias/categoria.html?categoria=abrigos">Abrigos</a>
+
+<a href="../categorias/categoria.html?categoria=camperas">Camperas</a>
+
+<a href="../categorias/categoria.html?categoria=remeras">Remeras</a>
+
+<a href="../categorias/categoria.html?categoria=buzos">Buzos</a>
+
+<a href="../categorias/categoria.html?categoria=pantalones">Pantalones</a>
+
+<a href="../categorias/categoria.html?categoria=vestidos">Vestidos y Faldas</a>
+
+<a href="../categorias/categoria.html?categoria=tops">Tops</a>
+
+<a href="../categorias/categoria.html?categoria=bodys">Bodys</a>
+
+</div>
+
+<a href="#" onclick="abrirComoComprar()">
+📦 Cómo comprar
+</a>
+
+</nav>
+
+<!-- PRODUCTO -->
+
+<main class="producto-detalle">
+
+<div id="galeria-principal"></div>
+
+<div id="miniaturas"></div>
+
+<div class="producto-info">
+
+<h1 id="nombre-producto"></h1>
+
+<p id="precio-producto"></p>
+
+<h4>COLOR</h4>
+
+<div id="colores"></div>
+
+<h4>TALLE</h4>
+
+<div id="talles"></div>
+
+<div id="opciones-pago"></div>
+
+<div id="info-pedido"></div>
+
+<button id="btn-carrito" class="btn-principal">
+
+🛒 Agregar al carrito
+
+</button>
+
+</div>
 
 </main>
-    
-<div id="contenedor-carrito"></div>
+
+    <!-- ================= CARRITO ================= -->
+
+<div id="carrito" class="carrito">
+
+    <div class="carrito-header">
+
+        <h2>🛒 Mi carrito</h2>
+
+        <button class="cerrar-carrito" onclick="cerrarCarrito()">
+            ✕
+        </button>
+
+    </div>
+
+    <div id="lista-carrito">
+
+        <p>Tu carrito está vacío.</p>
+
+    </div>
+
+    <div class="carrito-footer">
+
+        <h3 id="total">$0</h3>
+
+        <button class="btn-principal" onclick="finalizarCompra()">
+            Finalizar compra por WhatsApp
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ================= CÓMO COMPRAR ================= -->
+
+<div id="como-comprar" class="modal">
+
+    <div class="modal-contenido">
+
+        <h2>¿Cómo comprar?</h2>
+
+        <p>1️⃣ Elegí el producto.</p>
+
+        <p>2️⃣ Seleccioná color y talle.</p>
+
+        <p>3️⃣ Elegí si pagás el 100% o reservás con el 50%.</p>
+
+        <p>4️⃣ Agregalo al carrito y finalizá el pedido por WhatsApp.</p>
+
+        <button class="btn-principal" onclick="cerrarComoComprar()">
+            Cerrar
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>© 2026 L&L Boutique</p>
+
+    <p>Moda por pedido • Córdoba, Argentina</p>
+
+</footer>
+
 <script src="../js/productos.js"></script>
 <script src="../js/script.js"></script>
 <script src="producto.js"></script>
