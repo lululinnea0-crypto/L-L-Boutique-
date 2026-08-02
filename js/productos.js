@@ -73,7 +73,7 @@ const productos = [
     tipo: "pedido",
 
     colores: {
-        "♦️Bordo": ["XS, "S", "M", "L","XL","XXL"]
+        "♦️Bordo": ["XS","S","M","L","XL","XXL"]
     }
 },
     ];
