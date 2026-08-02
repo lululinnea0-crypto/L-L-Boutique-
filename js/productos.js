@@ -22,3 +22,21 @@ const productos = [
 // NUEVOS PRODUCTOS DEBAJO
 
 ];
+{
+    id: 2,
+    nombre: "Abrigo Duffel Coat",
+    categoria: "abrigos",
+
+    precio: 50000,
+
+    imagen: "img/productos/abrigos/Abrigo Duffel Coat/1.jpg",
+
+    carpeta: "Abrigo Duffel Coat",
+    cantidadImagenes: 4,
+
+    tipo: "pedido",
+
+    colores: {
+        "🤎marron": ["S", "M", "L","XL"]
+    }
+},
