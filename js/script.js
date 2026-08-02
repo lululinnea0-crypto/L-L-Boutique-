@@ -153,3 +153,39 @@ function cerrarCarrito(){
 }
 
 actualizarCarrito();
+
+function agregarAlCarrito(id) {
+
+    const producto = productos.find(p => p.id === id);
+
+    if (!producto) return;
+
+    carrito.push(producto);
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+
+    actualizarCarrito();
+
+    alert("Producto agregado al carrito 🛒");
+}
+
+function finalizarCompra() {
+
+    if (carrito.length === 0) {
+        alert("El carrito está vacío.");
+        return;
+    }
+
+    let mensaje = "¡Hola! Quiero realizar este pedido:%0A%0A";
+    let total = 0;
+
+    carrito.forEach(producto => {
+        mensaje += `• ${producto.nombre} - $${producto.precio.toLocaleString("es-AR")}%0A`;
+        total += producto.precio;
+    });
+
+    mensaje += `%0A*Total:* $${total.toLocaleString("es-AR")}`;
+
+    // Reemplazá este número por tu WhatsApp
+    window.open(`https://wa.me/5493512901763?text=${mensaje}`, "_blank");
+                    }
