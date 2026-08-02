@@ -27,6 +27,10 @@ const productos = [
     nombre: "Remera musculosa tokyo",
     categoria: "Remeras",
     imagen: "img/productos/Remeras/Remera musculosa tokyo/1.jpg",
+
+    carpeta: "Remera musculosa tokyo",
+    cantidadImagenes: 2,
+        
     precio: 18000,
     etiqueta: "Nuevo",
     colores: [
