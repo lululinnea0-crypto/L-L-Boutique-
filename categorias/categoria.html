@@ -1,46 +1,253 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L&L Boutique</title>
 
-    <link rel="stylesheet" href="../css/style.css">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>L&L Boutique</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
+
 
 <body>
 
+
+<!-- HEADER -->
+
 <header>
 
-    <a href="../index.html" class="volver">
-        ← Inicio
-    </a>
 
-    <h1 id="titulo-categoria"></h1>
+<div class="menu-btn" onclick="abrirMenu()">
 
-    <button class="btn-carrito" onclick="abrirCarrito()">
-🛒 <span id="contador-carrito">0</span>
-    </button>
-    
+☰
+
+</div>
+
+
+<div class="logo">
+
+<a href="../index.html">
+
+<img src="../img/logo.png" alt="L&L Boutique">
+
+</a>
+
+</div>
+
+
+<div class="acciones">
+
+
+<div class="carrito-icono" onclick="abrirCarrito()">
+
+🛒
+
+<span id="contador-carrito">0</span>
+
+</div>
+
+
+</div>
+
+
 </header>
 
-<main>
 
-    <section class="productos">
 
-        <div id="contenedor-productos" class="contenedor-productos">
+<!-- MENU -->
 
-        </div>
+<nav id="menu-lateral" class="menu-lateral">
 
-    </section>
+
+<div class="cerrar-menu" onclick="cerrarMenu()">
+
+✕
+
+</div>
+
+
+<a href="../index.html">
+
+🏠 Inicio
+
+</a>
+
+
+<div class="categoria-titulo" onclick="toggleCategorias()">
+
+🛍️ Categorías ▼
+
+</div>
+
+
+<div id="lista-categorias" class="lista-categorias">
+
+
+<a href="categoria.html?categoria=sueters">Suéters</a>
+
+<a href="categoria.html?categoria=cardigans">Cardigans</a>
+
+<a href="categoria.html?categoria=abrigos">Abrigos</a>
+
+<a href="categoria.html?categoria=camperas">Camperas</a>
+
+<a href="categoria.html?categoria=remeras">Remeras</a>
+
+<a href="categoria.html?categoria=buzos">Buzos</a>
+
+<a href="categoria.html?categoria=pantalones">Pantalones</a>
+
+<a href="categoria.html?categoria=vestidos">Vestidos</a>
+
+<a href="categoria.html?categoria=tops">Tops</a>
+
+<a href="categoria.html?categoria=bodys">Bodys</a>
+
+
+</div>
+
+
+<a href="#" onclick="abrirComoComprar()">
+
+📦 Cómo comprar
+
+</a>
+
+
+</nav>
+
+
+
+<!-- CONTENIDO -->
+
+
+<main class="categoria-pagina">
+
+
+<h1 id="titulo-categoria"></h1>
+
+
+<section class="productos">
+
+
+<div id="contenedor-productos" class="contenedor-productos">
+
+
+</div>
+
+
+</section>
+
 
 </main>
 
-<div id="contenedor-carrito"></div>
-    
+    <!-- ================= CARRITO ================= -->
+
+<div id="carrito" class="carrito">
+
+    <div class="carrito-header">
+
+        <h2>🛒 Mi carrito</h2>
+
+        <button class="cerrar-carrito" onclick="cerrarCarrito()">
+            ✕
+        </button>
+
+    </div>
+
+
+    <div id="lista-carrito">
+
+        <p>Tu carrito está vacío.</p>
+
+    </div>
+
+
+    <div class="carrito-footer">
+
+        <h3 id="total">$0</h3>
+
+
+        <button class="btn-principal" onclick="finalizarCompra()">
+
+            Finalizar compra por WhatsApp
+
+        </button>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!-- ================= COMO COMPRAR ================= -->
+
+
+<div id="como-comprar" class="modal">
+
+
+<div class="modal-contenido">
+
+
+<h2>¿Cómo comprar?</h2>
+
+
+<p>1️⃣ Elegí el producto.</p>
+
+<p>2️⃣ Seleccioná color y talle.</p>
+
+<p>3️⃣ Elegí pago completo o reserva del 50%.</p>
+
+<p>4️⃣ Finalizá tu pedido por WhatsApp.</p>
+
+
+<button class="btn-principal" onclick="cerrarComoComprar()">
+
+Cerrar
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+
+<footer>
+
+
+<p>© 2026 L&L Boutique</p>
+
+<p>Moda por pedido • Córdoba, Argentina</p>
+
+
+</footer>
+
+
+
 <script src="../js/productos.js"></script>
+
 <script src="../js/categoria.js"></script>
+
+<script src="../js/script.js"></script>
+
 <script src="../js/carrito.js"></script>
-    
+
+
 </body>
+
 </html>
