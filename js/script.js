@@ -34,3 +34,22 @@ function mostrarProductos(listaProductos){
 }
 
 mostrarProductos(productos);
+
+function filtrarCategoria(categoria){
+
+    const filtrados = productos.filter(producto =>
+        producto.categoria === categoria
+    );
+
+    mostrarProductos(filtrados);
+
+    cerrarMenu();
+}
+
+function mostrarTodos(){
+
+    mostrarProductos(productos);
+
+    cerrarMenu();
+
+}
