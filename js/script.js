@@ -10,13 +10,14 @@ const contenedor = document.getElementById("contenedor-productos");
 // MENÚ
 // ===============================
 
-function abrirMenu() {
+function abrirMenu(){
+
+    alert("funciona");
 
     document.getElementById("menu-lateral")
     .classList.add("abierto");
 
 }
-
 
 function cerrarMenu() {
 
