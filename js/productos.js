@@ -20,8 +20,6 @@ const productos = [
 },
 
 // NUEVOS PRODUCTOS DEBAJO
-
-];
 {
     id: 2,
     nombre: "Abrigo Duffel Coat",
@@ -40,3 +38,5 @@ const productos = [
         "🤎marron": ["S", "M", "L","XL"]
     }
 },
+
+    ];
