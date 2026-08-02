@@ -6,13 +6,13 @@ const productos = [
     {
         id: 1,
         nombre: "Suéter Cheshire",
-        categorias: "sueters",
+        categoria: "sueters",
         precio: 33000,
 
         carpeta: "Sueter Cheshire",
-        "../img/productos/sueters/Sueter Cheshire/1.jpg"
-        "../img/productos/sueters/Sueter Cheshire/2.jpg"
-        "../img/productos/sueters/Sueter Cheshire/3.jpg"
+        imagenes:"../img/productos/sueters/Sueter Cheshire/1.jpg"
+        imagenes:"../img/productos/sueters/Sueter Cheshire/2.jpg" 
+        imagenes:"../img/productos/sueters/Sueter Cheshire/3.jpg"
 
         cantidadImagenes: 3,
 
@@ -33,6 +33,8 @@ const productos = [
         precio: 28990,
 
         carpeta: "KAIAK SONAR EDT MASC 100ML LTM",
+       imagenes: "../img/productos/perfumes/KAIAK SONAR EDT MASC 100ML LTM/1.jpg"
+        
         cantidadImagenes: 1,
 
         tipo: "stock",
