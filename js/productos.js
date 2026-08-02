@@ -39,4 +39,23 @@ const productos = [
     }
 },
 
+    {
+    id: 3,
+    nombre: "Body chic",
+    categoria: "Bodys",
+
+    precio: 18000,
+
+    imagen: "img/productos/Bodys/Body chic/1.jpg",
+
+    carpeta: "Body chic",
+    cantidadImagenes: 2,
+
+    tipo: "pedido",
+
+    colores: {
+        "🖤Negro": ["S", "M", "L","XL"]
+    }
+},
+
     ];
