@@ -100,6 +100,10 @@ function mostrarTalles() {
 
 });
 
+    mostrarTalles();
+
+document.querySelector(".btn-color").classList.add("activo");
+
 }
 
 Object.keys(producto.colores).forEach(color => {
@@ -138,7 +142,7 @@ function seleccionarColor(color){
         }
     });
 
-    seleccionarColor(colorSeleccionado);
+    mostrarTalles();
 }
 function seleccionarTalle(talle){
 
