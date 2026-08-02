@@ -187,45 +187,54 @@ function cerrarCarrito(){
 
 function finalizarCompra(){
 
+    if(carrito.length === 0){
 
-    let mensaje =
-    "🛍️ *Nuevo pedido L&L Boutique*%0A%0A";
+        alert("El carrito está vacío.");
 
+        return;
+
+    }
+
+
+    let mensaje = "🛍️ *Nuevo pedido L&L Boutique*%0A%0A";
 
     let total = 0;
 
 
-    carrito.forEach(producto=>{
+    carrito.forEach(producto => {
 
 
-        mensaje +=
-        `• ${producto.nombre}%0A`;
+        mensaje += `🧥 ${producto.nombre}%0A`;
 
 
         if(producto.color){
 
-            mensaje +=
-            `🎨 ${producto.color}%0A`;
+            mensaje += `🎨 Color: ${producto.color}%0A`;
 
         }
 
 
         if(producto.talle){
 
-            mensaje +=
-            `📏 ${producto.talle}%0A`;
+            mensaje += `📏 Talle: ${producto.talle}%0A`;
 
         }
 
 
-        mensaje +=
-        `💳 ${producto.pago === "50" ? "Reserva 50%" : "Pago completo"}%0A`;
+        if(producto.pago === "50"){
 
-        mensaje +=
-        `💰 $${producto.precio.toLocaleString("es-AR")}%0A`;
+            mensaje += `💳 Reserva 50%%0A`;
 
-        mensaje +=
-        `--------------------%0A`;
+        }else{
+
+            mensaje += `💳 Pago completo%0A`;
+
+        }
+
+
+        mensaje += `💰 $${producto.precio.toLocaleString("es-AR")}%0A`;
+
+        mensaje += "--------------------%0A";
 
 
         total += producto.precio;
@@ -234,16 +243,15 @@ function finalizarCompra(){
     });
 
 
-    mensaje +=
-    `💵 Total: $${total.toLocaleString("es-AR")}`;
+    mensaje += `%0A💵 *Total: $${total.toLocaleString("es-AR")}*`;
 
 
-    window.open(
-    `https://wa.me/5493512901763?text=${mensaje}`,
-    "_blank"
-    );
+    const url = 
+    "https://wa.me/5493512901763?text=" + mensaje;
+
+
+    window.open(url,"_blank");
 
 }
-
 
 actualizarCarrito();
