@@ -81,24 +81,22 @@ function mostrarTalles() {
 
     listaTalles.innerHTML = "";
 
-    if (
-    !talleSeleccionado ||
-    !producto.colores[colorSeleccionado].includes(talleSeleccionado)
-) {
+    // Siempre selecciona el primer talle del color elegido
     talleSeleccionado = producto.colores[colorSeleccionado][0];
-    }
-    
+
     producto.colores[colorSeleccionado].forEach(talle => {
 
-    const activo = talle === talleSeleccionado ? "activo" : "";
+        listaTalles.innerHTML += `
+            <button
+                class="btn-talle ${talle === talleSeleccionado ? "activo" : ""}"
+                onclick="seleccionarTalle('${talle}')">
+                ${talle}
+            </button>
+        `;
 
-    listaTalles.innerHTML += `
-        <button class="btn-talle ${activo}" onclick="seleccionarTalle('${talle}')">
-            ${talle}
-        </button>
-    `;
+    });
 
-});
+}
 
     mostrarTalles();
 
