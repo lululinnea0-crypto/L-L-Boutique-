@@ -4,7 +4,7 @@ const productos = [
     // MODA
     // ==========================
     {
-        id: 2,
+        id: 1,
         nombre: "Suéter Cheshire",
         categoria: "sueters",
         precio: 33000,
