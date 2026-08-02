@@ -3,23 +3,19 @@ const productos = [
     // ==========================
     // MODA
     // ==========================
+{
+    id: 2,
+    nombre: "Suéter Cheshire",
+    categoria: "sueters",
+    precio: 33000,
 
-    {
-        id: 1,
-        nombre: "Suéter de manga larga con cuello en V",
-        categoria: "sueters",
-        marca: "L&L Boutique",
-        precio: 39990,
-        imagen: "img/productos/sueters/sueter-cuello-v/1.jpg",
-        descripcion: "Suéter tejido premium.",
-        etiqueta: "✨ Nuevo",
+    carpeta: "Sueter Cheshire",
+    cantidadImagenes: 3,
 
-        colores:{
-            "🖤 Negro":["XS","S","M","L","XL"],
-            "🤍 Blanco":["XS","S","M","L"],
-            "🩶 Gris":["S","M","L"]
-        },
-
+    colores: {
+        "💗 Rosa": ["S","M","L"]
+    }
+}
         destacado:true
     },
 
