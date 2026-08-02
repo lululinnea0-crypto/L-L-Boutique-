@@ -11,6 +11,7 @@ const productos = [
 
     carpeta: "Sueter Cheshire",
     cantidadImagenes: 3,
+    tipo: "pedido"
 
     colores: {
         "💗 Rosa": ["S","M","L"]
