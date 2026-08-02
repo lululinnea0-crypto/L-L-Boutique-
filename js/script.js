@@ -157,3 +157,24 @@ function mostrarDestacados(){
 
 
 mostrarDestacados();
+
+function abrirComoComprar(){
+
+    const ventana = document.getElementById("como-comprar");
+
+    if(ventana){
+        ventana.classList.add("abierto");
+    }
+
+}
+
+
+function cerrarComoComprar(){
+
+    const ventana = document.getElementById("como-comprar");
+
+    if(ventana){
+        ventana.classList.remove("abierto");
+    }
+
+}
