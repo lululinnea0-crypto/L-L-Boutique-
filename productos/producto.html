@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>L&L Boutique</title>
+    <title>Producto | L&L Boutique</title>
 
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -12,25 +11,32 @@
 <body>
 
 <header>
-        <img src="img/logo.png" alt="L&L Boutique">
 
-    <a href="../index.html">
-        ← Volver a productos
-    </a>
+    <a href="javascript:history.back()">← Volver</a>
+
 </header>
 
+<main class="producto-completo">
 
-<main id="producto">
+    <div id="galeria-principal"></div>
 
-    <p>Cargando producto...</p>
+    <div id="miniaturas"></div>
+
+    <h1 id="nombre-producto"></h1>
+
+    <p id="precio-producto"></p>
+
+    <div id="colores"></div>
+
+    <div id="talles"></div>
+
+    <div id="info-pedido"></div>
+
+    <button id="btn-carrito">
+        🛒 Agregar al carrito
+    </button>
 
 </main>
-
-
-<footer>
-    <p>© L&L Boutique 💕</p>
-</footer>
-
 
 <script src="../js/productos.js"></script>
 <script src="producto.js"></script>
