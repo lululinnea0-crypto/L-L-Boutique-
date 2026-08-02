@@ -96,7 +96,6 @@ function mostrarTalles() {
 
     });
 
-}
 
     mostrarTalles();
 
