@@ -35,6 +35,18 @@ function mostrarProductos(listaProductos){
 
 mostrarProductos(productos);
 
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+function agregarAlCarrito(producto){
+
+    carrito.push(producto);
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+
+    actualizarCarrito();
+
+}
+
 function filtrarCategoria(categoria){
 
     const filtrados = productos.filter(producto =>
@@ -80,3 +92,15 @@ function abrirCatalogoAvon(){
     alert("Próximamente catálogo Avon 💋");
 
 }
+
+function actualizarCarrito(){
+
+    const contador = document.getElementById("contador-carrito");
+
+    if(contador){
+        contador.textContent = carrito.length;
+    }
+
+}
+
+actualizarCarrito();
