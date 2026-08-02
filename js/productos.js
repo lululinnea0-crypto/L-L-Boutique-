@@ -49,7 +49,7 @@ const productos = [
     imagen: "img/productos/Bodys/Body chic/1.jpg",
 
     carpeta: "Body chic",
-    cantidadImagenes: 2,
+    cantidadImagenes: 4,
 
     tipo: "pedido",
 
@@ -58,4 +58,22 @@ const productos = [
     }
 },
 
+    {
+    id: 4,
+    nombre: "Buzo cherry chile",
+    categoria: "Buzos",
+
+    precio: 20000,
+
+    imagen: "img/productos/Buzos/Buzo cherry chile/1.jpg",
+
+    carpeta: "Buzo cherry chile",
+    cantidadImagenes: 4,
+
+    tipo: "pedido",
+
+    colores: {
+        "♦️Bordo": ["XS, "S", "M", "L","XL","XXL"]
+    }
+},
     ];
