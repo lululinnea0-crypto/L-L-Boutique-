@@ -8,7 +8,7 @@ const productos = [
     nombre: "Suéter Cheshire",
     categoria: "sueters",
     precio: 33000,
-    imagen: "img/productos/sueters/Sueter Cheshire/1.jpg",
+    imagen: "../img/productos/sueters/Sueter Cheshire/1.jpg"
 
     carpeta: "Sueter Cheshire",
 
