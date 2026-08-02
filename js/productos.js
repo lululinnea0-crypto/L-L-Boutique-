@@ -15,25 +15,19 @@ const productos = [
     colores: {
         "💗 Rosa": ["S","M","L"]
     }
-}
-        destacado:true
-    },
 
-    {
-        id:2,
-        nombre:"Pantalón Sastrero",
-        categoria:"pantalones",
-        marca:"L&L Boutique",
-        precio:49990,
-        imagen:"img/productos/pantalones/pantalon-sastrero/1.jpg",
-        descripcion:"Pantalón de vestir.",
+{
+    id: 50,
+    nombre: "Kaiak Clásico",
+    categoria: "perfumes",
+    precio: 28990,
 
-        colores:{
-            "🖤 Negro":["S","M","L","XL"],
-            "🤎 Beige":["S","M","L"]
-        },
+    carpeta: "Kaiak Clasico",
+    cantidadImagenes: 3,
 
-        destacado:true
+    tipo: "stock",
+
+    etiqueta: "🌿 Natura"
     }
 
 ];
