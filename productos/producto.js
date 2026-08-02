@@ -55,6 +55,23 @@ if (!producto) {
     // Información
     if (producto.tipo === "pedido") {
 
+        const opcionesPago = document.getElementById("opciones-pago");
+
+opcionesPago.innerHTML = `
+    <h3>Forma de pago</h3>
+
+    <label>
+        <input type="radio" name="pago" value="100" checked>
+        💳 Pagar el 100% - $${producto.precio.toLocaleString("es-AR")}
+    </label>
+
+    <br><br>
+
+    <label>
+        <input type="radio" name="pago" value="50">
+        📦 Reservar con el 50% - $${(producto.precio / 2).toLocaleString("es-AR")}
+    </label>
+`;
         info.innerHTML = `
             <p>📦 Producto por pedido</p>
             <p>💳 Reserva con el 50%</p>
@@ -66,6 +83,10 @@ if (!producto) {
         info.innerHTML = `
             <p>✅ Stock disponible</p>
         `;
+
+        document.getElementById("opciones-pago").innerHTML = `
+    <p><strong>💳 Este producto se paga completo.</strong></p>
+`;
 
     }
 
