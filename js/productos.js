@@ -3,32 +3,37 @@ const productos = [
     // ==========================
     // MODA
     // ==========================
-{
-    id: 2,
-    nombre: "Suéter Cheshire",
-    categoria: "sueters",
-    precio: 33000,
+    {
+        id: 2,
+        nombre: "Suéter Cheshire",
+        categoria: "sueters",
+        precio: 33000,
 
-    carpeta: "Sueter Cheshire",
-    cantidadImagenes: 3,
-    tipo: "pedido"
+        carpeta: "Sueter Cheshire",
+        cantidadImagenes: 3,
 
-    colores: {
-        "💗 Rosa": ["S","M","L"]
-    }
+        tipo: "pedido",
 
-{
-    id: 50,
-    nombre: "Kaiak Clásico",
-    categoria: "perfumes",
-    precio: 28990,
+        colores: {
+            "💗 Rosa": ["S", "M", "L"]
+        }
+    },
 
-    carpeta: "Kaiak Clasico",
-    cantidadImagenes: 3,
+    // ==========================
+    // BELLEZA
+    // ==========================
+    {
+        id: 50,
+        nombre: "Kaiak Clásico",
+        categoria: "perfumes",
+        precio: 28990,
 
-    tipo: "stock",
+        carpeta: "Kaiak Clasico",
+        cantidadImagenes: 3,
 
-    etiqueta: "🌿 Natura"
+        tipo: "stock",
+
+        etiqueta: "🌿 Natura"
     }
 
 ];
