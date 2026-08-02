@@ -53,3 +53,30 @@ function mostrarTodos(){
     cerrarMenu();
 
 }
+
+function abrirMenu(){
+    document.getElementById("menu-lateral").classList.add("abierto");
+}
+
+function cerrarMenu(){
+    document.getElementById("menu-lateral").classList.remove("abierto");
+}
+
+function toggleCategorias(){
+    document.getElementById("lista-categorias").classList.toggle("abierta");
+}
+
+function abrirCatalogoNatura(){
+
+    window.open(
+        "https://short.natura.com/1cTOPxt",
+        "_blank"
+    );
+
+}
+
+function abrirCatalogoAvon(){
+
+    alert("Próximamente catálogo Avon 💋");
+
+}
