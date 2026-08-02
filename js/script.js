@@ -97,3 +97,63 @@ if (typeof productos !== "undefined") {
     mostrarProductos(productos);
 
 }
+
+// ===============================
+// PRODUCTOS DESTACADOS
+// ===============================
+
+function mostrarDestacados(){
+
+    const destacados = document.getElementById("productos-destacados");
+
+    if(!destacados) return;
+
+
+    destacados.innerHTML = "";
+
+
+    const productosDestacados = productos.filter(producto => producto.etiqueta);
+
+
+    productosDestacados.forEach(producto => {
+
+
+        destacados.innerHTML += `
+
+        <div class="producto">
+
+
+            <div class="etiqueta-producto">
+                ${producto.etiqueta}
+            </div>
+
+
+            <img src="${producto.imagen}" alt="${producto.nombre}">
+
+
+            <h3>
+                ${producto.nombre}
+            </h3>
+
+
+            <p class="precio">
+                $${producto.precio.toLocaleString("es-AR")}
+            </p>
+
+
+            <a href="productos/producto.html?id=${producto.id}" class="btn-producto">
+                Ver producto
+            </a>
+
+
+        </div>
+
+        `;
+
+
+    });
+
+}
+
+
+mostrarDestacados();
