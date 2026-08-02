@@ -110,21 +110,13 @@ function actualizarCarrito() {
 
     });
 
-    total.textContent = totalCompra.toLocaleString("es-AR");
+    const sena = totalCompra / 2;
 
-}
-
-function agregarAlCarrito(id){
-
-    const producto = productos.find(p => p.id == id);
-
-    if(!producto) return;
-
-    carrito.push(producto);
-
-    localStorage.setItem("carrito", JSON.stringify(carrito));
-
-    actualizarCarrito();
+total.innerHTML = `
+    Total: $${totalCompra.toLocaleString("es-AR")}
+    <br>
+    Reserva 50%: $${sena.toLocaleString("es-AR")}
+`;
 
 }
 
@@ -184,7 +176,10 @@ function finalizarCompra() {
         total += producto.precio;
     });
 
-    mensaje += `%0A*Total:* $${total.toLocaleString("es-AR")}`;
+    let sena = total / 2;
+
+mensaje += `%0A*Total:* $${total.toLocaleString("es-AR")}`;
+mensaje += `%0A*Reserva 50%:* $${sena.toLocaleString("es-AR")}`;
 
     // Reemplazá este número por tu WhatsApp
     window.open(`https://wa.me/5493512901763?text=${mensaje}`, "_blank");
