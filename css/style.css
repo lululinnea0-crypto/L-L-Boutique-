@@ -960,3 +960,103 @@ label {
     font-size:28px;
     cursor:pointer;
 }
+
+/* ===========================
+   PÁGINA DEL PRODUCTO
+=========================== */
+
+.producto-completo{
+    max-width:500px;
+    margin:auto;
+    padding:20px;
+}
+
+#galeria-principal img{
+    width:100%;
+    border-radius:18px;
+    display:block;
+}
+
+#miniaturas{
+    display:flex;
+    gap:10px;
+    margin-top:15px;
+    margin-bottom:20px;
+    overflow-x:auto;
+}
+
+#miniaturas img{
+    width:75px;
+    height:75px;
+    object-fit:cover;
+    border-radius:12px;
+    cursor:pointer;
+    border:2px solid transparent;
+    transition:.3s;
+}
+
+#miniaturas img:hover{
+    border-color:#d67ea8;
+}
+
+#nombre-producto{
+    font-size:32px;
+    margin-top:20px;
+    font-family:"Playfair Display",serif;
+}
+
+#precio-producto{
+    font-size:28px;
+    font-weight:bold;
+    color:#d67ea8;
+    margin:15px 0;
+}
+
+#colores,
+#talles{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:20px 0;
+}
+
+#colores button,
+#talles button{
+    border:none;
+    padding:12px 18px;
+    border-radius:12px;
+    cursor:pointer;
+    background:#fff;
+    transition:.3s;
+    font-size:16px;
+}
+
+#colores button:hover,
+#talles button:hover{
+    background:#d67ea8;
+    color:white;
+}
+
+#info-pedido{
+    background:#fff;
+    padding:18px;
+    border-radius:15px;
+    margin:20px 0;
+}
+
+#btn-carrito{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:15px;
+    background:#d67ea8;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#btn-carrito:hover{
+    background:#c85f91;
+    }
