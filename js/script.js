@@ -105,6 +105,3 @@ function actualizarCarrito(){
 
 actualizarCarrito();
 
-
-<script src="js/productos.js"></script>
-<script src="js/categoria.js"></script>
