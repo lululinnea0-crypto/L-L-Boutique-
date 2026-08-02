@@ -4,6 +4,7 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>L&L Boutique</title>
@@ -14,24 +15,19 @@
 
 </head>
 
-
 <body>
 
+<!-- ================= HEADER ================= -->
 
 <header>
-
 
 <div class="menu-btn" onclick="abrirMenu()">
 ☰
 </div>
 
-
 <div class="logo">
-
 <img src="img/logo.png" alt="L&L Boutique">
-
 </div>
-
 
 <div class="acciones">
 
@@ -45,268 +41,106 @@
 
 </div>
 
-
 </header>
 
-
+<!-- ================= MENÚ ================= -->
 
 <nav id="menu-lateral" class="menu-lateral">
-
 
 <div class="cerrar-menu" onclick="cerrarMenu()">
 ✕
 </div>
 
-
-<a href="index.html">
-🏠 Inicio
-</a>
-
+<a href="index.html">🏠 Inicio</a>
 
 <div class="categoria-titulo" onclick="toggleCategorias()">
 🛍️ Categorías ▼
 </div>
 
-
 <div id="lista-categorias" class="lista-categorias">
 
+<a href="categorias/categoria.html?categoria=sueters">Suéters</a>
 
-<a href="categorias/categoria.html?categoria=sueters">
-Suéters
-</a>
+<a href="categorias/categoria.html?categoria=cardigans">Cardigans</a>
 
-<a href="categorias/categoria.html?categoria=abrigos">
-Abrigos
-</a>
+<a href="categorias/categoria.html?categoria=abrigos">Abrigos</a>
 
-<a href="categorias/categoria.html?categoria=cardigans">
-Cardigans
-</a>
+<a href="categorias/categoria.html?categoria=camperas">Camperas</a>
 
-<a href="categorias/categoria.html?categoria=remeras">
-Remeras
-</a>
+<a href="categorias/categoria.html?categoria=remeras">Remeras</a>
 
-<a href="categorias/categoria.html?categoria=pantalones">
-Pantalones
-</a>
+<a href="categorias/categoria.html?categoria=buzos">Buzos</a>
 
-<a href="categorias/categoria.html?categoria=vestidos">
-Vestidos
-</a>
+<a href="categorias/categoria.html?categoria=pantalones">Pantalones</a>
 
+<a href="categorias/categoria.html?categoria=vestidos">Vestidos y Faldas</a>
+
+<a href="categorias/categoria.html?categoria=tops">Tops</a>
+
+<a href="categorias/categoria.html?categoria=bodys">Bodys</a>
+
+<a href="categorias/categoria.html?categoria=lenceria">Lencería</a>
+
+<a href="categorias/categoria.html?categoria=maquillaje">Maquillaje</a>
+
+<a href="categorias/categoria.html?categoria=perfumes">Perfumes</a>
+
+<a href="categorias/categoria.html?categoria=cabello">Cabello</a>
+
+<a href="categorias/categoria.html?categoria=piel">Cuidado de la piel</a>
 
 </div>
 
-
-<a href="javascript:void(0)" onclick="abrirComoComprar()">
-🛒 Cómo comprar
-</a>
-
-
-
-<a href="#contacto">
-📱 Contacto
-</a>
-
+<a href="#" onclick="abrirComoComprar()">📦 Cómo comprar</a>
 
 </nav>
 
-
-
-
+  <!-- ================= BANNER ================= -->
 
 <section class="hero">
 
+    <div class="banner-campania">
 
-<div class="slide activo">
+        <h1>✨ Nueva campaña abierta</h1>
 
+        <p>Reservá tus prendas favoritas con el <strong>50% de seña</strong>.</p>
 
-<h1>
-✨ Nueva Campaña
-</h1>
+        <p>📦 Entrega estimada de 10 a 15 días luego del cierre de campaña.</p>
 
+        <a href="#destacados" class="btn-principal">
+            Ver productos
+        </a>
 
-<p>
-Moda por encargo • Reservá tu prenda con el 50%
-</p>
-
-
-<a href="#destacados" class="btn-principal">
-Ver productos
-</a>
-
-
-</div>
-
+    </div>
 
 </section>
 
 
+<!-- ================= DESTACADOS ================= -->
 
+<section id="destacados">
 
+    <h2>✨ Productos destacados</h2>
 
-<section class="destacados" id="destacados">
+    <div
+        id="productos-destacados"
+        class="contenedor-productos">
 
-
-<h2>
-✨ Productos destacados
-</h2>
-
-
-<div id="productos-destacados" class="contenedor-productos">
-
-</div>
-
+    </div>
 
 </section>
 
 
+<!-- ================= TODOS LOS PRODUCTOS ================= -->
 
+<section>
 
+    <h2>🛍️ Todos los productos</h2>
 
-<section class="informacion" id="compra">
+    <div
+        id="contenedor-productos"
+        class="contenedor-productos">
 
-
-<h2>
-🛍️ Cómo comprar
-</h2>
-
-
-<div class="info-card">
-
-
-<p>
-1️⃣ Elegí tu producto, color y talle.
-</p>
-
-
-<p>
-2️⃣ Reservá con el 50%.
-</p>
-
-
-<p>
-3️⃣ Cerramos la campaña y hacemos el pedido al proveedor.
-</p>
-
-
-<p>
-4️⃣ Recibís tu compra en 10 a 15 días.
-</p>
-
-
-</div>
-
+    </div>
 
 </section>
-
-
-
-
-
-<section class="informacion">
-
-
-<h2>
-💳 Medios de pago
-</h2>
-
-
-<div class="info-card">
-
-
-<p>
-✔ Mercado Pago
-</p>
-
-
-<p>
-✔ Transferencia bancaria
-</p>
-
-
-<p>
-✔ Pago del 50% para reservar
-</p>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<section class="informacion" id="envios">
-
-
-<h2>
-🚚 Envíos
-</h2>
-
-
-<div class="info-card">
-
-
-<p>
-Realizamos envíos a todo el país.
-</p>
-
-
-<p>
-Consultá costos según tu localidad.
-</p>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<footer id="contacto">
-
-
-<h3>
-L&L Boutique
-</h3>
-
-
-<p>
-Moda online • Córdoba
-</p>
-
-
-<p>
-📱 WhatsApp: 3512901763
-</p>
-
-
-</footer>
-
-
-
-
-
-<div id="contenedor-carrito"></div>
-
-
-
-
-
-<script src="js/productos.js"></script>
-
-<script src="js/script.js"></script>
-
-<script src="js/carrito.js"></script>
-
-
-</body>
-
-</html>
