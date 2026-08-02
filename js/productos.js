@@ -6,7 +6,7 @@ const productos = [
     {
         id: 1,
         nombre: "Suéter Cheshire",
-        categoria: "sueters",
+        categorias: "sueters",
         precio: 33000,
 
         carpeta: "Sueter Cheshire",
