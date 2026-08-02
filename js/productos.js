@@ -17,44 +17,8 @@ const productos = [
     colores: {
         "💗 Rosa": ["S", "M", "L"]
     }
-}
+},
+
+// NUEVOS PRODUCTOS DEBAJO
 
 ];
-,
-{
-    id: 2,
-    nombre: "Suéter Negro",
-    categoria: "sueters",
-
-    precio: 35000,
-
-    imagen: "img/productos/sueters/Sueter Negro/1.jpg",
-
-    carpeta: "Sueter Negro",
-    cantidadImagenes: 4,
-
-    tipo: "stock",
-
-    colores: {
-        "🖤 Negro": ["S","M","L","XL"]
-    }
-}
-{
-    id: 3,
-    nombre: "Remera Basic",
-    categoria: "remeras",
-
-    precio: 18000,
-
-    imagen: "img/productos/remeras/Remera Basic/1.jpg",
-
-    carpeta: "Remera Basic",
-    cantidadImagenes: 2,
-
-    tipo: "pedido",
-
-    colores: {
-        "🤍 Blanco":["S","M","L"],
-        "🖤 Negro":["S","M","L"]
-    }
-}
