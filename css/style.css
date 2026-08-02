@@ -223,3 +223,173 @@ header{
     padding:10px 0;
 
 }
+/* ==========================================
+   PARTE 2 - BANNER + PRODUCTOS
+========================================== */
+
+/* ===== BANNER ===== */
+
+.hero{
+    padding:20px 15px;
+}
+
+.slider{
+    background:linear-gradient(135deg,#F20A67,#F472B6);
+    color:#fff;
+    border-radius:20px;
+    padding:35px 25px;
+    text-align:center;
+}
+
+.slider h1{
+    font-size:28px;
+    margin-bottom:10px;
+    font-family:'Playfair Display',serif;
+}
+
+.slider p{
+    font-size:16px;
+    margin-bottom:20px;
+}
+
+.btn-principal{
+    display:inline-block;
+    background:#fff;
+    color:#F20A67;
+    padding:12px 24px;
+    border-radius:50px;
+    font-weight:600;
+}
+
+/* ===== SECCIONES ===== */
+
+section{
+    padding:25px 15px;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#F20A67;
+    font-family:'Playfair Display',serif;
+}
+
+/* ===== CONTENEDOR PRODUCTOS ===== */
+
+.contenedor-productos{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+}
+
+/* ===== TARJETA ===== */
+
+.producto{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    position:relative;
+
+    transition:.25s;
+
+}
+
+.producto:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.producto img{
+
+    width:100%;
+
+    aspect-ratio:4/5;
+
+    object-fit:cover;
+
+}
+
+.etiqueta-producto{
+
+    position:absolute;
+
+    top:10px;
+
+    left:10px;
+
+    background:#F20A67;
+
+    color:#fff;
+
+    padding:6px 10px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+}
+
+.producto h3{
+
+    font-size:15px;
+
+    padding:10px 10px 5px;
+
+    min-height:48px;
+
+}
+
+.precio{
+
+    color:#F20A67;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+}
+
+.btn-producto{
+
+    display:block;
+
+    margin:0 10px 12px;
+
+    text-align:center;
+
+    background:#F20A67;
+
+    color:#fff;
+
+    padding:10px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:.2s;
+
+}
+
+.btn-producto:hover{
+
+    background:#d80a5d;
+
+}
