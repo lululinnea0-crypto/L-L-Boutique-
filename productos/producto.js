@@ -133,7 +133,8 @@ if (!producto) {
 
         }
 
-
+console.log("Pago:", pagoSeleccionado);
+console.log("Cuotas:", cuotasSeleccionadas);
 
         agregarAlCarrito(
 
