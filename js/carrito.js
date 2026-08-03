@@ -125,25 +125,27 @@ function agregarAlCarrito(id,color,talle,pago,cuotas){
 
 
 
-    if(pago === "cuotas"){
+    if (pago === "cuotas") {
 
+    const opcion = producto.pagos.cuotas.find(
+        c => c.semanas == cuotas
+    );
 
-        const opcion = producto.pagos.cuotas.find(
-            c => c.semanas == cuotas
-        );
+    if (opcion) {
 
+        precioFinal = opcion.total;
 
-        if(opcion){
+        detalleCuotas = {
 
-            detalleCuotas = {
+            semanas: opcion.semanas,
 
-                semanas: opcion.semanas,
+            cuotaSemanal: opcion.cuotaSemanal,
 
-                cuotaSemanal: opcion.cuotaSemanal
+            total: opcion.total
 
-            };
+        };
 
-        }
+    }
 
     }
 
@@ -176,7 +178,6 @@ function agregarAlCarrito(id,color,talle,pago,cuotas){
     actualizarCarrito();
 
 
-    alert("Producto agregado al carrito 🛒");
 
 }
 
