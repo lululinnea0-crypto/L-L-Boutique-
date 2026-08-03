@@ -57,6 +57,25 @@ const productos = [
         "🖤Negro": ["S", "M", "L","XL"]
     }
 },
+    {
+    id: 7,
+    nombre: "Body galaxy 2 piezas",
+    categoria: "Lencería",
+
+    precio: 21000,
+
+    imagen: "img/productos/Lencería/Bodys sexys/Body galaxy 2 piezas/1.jpg",
+
+    carpeta: "Body galaxy 2 piezas",
+    cantidadImagenes: 1,
+
+    tipo: "pedido",
+
+    colores: {
+        "🤍 Blanco": ["XS","S", "M", "L"]
+        
+    }
+},
 
     {
     id: 4,
