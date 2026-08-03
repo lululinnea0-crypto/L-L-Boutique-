@@ -116,7 +116,7 @@ const productos = [
         "🤍 Blanco": ["XS", "S", "L"]
     }
 },
-    {{
+    {
     id: 30,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
     categoria: "Perfumes",
