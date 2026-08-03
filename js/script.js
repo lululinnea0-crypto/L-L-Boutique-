@@ -93,10 +93,12 @@ function mostrarProductos(lista) {
 }
 
 
-if (typeof productos !== "undefined") {
+const esIndex = window.location.pathname.endsWith("index.html") ||
+                window.location.pathname.endsWith("/") ||
+                window.location.pathname === "";
 
+if (typeof productos !== "undefined" && esIndex) {
     mostrarProductos(productos);
-
 }
 
 // ===============================
