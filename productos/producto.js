@@ -16,7 +16,7 @@ const opcionesPago = document.getElementById("opciones-pago");
 
 let colorSeleccionado = "";
 let talleSeleccionado = "";
-let pagoSeleccionado = "50";
+let pagoSeleccionado = "contado";
 let cuotasSeleccionadas = "";
 
 
