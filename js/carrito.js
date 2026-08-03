@@ -49,15 +49,29 @@ function actualizarCarrito(){
 
             <p>${producto.nombre}</p>
 
+
             ${producto.color ? `<p>🎨 ${producto.color}</p>` : ""}
+
 
             ${producto.talle ? `<p>📏 ${producto.talle}</p>` : ""}
 
-            <p>
-            💳 ${producto.pago === "50" 
-            ? "Reserva 50%" 
-            : "Pago completo"}
-            </p>
+
+
+            ${
+            producto.pago === "50"
+
+            ? `<p>💳 Reserva 50%</p>`
+
+            : producto.pago === "cuotas"
+
+            ? `
+            <p>📅 Pago en ${producto.cuotas.semanas} semanas</p>
+            <p>💵 $${producto.cuotas.cuotaSemanal.toLocaleString("es-AR")} por semana</p>
+            `
+
+            : `<p>💳 Pago completo</p>`
+            }
+
 
 
             <strong>
@@ -87,7 +101,7 @@ function actualizarCarrito(){
 
 // AGREGAR PRODUCTO
 
-function agregarAlCarrito(id,color,talle,pago){
+function agregarAlCarrito(id,color,talle,pago,cuotas){
 
 
     const producto = productos.find(p => p.id === id);
@@ -96,7 +110,11 @@ function agregarAlCarrito(id,color,talle,pago){
     if(!producto) return;
 
 
+
     let precioFinal = producto.precio;
+
+    let detalleCuotas = null;
+
 
 
     if(pago === "50"){
@@ -104,6 +122,31 @@ function agregarAlCarrito(id,color,talle,pago){
         precioFinal = producto.precio / 2;
 
     }
+
+
+
+    if(pago === "cuotas"){
+
+
+        const opcion = producto.pagos.cuotas.find(
+            c => c.semanas == cuotas
+        );
+
+
+        if(opcion){
+
+            detalleCuotas = {
+
+                semanas: opcion.semanas,
+
+                cuotaSemanal: opcion.cuotaSemanal
+
+            };
+
+        }
+
+    }
+
 
 
     carrito.push({
@@ -116,7 +159,9 @@ function agregarAlCarrito(id,color,talle,pago){
 
         talle: talle,
 
-        pago: pago
+        pago: pago,
+
+        cuotas: detalleCuotas
 
     });
 
@@ -204,7 +249,7 @@ function finalizarCompra(){
     carrito.forEach(producto => {
 
 
-        mensaje += `🧥 ${producto.nombre}\n`;
+        mensaje += `🛍️ ${producto.nombre}\n`;
 
 
         if(producto.color){
@@ -221,15 +266,27 @@ function finalizarCompra(){
         }
 
 
+
         if(producto.pago === "50"){
 
             mensaje += "💳 Reserva 50%\n";
 
+
+        } else if(producto.pago === "cuotas"){
+
+
+            mensaje += `📅 ${producto.cuotas.semanas} semanas\n`;
+
+            mensaje += `💵 $${producto.cuotas.cuotaSemanal.toLocaleString("es-AR")} semanal\n`;
+
+
         } else {
+
 
             mensaje += "💳 Pago completo\n";
 
         }
+
 
 
         mensaje += `💰 $${producto.precio.toLocaleString("es-AR")}\n`;
@@ -243,10 +300,13 @@ function finalizarCompra(){
     });
 
 
+
     mensaje += `\n💵 *Total: $${total.toLocaleString("es-AR")}*`;
 
 
+
     const mensajeFinal = encodeURIComponent(mensaje);
+
 
 
     window.open(
@@ -255,4 +315,6 @@ function finalizarCompra(){
     );
 
 }
+
+
 actualizarCarrito();
