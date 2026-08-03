@@ -93,10 +93,11 @@ function mostrarProductos(lista) {
 }
 
 
-if (typeof productos !== "undefined") {
-
+if (
+    typeof productos !== "undefined" &&
+    document.getElementById("productos-destacados")
+) {
     mostrarProductos(productos);
-
 }
 
 // ===============================
