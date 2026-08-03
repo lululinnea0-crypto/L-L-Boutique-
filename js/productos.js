@@ -117,8 +117,26 @@ const productos = [
     }
  },
     {
+    id: 10,
+    nombre: "Catsuit acampanado",
+    categoria: "Vestimenta deportiva",
+
+    precio: 27200,
+
+    imagen: "img/productos/Vestimenta deportiva/Catsuit acampanado/1.jpg",
+
+    carpeta: "Catsuit acampanado",
+    cantidadImagenes: 2,
+
+    tipo: "pedido",
+
+    colores: {
+        "🖤Negro": ["XXS","XS","S", "M", "L","XL"]
+      }
+    },
+      {
     id: 4,
-    nombre: "Buzo cherry chile",
+    nombre: "Buzo cherry child",
     categoria: "Buzos",
 
     precio: 20000,
