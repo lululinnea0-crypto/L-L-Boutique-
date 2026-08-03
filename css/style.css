@@ -789,3 +789,11 @@ grid-template-columns:repeat(4,1fr);
     background:#d80a5d;
 
 }
+
+#lista-belleza{
+    display:none;
+}
+
+#lista-belleza.mostrar{
+    display:block;
+}
