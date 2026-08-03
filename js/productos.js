@@ -94,6 +94,7 @@ const productos = [
     colores: {
         "🧡Naranja": ["S", "M", "L","XL","XXL"]
         "💜Morado": ["S", "M", "L","XL"]
+        "💙Celeste": ["S", "M", "L","XL","XXL"]
     }
 },
     ];
