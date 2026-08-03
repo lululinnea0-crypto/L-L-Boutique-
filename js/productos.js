@@ -72,8 +72,28 @@ const productos = [
     tipo: "pedido",
 
     colores: {
-        "🤍 Blanco": ["XS","S", "M", "L"]
+        "🤍Blanco": ["XS","S", "M", "L"]
         
+    }
+},
+    {
+    id: 8,
+    nombre: "Remera con encaje",
+    categoria: "Remeras",
+
+    precio: 13500,
+
+    imagen: "img/productos/Remeras/Remera con encaje/1.jpg",
+
+    carpeta: "Remera con encaje",
+    cantidadImagenes: 3,
+
+    tipo: "pedido",
+
+    colores: {
+        "🖤Negro": ["XXS","XS","S", "M", "L"],
+        "🤍Blanco": ["XXS","XS","S", "M", "L"],
+        "🍷Burdeos": ["XXS","XS","S", "M", "L"]
     }
 },
 
