@@ -93,7 +93,7 @@ const productos = [
     tipo: "pedido",
 
     colores: {
-        "🔳Gris": ["S", "M", "L","XL]
+        "Gris": ["S", "M", "L","XL"]
     }
 },
 
