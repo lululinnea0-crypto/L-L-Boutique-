@@ -274,6 +274,42 @@ const productos = [
     }
  },
     {
+    id: 15,
+    nombre: "Calza Bety",
+    categoria: "Pantalones",
+
+    precio: 18000,
+
+    imagen: "img/productos/Pantalones/Calza Bety/1.jpg",
+
+    carpeta: "Calza Bety",
+    cantidadImagenes: 2,
+
+    tipo: "pedido",
+
+    colores: {
+        "🖤Negro": ["XXS","XS","S", "M", "L","XL"]
+    }
+},
+    {
+    id: 16,
+    nombre: "Conjunto Pinky",
+    categoria: "Lencería",
+
+    precio: 16000,
+
+    imagen: "img/productos/Lencería/Conjunto Pinky/1.jpg",
+
+    carpeta: "Conjunto Pinky",
+    cantidadImagenes: 4,
+
+    tipo: "pedido",
+
+    colores: {
+        "🌺Rosita": ["S", "M", "L","XL"]
+    }
+},
+    {
     id: 30,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
