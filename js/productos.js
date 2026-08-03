@@ -80,7 +80,7 @@ const productos = [
     {
     id: 5,
     nombre: "Cardigan mariposa",
-    categoria: "Cardigans",
+    categoria: "cardigans",
 
     precio: 25300,
 
@@ -96,5 +96,5 @@ const productos = [
         "💜Morado": ["S", "M", "L","XL"]
         "💙Celeste": ["S", "M", "L","XL","XXL"]
     }
-},
+        
     ];
