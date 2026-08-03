@@ -13,6 +13,9 @@ const info = document.getElementById("info-pedido");
 const boton = document.getElementById("btn-carrito");
 const opcionesPago = document.getElementById("opciones-pago");
 
+console.log("DIV pago:", opcionesPago);
+console.log("PRODUCTO:", producto);
+
 
 let colorSeleccionado = "";
 let talleSeleccionado = "";
