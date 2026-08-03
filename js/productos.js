@@ -77,4 +77,24 @@ const productos = [
     }
 },
 
+
+{
+    id: 5,
+    nombre: "Abrigo Athleisure",
+    categoria: "Abrigos",
+
+    precio: 45000,
+
+    imagen: "img/productos/abrigos/Abrigo Athleisure/1.jpg",
+
+    carpeta: "Abrigo Athleisure",
+    cantidadImagenes: 4,
+
+    tipo: "pedido",
+
+    colores: {
+        "🔳Gris": ["S", "M", "L","XL]
+    }
+},
+
     ];
