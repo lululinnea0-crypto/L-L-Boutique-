@@ -97,3 +97,11 @@ function cerrarComoComprar(){
     }
 
 }
+
+function toggleBelleza(){
+
+    const belleza = document.getElementById("lista-belleza");
+
+    belleza.classList.toggle("mostrar");
+
+}
