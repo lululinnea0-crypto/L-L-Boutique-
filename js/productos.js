@@ -113,7 +113,6 @@ const productos = [
 
     colores: {
         "💗Rosa fucsia": ["XS", "S", "L","XL"]
-        "🤍Blanco": ["XS", "S", "M"]
     }
 },
     ];
