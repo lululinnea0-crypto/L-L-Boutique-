@@ -116,18 +116,49 @@ const productos = [
         "🤍 Blanco": ["XS", "S", "L"]
     }
 },
-    {
-    id: 25,
-    nombre: "Kaiak Sonar EDT Masculino 100 ml",
-    categoria: "Perfumes",
-    precio: 64000,
-    imagen: "img/productos/Perfumes/KAIAK SONAR EDT MASC 100ML LTM/1.jpg",
-    descripcion: "Perfume masculino Kaiak Sonar EDT 100 ml, se puede pagar con cuotas semanales",
-    stock: 1,
-        cuotas: {
-        cantidad: 4,
-        precioCuota: 19200,
+    {{
+    id: 30,
+    nombre: "KAIAK SONAR EDT MASC 100ML LTM",
+    categoria: "perfumes",
+    carpeta: "kaiak-sonar",
+    imagen: "img/productos/perfumes/kaiak-sonar/1.jpg",
+    cantidadImagenes: 1,
 
-    }
-},
+    precio: 64000,
+
+    tipo: "stock",
+
+    pagos: {
+        contado: true,
+
+        cuotas: [
+            {
+                semanas: 2,
+                interes: 10,
+                total: 70400,
+                cuotaSemanal: 35200
+            },
+            {
+                semanas: 4,
+                interes: 15,
+                total: 73600,
+                cuotaSemanal: 18400
+            },
+            {
+                semanas: 6,
+                interes: 20,
+                total: 76800,
+                cuotaSemanal: 12800
+            },
+            {
+                semanas: 8,
+                interes: 25,
+                total: 80000,
+                cuotaSemanal: 10000
+            }
+        ]
+    },
+
+    colores: {}
+    },
     ];
