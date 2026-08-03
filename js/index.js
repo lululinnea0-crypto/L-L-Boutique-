@@ -1,83 +1,81 @@
 // ===============================
-// L&L Boutique - index.js
+// L&L Boutique
+// index.js
+// Solo la página principal
 // ===============================
 
 const contenedor = document.getElementById("contenedor-productos");
 const destacados = document.getElementById("productos-destacados");
 
-// Mostrar todos los productos
-function mostrarProductos() {
+function crearTarjeta(producto){
 
-    if (!contenedor) return;
+    return `
+
+    <div class="producto">
+
+        ${
+            producto.etiqueta
+            ? `<div class="etiqueta-producto">${producto.etiqueta}</div>`
+            : ""
+        }
+
+        <img
+            src="${producto.imagen}"
+            alt="${producto.nombre}"
+        >
+
+        <h3>${producto.nombre}</h3>
+
+        <p class="precio">
+            $${producto.precio.toLocaleString("es-AR")}
+        </p>
+
+        <a
+            href="productos/producto.html?id=${producto.id}"
+            class="btn-producto">
+
+            Ver producto
+
+        </a>
+
+    </div>
+
+    `;
+
+}
+
+function mostrarProductos(){
+
+    if(!contenedor) return;
 
     contenedor.innerHTML = "";
 
-    productos.forEach(producto => {
+    productos.forEach(producto=>{
 
-        contenedor.innerHTML += `
-        <div class="producto">
-
-            ${producto.etiqueta ? `
-            <div class="etiqueta-producto">
-                ${producto.etiqueta}
-            </div>
-            ` : ""}
-
-            <img src="${producto.imagen}" alt="${producto.nombre}">
-
-            <h3>${producto.nombre}</h3>
-
-            <p class="precio">
-                $${producto.precio.toLocaleString("es-AR")}
-            </p>
-
-            <a href="productos/producto.html?id=${producto.id}" class="btn-producto">
-                Ver producto
-            </a>
-
-        </div>
-        `;
+        contenedor.innerHTML += crearTarjeta(producto);
 
     });
 
 }
 
-// Mostrar destacados
-function mostrarDestacados() {
+function mostrarDestacados(){
 
-    if (!destacados) return;
+    if(!destacados) return;
 
     destacados.innerHTML = "";
 
-    const lista = productos.filter(p => p.etiqueta);
+    const lista = productos.filter(
+        producto => producto.etiqueta
+    );
 
-    lista.forEach(producto => {
+    lista.forEach(producto=>{
 
-        destacados.innerHTML += `
-        <div class="producto">
-
-            <div class="etiqueta-producto">
-                ${producto.etiqueta}
-            </div>
-
-            <img src="${producto.imagen}" alt="${producto.nombre}">
-
-            <h3>${producto.nombre}</h3>
-
-            <p class="precio">
-                $${producto.precio.toLocaleString("es-AR")}
-            </p>
-
-            <a href="productos/producto.html?id=${producto.id}" class="btn-producto">
-                Ver producto
-            </a>
-
-        </div>
-        `;
+        destacados.innerHTML += crearTarjeta(producto);
 
     });
 
 }
 
 mostrarProductos();
+
 mostrarDestacados();
