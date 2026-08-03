@@ -301,7 +301,7 @@ const productos = [
     imagen: "img/productos/Lencería/Conjuntos sexys/Conjunto Pinky/1.jpg",
 
     carpeta: "Conjunto Pinky",
-    cantidadImagenes: 4,
+    cantidadImagenes: 3,
 
     tipo: "pedido",
 
