@@ -98,44 +98,74 @@ if (!producto) {
     // Forma de pago
 
 
-    if (producto.tipo === "pedido") {
+    if (producto.pagos) {
+
+    opcionesPago.innerHTML = `
+
+    <h3>Forma de pago</h3>
+
+    <label>
+    <input 
+    type="radio" 
+    name="pago"
+    value="contado"
+    checked>
+
+    💵 Pago completo -
+    $${producto.precio.toLocaleString("es-AR")}
+
+    </label>
 
 
-        opcionesPago.innerHTML = `
+    <br><br>
 
-        <h3>Forma de pago</h3>
 
+    <label>
+    <input 
+    type="radio"
+    name="pago"
+    value="cuotas">
+
+    📅 Pagar en cuotas semanales
+
+    </label>
+
+
+    <div id="lista-cuotas"></div>
+
+    `;
+
+
+    const listaCuotas = document.getElementById("lista-cuotas");
+
+
+    producto.pagos.cuotas.forEach(opcion => {
+
+
+        listaCuotas.innerHTML += `
 
         <label>
 
         <input 
         type="radio"
-        name="pago"
-        value="100">
+        name="cuota"
+        value="${opcion.semanas}">
 
-        💳 Pago completo -
-        $${producto.precio.toLocaleString("es-AR")}
-
-        </label>
-
-
-        <br><br>
-
-
-        <label>
-
-        <input
-        type="radio"
-        name="pago"
-        value="50"
-        checked>
-
-        📦 Reserva 50% -
-        $${(producto.precio / 2).toLocaleString("es-AR")}
+        ${opcion.semanas} semanas -
+        $${opcion.cuotaSemanal.toLocaleString("es-AR")}
+        por semana
 
         </label>
+
+        <br>
 
         `;
+
+
+    });
+
+
+    }
 
 
 
