@@ -119,9 +119,9 @@ const productos = [
     {{
     id: 30,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
-    categoria: "perfumes",
-    carpeta: "kaiak-sonar",
-    imagen: "img/productos/perfumes/kaiak-sonar/1.jpg",
+    categoria: "Perfumes",
+    carpeta: "KAIAK SONAR EDT MASC 100ML LTM",
+    imagen: "img/productos/Perfumes/KAIAK SONAR EDT MASC 100ML LTM/1.jpg",
     cantidadImagenes: 1,
 
     precio: 64000,
