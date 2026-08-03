@@ -76,4 +76,24 @@ const productos = [
         "♦️Bordo": ["XS","S","M","L","XL","XXL"]
     }
 },
+
+    {
+    id: 5,
+    nombre: "Cardigan mariposa",
+    categoria: "Cardigans",
+
+    precio: 25300,
+
+    imagen: "img/productos/Cardigans/Cardigan mariposa/1.jpg",
+
+    carpeta: "Cardigan mariposa",
+    cantidadImagenes: 5,
+
+    tipo: "pedido",
+
+    colores: {
+        "🧡Naranja": ["S", "M", "L","XL","XXL"]
+        "💜Morado": ["S", "M", "L","XL"]
+    }
+},
     ];
