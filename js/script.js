@@ -1,183 +1,99 @@
 // ===============================
 // L&L Boutique - script.js
+// Solo funciones generales
 // ===============================
 
 
-const contenedor = document.getElementById("contenedor-productos");
-
-
 // ===============================
-// MENÚ
+// MENÚ LATERAL
 // ===============================
 
-function abrirMenu(){
+function abrirMenu() {
 
-    alert("funciona");
+    const menu = document.getElementById("menu-lateral");
 
-    document.getElementById("menu-lateral")
-    .classList.add("abierto");
+    if(menu){
+        menu.classList.add("abierto");
+    }
 
 }
 
 function cerrarMenu() {
 
-    document.getElementById("menu-lateral")
-    .classList.remove("abierto");
+    const menu = document.getElementById("menu-lateral");
 
-}
-
-
-function toggleCategorias() {
-
-    document.getElementById("lista-categorias")
-    .classList.toggle("abierta");
-
-}
-
-
-
-// ===============================
-// MOSTRAR PRODUCTOS
-// ===============================
-
-function mostrarProductos(lista) {
-
-
-    if (!contenedor) return;
-
-
-    contenedor.innerHTML = "";
-
-
-    lista.forEach(producto => {
-
-
-        contenedor.innerHTML += `
-
-        <div class="producto">
-
-
-            ${producto.etiqueta ? 
-            `<div class="etiqueta-producto">
-            ${producto.etiqueta}
-            </div>` 
-            : ""}
-
-
-            <img src="${producto.imagen}" 
-            alt="${producto.nombre}">
-
-
-            <h3>${producto.nombre}</h3>
-
-
-            <p class="precio">
-            $${producto.precio.toLocaleString("es-AR")}
-            </p>
-
-
-            <a href="productos/producto.html?id=${producto.id}" 
-            class="btn-producto">
-            Ver producto
-            </a>
-
-
-        </div>
-
-        `;
-
-
-    });
-
-
-}
-
-
-const esIndex = window.location.pathname.endsWith("index.html") ||
-                window.location.pathname.endsWith("/") ||
-                window.location.pathname === "";
-
-if (typeof productos !== "undefined" && esIndex) {
-    mostrarProductos(productos);
-}
-
-// ===============================
-// PRODUCTOS DESTACADOS
-// ===============================
-
-function mostrarDestacados(){
-
-    const destacados = document.getElementById("productos-destacados");
-
-    if(!destacados) return;
-
-
-    destacados.innerHTML = "";
-
-
-    const productosDestacados = productos.filter(producto => producto.etiqueta);
-
-
-    productosDestacados.forEach(producto => {
-
-
-        destacados.innerHTML += `
-
-        <div class="producto">
-
-
-            <div class="etiqueta-producto">
-                ${producto.etiqueta}
-            </div>
-
-
-            <img src="${producto.imagen}" alt="${producto.nombre}">
-
-
-            <h3>
-                ${producto.nombre}
-            </h3>
-
-
-            <p class="precio">
-                $${producto.precio.toLocaleString("es-AR")}
-            </p>
-
-
-            <a href="productos/producto.html?id=${producto.id}" class="btn-producto">
-                Ver producto
-            </a>
-
-
-        </div>
-
-        `;
-
-
-    });
-
-}
-
-
-mostrarDestacados();
-
-function abrirComoComprar(){
-
-    const ventana = document.getElementById("como-comprar");
-
-    if(ventana){
-        ventana.classList.add("abierto");
+    if(menu){
+        menu.classList.remove("abierto");
     }
 
 }
 
 
+// ===============================
+// SUBMENÚ ROPA
+// ===============================
+
+function toggleCategorias(){
+
+    const lista = document.getElementById("lista-categorias");
+
+    if(lista){
+        lista.classList.toggle("abierta");
+    }
+
+}
+
+
+// ===============================
+// SUBMENÚ BELLEZA
+// ===============================
+
+function toggleBelleza(){
+
+    const lista = document.getElementById("lista-belleza");
+
+    if(lista){
+        lista.classList.toggle("abierta");
+    }
+
+}
+
+
+// ===============================
+// SUBMENÚ REVISTAS
+// ===============================
+
+function toggleRevistas(){
+
+    const lista = document.getElementById("lista-revistas");
+
+    if(lista){
+        lista.classList.toggle("abierta");
+    }
+
+}
+
+
+// ===============================
+// MODAL CÓMO COMPRAR
+// ===============================
+
+function abrirComoComprar(){
+
+    const modal = document.getElementById("como-comprar");
+
+    if(modal){
+        modal.classList.add("abierto");
+    }
+
+}
+
 function cerrarComoComprar(){
 
-    const ventana = document.getElementById("como-comprar");
+    const modal = document.getElementById("como-comprar");
 
-    if(ventana){
-        ventana.classList.remove("abierto");
+    if(modal){
+        modal.classList.remove("abierto");
     }
 
 }
