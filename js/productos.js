@@ -346,6 +346,24 @@ const productos = [
     }
 },
     {
+    id: 19,
+    nombre: "Buzo espalda descubierta",
+    categoria: "Buzos",
+
+    precio: 19500,
+
+    imagen: "img/productos/Buzos/Buzo espalda descubierta/1.jpg",
+
+    carpeta: "Buzo espalda descubierta",
+    cantidadImagenes: 3,
+
+    tipo: "pedido",
+
+    colores: {
+        "🖤Negro": ["S", "M", "L","XL"]
+    }
+},
+    {
     id: 30,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
