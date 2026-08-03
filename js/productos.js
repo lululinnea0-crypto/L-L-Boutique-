@@ -311,20 +311,20 @@ const productos = [
 },
     {
     id: 17,
-    nombre: "Campera panda street",
+    nombre: "Campera Chrome Venom Zip Unisex",
     categoria: "Camperas",
 
-    precio: 24000,
+    precio: 19200,
 
-    imagen: "img/productos/Camperas/Campera panda street/1.jpg",
+    imagen: "img/productos/Camperas/Campera Chrome Venom Zip/1.jpg",
 
-    carpeta: "Campera panda street",
-    cantidadImagenes: 3,
+    carpeta: "Campera Chrome Venom Zip",
+    cantidadImagenes: 4,
 
     tipo: "pedido",
 
     colores: {
-        "unicolor": ["S", "M", "L","XL"]
+        "unicolor": ["S", "M", "L","XL","XXL"]
     }
 },
     {
