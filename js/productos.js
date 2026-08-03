@@ -84,9 +84,9 @@ const productos = [
 
     precio: 25300,
 
-    imagen: "img/productos/Cardigans/Cardigan mariposa/1.jpg",
+    imagen: "img/productos/cardigans/cardigan mariposa/1.jpg",
 
-    carpeta: "Cardigan mariposa",
+    carpeta: "cardigan mariposa",
     cantidadImagenes: 5,
 
     tipo: "pedido",
