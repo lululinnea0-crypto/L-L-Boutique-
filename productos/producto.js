@@ -1,5 +1,4 @@
 const params = new URLSearchParams(window.location.search);
-alert("Producto.js cargado");
 const id = Number(params.get("id"));
 
 const producto = productos.find(p => p.id === id);
@@ -14,14 +13,10 @@ const info = document.getElementById("info-pedido");
 const boton = document.getElementById("btn-carrito");
 const opcionesPago = document.getElementById("opciones-pago");
 
-console.log("DIV pago:", opcionesPago);
-console.log("PRODUCTO:", producto);
-
 
 let colorSeleccionado = "";
 let talleSeleccionado = "";
-let pagoSeleccionado = "contado";
-let cuotasSeleccionadas = "";
+let pagoSeleccionado = "50";
 
 
 
@@ -32,26 +27,86 @@ if (!producto) {
 } else {
 
 
-nombre.textContent = producto.nombre;
+    nombre.textContent = producto.nombre;
 
-precio.textContent =
-"$" + producto.precio.toLocaleString("es-AR");
+    precio.textContent =
+        "$" + producto.precio.toLocaleString("es-AR");
 
 
-// Forma de pago
 
-if (producto.pagos) {
+    // Imagen principal
 
+    galeria.innerHTML = `
+
+        <img 
+        id="imagen-principal"
+        src="../${producto.imagen}"
+        alt="${producto.nombre}">
+
+    `;
+
+
+
+    // Miniaturas
+
+    miniaturas.innerHTML = "";
+
+    for (let i = 1; i <= producto.cantidadImagenes; i++) {
+
+        miniaturas.innerHTML += `
+
+            <img 
+            src="../img/productos/${producto.categoria}/${producto.carpeta}/${i}.jpg"
+            class="miniatura"
+            onclick="cambiarImagen('../img/productos/${producto.categoria}/${producto.carpeta}/${i}.jpg')">
+
+        `;
+
+    }
+
+
+
+    // Colores
+
+    colores.innerHTML = "";
+
+    if (producto.colores) {
+
+
+        for (let color in producto.colores) {
+
+
+            colores.innerHTML += `
+
+            <button 
+            class="btn-color"
+            onclick="seleccionarColor('${color}')">
+
+            ${color}
+
+            </button>
+
+            `;
+
+        }
+
+
+    }
+
+
+
+    // Forma de pago
+
+
+    if (producto.pagos) {
 
     opcionesPago.innerHTML = `
 
     <h3>Forma de pago</h3>
 
-
     <label>
-
     <input 
-    type="radio"
+    type="radio" 
     name="pago"
     value="contado"
     checked>
@@ -66,13 +121,12 @@ if (producto.pagos) {
 
 
     <label>
-
-    <input
+    <input 
     type="radio"
     name="pago"
     value="cuotas">
 
-    📅 Pago en cuotas semanales
+    📅 Pagar en cuotas semanales
 
     </label>
 
@@ -92,7 +146,7 @@ if (producto.pagos) {
 
         <label>
 
-        <input
+        <input 
         type="radio"
         name="cuota"
         value="${opcion.semanas}">
@@ -111,13 +165,49 @@ if (producto.pagos) {
     });
 
 
+    }
 
-    document.querySelectorAll('input[name="cuota"]').forEach(input => {
+
+
+        info.innerHTML = `
+
+        <p>📦 Producto por pedido</p>
+
+        <p>💳 Reserva del 50%</p>
+
+        <p>⏳ Entrega estimada: 10 a 15 días después del cierre de campaña.</p>
+
+        `;
+
+
+
+    } else {
+
+
+        pagoSeleccionado = "100";
+
+
+        opcionesPago.innerHTML = `
+
+        <p>
+        <strong>
+        💳 Este producto se paga completo.
+        </strong>
+        </p>
+
+        `;
+
+
+    }
+
+
+
+    document.querySelectorAll('input[name="pago"]').forEach(input => {
 
 
         input.addEventListener("change", () => {
 
-            cuotasSeleccionadas = input.value;
+            pagoSeleccionado = input.value;
 
         });
 
@@ -126,109 +216,120 @@ if (producto.pagos) {
 
 
 
-} else if (producto.tipo === "pedido") {
+    // Agregar al carrito
 
 
-    opcionesPago.innerHTML = `
-
-    <h3>Forma de pago</h3>
+    boton.onclick = () => {
 
 
-    <label>
-
-    <input
-    type="radio"
-    name="pago"
-    value="100">
-
-    💳 Pago completo
-
-    </label>
+        if (producto.colores && Object.keys(producto.colores).length > 0) {
 
 
-    <br><br>
+            if (colorSeleccionado === "") {
+
+                alert("Selecciona un color");
+                return;
+
+            }
 
 
-    <label>
-
-    <input
-    type="radio"
-    name="pago"
-    value="50"
-    checked>
-
-    📦 Reserva 50%
-
-    </label>
-
-    `;
+        }
 
 
-    info.innerHTML = `
+        if (producto.colores && talleSeleccionado === "") {
 
-    <p>📦 Producto por pedido</p>
+            alert("Selecciona un talle");
+            return;
 
-    <p>💳 Reserva con 50%</p>
-
-    <p>⏳ Entrega de 10 a 15 días después del cierre.</p>
-
-    `;
+        }
 
 
-} else {
+
+        agregarAlCarrito(
+
+            producto.id,
+            colorSeleccionado,
+            talleSeleccionado,
+            pagoSeleccionado
+
+        );
 
 
-    pagoSeleccionado = "100";
-
-
-    opcionesPago.innerHTML = `
-
-    <p>
-    <strong>
-    💳 Este producto se paga completo.
-    </strong>
-    </p>
-
-    `;
+    };
 
 
 }
 
 
 
-// Detectar pago
 
-document.querySelectorAll('input[name="pago']").forEach(input => {
+function cambiarImagen(ruta) {
 
 
-    input.addEventListener("change", () => {
+    document.getElementById("imagen-principal").src = ruta;
 
-        pagoSeleccionado = input.value;
+
+}
+
+
+
+
+function seleccionarColor(color) {
+
+
+    colorSeleccionado = color;
+
+    talleSeleccionado = "";
+
+    mostrarTalles(color);
+
+
+}
+
+
+
+
+function mostrarTalles(color) {
+
+
+    talles.innerHTML = "";
+
+
+    if (!producto.colores[color]) return;
+
+
+
+    producto.colores[color].forEach(talle => {
+
+
+        talles.innerHTML += `
+
+
+        <button 
+        class="btn-talle"
+        onclick="seleccionarTalle('${talle}')">
+
+        ${talle}
+
+        </button>
+
+
+        `;
+
 
     });
 
 
-});
-
-
-
-// Botón carrito
-
-boton.onclick = () => {
-
-
-    agregarAlCarrito(
-
-        producto.id,
-        colorSeleccionado,
-        talleSeleccionado,
-        pagoSeleccionado,
-        cuotasSeleccionadas
-
-    );
-
-
-};
-
-
 }
+
+
+
+
+function seleccionarTalle(talle) {
+
+
+    talleSeleccionado = talle;
+
+
+                }
+                                              
