@@ -96,7 +96,26 @@ const productos = [
         "🍷Burdeos": ["XXS","XS","S", "M", "L"]
     }
 },
+   {
+    id: 9,
+    nombre: "cardigan mariposa",
+    categoria: "cardigans",
 
+    precio: 25000,
+
+    imagen: "img/productos/cardigans/cardigan mariposa/1.jpg",
+
+    carpeta: "cardigan mariposa",
+    cantidadImagenes: 5,
+
+    tipo: "pedido",
+
+    colores: {
+        "🧡Naranja": ["S", "M", "L","XL","XXL"],
+        "💜Morado":["S", "M", "L","XL","XXL"],
+        "💙Celeste": ["S", "M", "L","XL","XXL"]
+    }
+ },
     {
     id: 4,
     nombre: "Buzo cherry chile",
