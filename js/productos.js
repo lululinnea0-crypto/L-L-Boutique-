@@ -233,7 +233,46 @@ const productos = [
         "🍷Burdeos": ["XS","S", "M", "L"]
     }
     },
-    
+    {
+    id: 13,
+    nombre: "Sueter Antonieta",
+    categoria: "Sueters",
+
+    precio: 20000,
+
+    imagen: "img/productos/Sueters/Sueter Antonieta/3.jpg",
+
+    carpeta: "Sueter Antonieta",
+    cantidadImagenes: 2,
+
+    tipo: "pedido",
+
+    colores: {
+        "🖤Negro": ["XS","S", "M", "L","XL"],
+        "💗Rosa":["XS","S", "M", "L","XL"]
+
+    }
+ },
+    {
+    id: 14,
+    nombre: "Remera Cleo",
+    categoria: "Remeras",
+
+    precio: 15000,
+
+    imagen: "img/productos/Remeras/Remera Cleo/1.jpg",
+
+    carpeta: "Remera Cleo",
+    cantidadImagenes: 5,
+
+    tipo: "pedido",
+
+    colores: {
+        "🖤Negro": ["XXS","S", "M", "L","XL"],
+        "🍷Burdeos":["S", "M", "L"],
+        "🌺Rosita": ["S", "M", "L","XL"]
+    }
+ },
     {
     id: 30,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
