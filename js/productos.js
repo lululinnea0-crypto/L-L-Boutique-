@@ -77,24 +77,4 @@ const productos = [
     }
 },
 
-    {
-    id: 5,
-    nombre: "Cardigan mariposa",
-    categoria: "cardigans",
-
-    precio: 25300,
-
-    imagen: "img/productos/cardigans/cardigan mariposa/1.jpg",
-
-    carpeta: "cardigan mariposa",
-    cantidadImagenes: 5,
-
-    tipo: "pedido",
-
-    colores: {
-        "🧡Naranja": ["S", "M", "L","XL","XXL"]
-        "💜Morado": ["S", "M", "L","XL"]
-        "💙Celeste": ["S", "M", "L","XL","XXL"]
-    }
-        
     ];
