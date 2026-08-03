@@ -11,10 +11,13 @@ const colores = document.getElementById("colores");
 const talles = document.getElementById("talles");
 const info = document.getElementById("info-pedido");
 const boton = document.getElementById("btn-carrito");
+const opcionesPago = document.getElementById("opciones-pago");
+
 
 let colorSeleccionado = "";
 let talleSeleccionado = "";
 let pagoSeleccionado = "50";
+
 
 
 if (!producto) {
@@ -30,24 +33,33 @@ if (!producto) {
         "$" + producto.precio.toLocaleString("es-AR");
 
 
+
     // Imagen principal
 
     galeria.innerHTML = `
-        <img id="imagen-principal"
+
+        <img 
+        id="imagen-principal"
         src="../${producto.imagen}"
         alt="${producto.nombre}">
+
     `;
+
 
 
     // Miniaturas
 
+    miniaturas.innerHTML = "";
+
     for (let i = 1; i <= producto.cantidadImagenes; i++) {
 
         miniaturas.innerHTML += `
-            <img
+
+            <img 
             src="../img/productos/${producto.categoria}/${producto.carpeta}/${i}.jpg"
             class="miniatura"
             onclick="cambiarImagen('../img/productos/${producto.categoria}/${producto.carpeta}/${i}.jpg')">
+
         `;
 
     }
@@ -56,21 +68,34 @@ if (!producto) {
 
     // Colores
 
-    for (let color in producto.colores) {
+    colores.innerHTML = "";
 
-        colores.innerHTML += `
-            <button onclick="seleccionarColor('${color}')">
-                ${color}
+    if (producto.colores) {
+
+
+        for (let color in producto.colores) {
+
+
+            colores.innerHTML += `
+
+            <button 
+            class="btn-color"
+            onclick="seleccionarColor('${color}')">
+
+            ${color}
+
             </button>
-        `;
+
+            `;
+
+        }
+
 
     }
 
 
 
-    // Pago
-
-    const opcionesPago = document.getElementById("opciones-pago");
+    // Forma de pago
 
 
     if (producto.tipo === "pedido") {
@@ -84,11 +109,11 @@ if (!producto) {
         <label>
 
         <input 
-        type="radio" 
-        name="pago" 
+        type="radio"
+        name="pago"
         value="100">
 
-        💳 Pagar 100% -
+        💳 Pago completo -
         $${producto.precio.toLocaleString("es-AR")}
 
         </label>
@@ -99,9 +124,9 @@ if (!producto) {
 
         <label>
 
-        <input 
-        type="radio" 
-        name="pago" 
+        <input
+        type="radio"
+        name="pago"
         value="50"
         checked>
 
@@ -113,15 +138,17 @@ if (!producto) {
         `;
 
 
+
         info.innerHTML = `
 
         <p>📦 Producto por pedido</p>
 
-        <p>💳 Reserva con 50%</p>
+        <p>💳 Reserva del 50%</p>
 
-        <p>⏳ Entrega de 10 a 15 días después del cierre de campaña.</p>
+        <p>⏳ Entrega estimada: 10 a 15 días después del cierre de campaña.</p>
 
         `;
+
 
 
     } else {
@@ -140,13 +167,13 @@ if (!producto) {
 
         `;
 
+
     }
 
 
 
-    // Detectar forma de pago
-
     document.querySelectorAll('input[name="pago"]').forEach(input => {
+
 
         input.addEventListener("change", () => {
 
@@ -154,23 +181,45 @@ if (!producto) {
 
         });
 
+
     });
 
 
 
-    // Botón agregar carrito
+    // Agregar al carrito
+
 
     boton.onclick = () => {
+
+
+        if (producto.colores && Object.keys(producto.colores).length > 0) {
+
+
+            if (colorSeleccionado === "") {
+
+                alert("Selecciona un color");
+                return;
+
+            }
+
+
+        }
+
+
+        if (producto.colores && talleSeleccionado === "") {
+
+            alert("Selecciona un talle");
+            return;
+
+        }
+
 
 
         agregarAlCarrito(
 
             producto.id,
-
             colorSeleccionado,
-
             talleSeleccionado,
-
             pagoSeleccionado
 
         );
@@ -186,7 +235,9 @@ if (!producto) {
 
 function cambiarImagen(ruta) {
 
+
     document.getElementById("imagen-principal").src = ruta;
+
 
 }
 
@@ -198,6 +249,7 @@ function seleccionarColor(color) {
 
     colorSeleccionado = color;
 
+    talleSeleccionado = "";
 
     mostrarTalles(color);
 
@@ -213,16 +265,24 @@ function mostrarTalles(color) {
     talles.innerHTML = "";
 
 
+    if (!producto.colores[color]) return;
+
+
+
     producto.colores[color].forEach(talle => {
 
 
         talles.innerHTML += `
 
-        <button onclick="seleccionarTalle('${talle}')">
+
+        <button 
+        class="btn-talle"
+        onclick="seleccionarTalle('${talle}')">
 
         ${talle}
 
         </button>
+
 
         `;
 
