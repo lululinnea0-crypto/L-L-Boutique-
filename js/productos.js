@@ -278,7 +278,7 @@ const productos = [
     nombre: "Calza Bety",
     categoria: "Pantalones",
 
-    precio: 18000,
+    precio: 22000,
 
     imagen: "img/productos/Pantalones/Calza Bety/1.jpg",
 
@@ -298,7 +298,7 @@ const productos = [
 
     precio: 16000,
 
-    imagen: "img/productos/Lencería/Conjunto Pinky/1.jpg",
+    imagen: "img/productos/Lencería/Conjuntos sexys/Conjunto Pinky/1.jpg",
 
     carpeta: "Conjunto Pinky",
     cantidadImagenes: 4,
