@@ -1,168 +1,88 @@
 // ===============================
-// L&L Boutique - categoria.js
+// L&L Boutique
+// categoria.js
 // ===============================
 
-
 const contenedor = document.getElementById("contenedor-productos");
-
 const titulo = document.getElementById("titulo-categoria");
 
-
-// Obtener categoría
-
+// Obtener categoría de la URL
 const params = new URLSearchParams(window.location.search);
-
 const categoria = params.get("categoria");
 
-
-// Nombres categorías
-
+// Nombres para mostrar
 const nombresCategorias = {
-
-    sueters:"Suéters",
-
-    abrigos:"Abrigos",
-
-    cardigans:"Cardigans",
-
-    remeras:"Remeras",
-
-    buzos:"Buzos",
-
-    pantalones:"Pantalones",
-
-    camperas:"Camperas",
-
-    deportiva:"Vestimenta deportiva",
-
-    tops:"Tops",
-
-    bodys:"Bodys",
-
-    vestidos:"Vestidos y faldas",
-
-    lenceria:"Lencería",
-
-    maquillaje:"Maquillaje",
-
-    perfumes:"Perfumes",
-
-    cabello:"Cuidado de cabello",
-
-    piel:"Cuidado de piel"
-
+    sueters: "Suéters",
+    cardigans: "Cardigans",
+    abrigos: "Abrigos",
+    camperas: "Camperas",
+    remeras: "Remeras",
+    buzos: "Buzos",
+    pantalones: "Pantalones",
+    vestidos: "Vestidos y Faldas",
+    tops: "Tops",
+    bodys: "Bodys",
+    lenceria: "Lencería",
+    maquillaje: "Maquillaje",
+    perfumes: "Perfumes",
+    cabello: "Cuidado del Cabello",
+    piel: "Cuidado de la Piel"
 };
 
-
-
-// Título
-
-if(titulo){
-
+// Cambiar título
+if (titulo) {
     titulo.textContent = nombresCategorias[categoria] || "Productos";
-
 }
 
-
-
 // Filtrar productos
-
-const productosCategoria = productos.filter(producto => 
-
-    producto.categoria === categoria
-
+const productosCategoria = productos.filter(producto =>
+    producto.categoria.toLowerCase() === categoria.toLowerCase()
 );
 
-
-
 // Mostrar productos
-
-if(contenedor){
-
+if (contenedor) {
 
     contenedor.innerHTML = "";
 
-
-    if(productosCategoria.length === 0){
-
+    if (productosCategoria.length === 0) {
 
         contenedor.innerHTML = `
-
-        <p>
-
-        No hay productos disponibles en esta categoría.
-
-        </p>
-
+            <p class="sin-productos">
+                Próximamente agregaremos productos en esta categoría.
+            </p>
         `;
 
+    } else {
 
-    }else{
-
-
-        productosCategoria.forEach(producto=>{
-
+        productosCategoria.forEach(producto => {
 
             contenedor.innerHTML += `
+                <div class="producto">
 
+                    ${producto.etiqueta ? `
+                        <div class="etiqueta-producto">
+                            ${producto.etiqueta}
+                        </div>
+                    ` : ""}
 
-            <div class="producto">
+                    <img src="../${producto.imagen}" alt="${producto.nombre}">
 
+                    <h3>${producto.nombre}</h3>
 
-            ${
-            producto.etiqueta 
-            ? 
-            `<div class="etiqueta-producto">
-            ${producto.etiqueta}
-            </div>`
-            :
-            ""
-            }
+                    <p class="precio">
+                        $${producto.precio.toLocaleString("es-AR")}
+                    </p>
 
+                    <a href="../productos/producto.html?id=${producto.id}"
+                       class="btn-producto">
+                        Ver producto
+                    </a>
 
-            <img 
-            src="../${producto.imagen}" 
-            alt="${producto.nombre}"
-            >
-
-
-            <h3>
-
-            ${producto.nombre}
-
-            </h3>
-
-
-            <p class="precio">
-
-            $${producto.precio.toLocaleString("es-AR")}
-
-            </p>
-
-
-            <a 
-
-            href="../productos/producto.html?id=${producto.id}"
-
-            class="btn-producto"
-
-            >
-
-            Ver producto
-
-            </a>
-
-
-            </div>
-
-
+                </div>
             `;
-
 
         });
 
-
     }
-
 
 }
