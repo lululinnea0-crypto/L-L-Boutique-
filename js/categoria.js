@@ -14,9 +14,6 @@ const params = new URLSearchParams(window.location.search);
 
 const categoria = params.get("categoria");
 
-alert("categoria.js cargó");
-
-alert("Categoría: " + categoria);
 
 // Nombres categorías
 
