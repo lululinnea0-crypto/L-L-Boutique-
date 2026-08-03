@@ -134,6 +134,26 @@ const productos = [
         "🖤Negro": ["XXS","XS","S", "M", "L","XL"]
       }
     },
+    {
+    id: 11,
+    nombre: "Conjunto de dos piezas beauty",
+    categoria: "Vestidos y faldas",
+
+    precio: 23500,
+
+    imagen: "img/productos/Vestidos y faldas/Conjunto de dos piezas beauty/1.jpg",
+
+    carpeta: "Conjunto de dos piezas beauty",
+    cantidadImagenes: 3,
+
+    tipo: "pedido",
+
+    colores: {
+        "🖤Negro": ["XS","S", "M", "L",],
+        "🤍Blanco": ["XS","S", "L"],
+        "🍷Burdeos": ["XXS","XS","S", "M", "L","XL"]
+    }
+ },
       {
     id: 4,
     nombre: "Buzo cherry child",
