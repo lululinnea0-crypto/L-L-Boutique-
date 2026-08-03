@@ -213,6 +213,28 @@ const productos = [
     }
 },
     {
+    id: 12,
+    nombre: "Top 2000s Glitter Tank",
+    categoria: "Tops",
+
+    precio: 12500,
+
+    imagen: "img/productos/Tops/Top 2000s Glitter Tank/1.jpg",
+
+    carpeta: "Top 2000s Glitter Tank",
+    cantidadImagenes: 4,
+
+    tipo: "pedido",
+
+    colores: {
+        "❤️Rojo": ["XXS","XS","S", "M", "L","XL"],
+        "🖤Negro": ["XXS","XS","S", "M", "L","XL"],
+        "🤍Blanco": ["XXS","XS","S", "M", "L","XL"],
+        "🍷Burdeos": ["XS","S", "M", "L"]
+    }
+    },
+    
+    {
     id: 30,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
