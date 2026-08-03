@@ -100,11 +100,11 @@ const productos = [
     {
     id: 6,
     nombre: "Campera AONW",
-    categoria: "Camperas",
+    categoria: "camperas",
 
     precio: 50000,
 
-    imagen: "img/productos/Camperas/Campera AONW/1.jpg",
+    imagen: "img/productos/camperas/Campera AONW/1.jpg",
 
     carpeta: "Campera AONW",
     cantidadImagenes: 4,
@@ -112,7 +112,8 @@ const productos = [
     tipo: "pedido",
 
     colores: {
-        "💗Rosa fucsia": ["XS", "S", "L","XL"]
+        "💗 Rosa fucsia": ["XS", "S", "M", "L", "XL"],
+        "🤍 Blanco": ["XS", "S", "L"]
     }
 },
     ];
