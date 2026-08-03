@@ -100,11 +100,11 @@ const productos = [
     {
     id: 6,
     nombre: "Campera AONW",
-    categoria: "camperas",
+    categoria: "Camperas",
 
     precio: 50000,
 
-    imagen: "img/productos/camperas/Campera AONW/1.jpg",
+    imagen: "img/productos/Camperas/Campera AONW/1.jpg",
 
     carpeta: "Campera AONW",
     cantidadImagenes: 4,
