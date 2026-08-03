@@ -310,6 +310,42 @@ const productos = [
     }
 },
     {
+    id: 17,
+    nombre: "Campera panda street",
+    categoria: "Camperas",
+
+    precio: 24000,
+
+    imagen: "img/productos/Camperas/Campera panda street/1.jpg",
+
+    carpeta: "Campera panda street",
+    cantidadImagenes: 3,
+
+    tipo: "pedido",
+
+    colores: {
+        "unicolor": ["S", "M", "L","XL"]
+    }
+},
+    {
+    id: 18,
+    nombre: "Buzo brilli brilli",
+    categoria: "Buzos",
+
+    precio: 19000,
+
+    imagen: "img/productos/Buzos/Buzo brilli brilli/1.jpg",
+
+    carpeta: "Buzo brilli brilli",
+    cantidadImagenes: 2,
+
+    tipo: "pedido",
+
+    colores: {
+        "🖤Negro": ["S", "M", "L","XL"]
+    }
+},
+    {
     id: 30,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
