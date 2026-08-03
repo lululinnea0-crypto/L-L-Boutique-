@@ -42,7 +42,7 @@ const productos = [
     {
     id: 3,
     nombre: "Body chic",
-    categoria: "bodys",
+    categoria: "Bodys",
 
     precio: 18000,
 
@@ -61,7 +61,7 @@ const productos = [
     {
     id: 4,
     nombre: "Buzo cherry chile",
-    categoria: "buzos",
+    categoria: "Buzos",
 
     precio: 20000,
 
@@ -100,7 +100,7 @@ const productos = [
     {
     id: 6,
     nombre: "Campera AONW",
-    categoria: "camperas",
+    categoria: "Camperas",
 
     precio: 50000,
 
