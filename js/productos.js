@@ -97,4 +97,23 @@ const productos = [
     }
 },
 
+    {
+    id: 6,
+    nombre: "Campera AONW",
+    categoria: "Camperas",
+
+    precio: 50000,
+
+    imagen: "img/productos/Camperas/Campera AONW/1.jpg",
+
+    carpeta: "Campera AONW",
+    cantidadImagenes: 4,
+
+    tipo: "pedido",
+
+    colores: {
+        "💗Rosa fucsia": ["XS", "S", "L","XL"]
+        "🤍Blanco": ["XS", "S", "M"]
+    }
+},
     ];
