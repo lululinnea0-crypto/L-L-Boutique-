@@ -137,7 +137,7 @@ const productos = [
     {
     id: 11,
     nombre: "Conjunto de dos piezas beauty",
-    categoria: "Vestidos y faldas",
+    categoria: "Vestidos y Faldas",
 
     precio: 23500,
 
