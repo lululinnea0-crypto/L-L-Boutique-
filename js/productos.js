@@ -943,13 +943,23 @@ const productos = [
     },
     {
     id: 61,
-    nombre: "Avon Care crema de coco loción corporal 1 Litro",
+    nombre: "Desodorante Antitranspirante Roll On Erva Doce 70 ml",
     categoria: "Piel",
     precio: 18900,
+    imagen: "img/productos/Cuidado de piel/Desodorante Antitranspirante Roll On Erva Doce 70 ml/1.jpg",
+    carpeta: "Desodorante Antitranspirante Roll On Erva Doce 70 ml",
+    cantidadImagenes: 1,
+    tipo: "stock"
+    }
+    },
+    {
+    id: 62,
+    nombre: "Avon Care crema de coco loción corporal 1 Litro",
+    categoria: "Piel",
+    precio: 5000,
     imagen: "img/productos/Cuidado de piel/Avon Care crema de coco loción corporal 1 Litro/1.jpg",
     carpeta: "Avon Care crema de coco loción corporal 1 Litro",
     cantidadImagenes: 1,
     tipo: "stock"
-    }
-    
+}
     ];
