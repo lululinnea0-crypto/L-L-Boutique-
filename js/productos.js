@@ -364,6 +364,24 @@ const productos = [
     }
 },
     {
+    id: 20,
+    nombre: "Body drag black",
+    categoria: "Bodys",
+
+    precio: 19500,
+
+    imagen: "img/productos/Bodys/Body drag black/1.jpg",
+
+    carpeta: "Body drag black",
+    cantidadImagenes: 2,
+
+    tipo: "pedido",
+
+    colores: {
+        "🖤Negro": ["XS","S", "M", "L","XL"]
+    }
+},
+    {
     id: 30,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
