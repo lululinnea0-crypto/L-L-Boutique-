@@ -844,6 +844,27 @@ const productos = [
     }
 },
     {
+    id: 43,
+    nombre: "Conjunto 4 piezas malva",
+    categoria: "Lencería",
+
+    precio: 16500,
+
+    imagen: "img/productos/Lencería/Conjuntos sexys/Conjunto malva/1.jpg",
+
+    carpeta: "Conjunto malva",
+    cantidadImagenes: 4,
+
+    tipo: "pedido",
+
+    colores: {
+        "🖤Negro": ["S", "M", "L","XL","XXL"],
+        "🍷Burdeos": ["XS","S", "M", "L","XL"],
+        "❤️Rojo": ["S", "M", "L","XL"],
+        "🌺Rosita": ["XS","S", "M", "L","XL","XXL"]
+    }
+},
+    {
     id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
