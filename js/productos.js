@@ -826,6 +826,24 @@ const productos = [
     }
  },
     {
+    id: 42,
+    nombre: "Conjunto lila 5 piezas",
+    categoria: "Lencería",
+
+    precio: 23300,
+
+    imagen: "img/productos/Lencería/Conjuntos sexys/Conjunto lila 5 piezas/1.jpg",
+
+    carpeta: "Conjunto lila 5 piezas",
+    cantidadImagenes: 2,
+
+    tipo: "pedido",
+
+    colores: {
+        "🟣Lila": ["S", "M", "L","XL"]
+    }
+},
+    {
     id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
