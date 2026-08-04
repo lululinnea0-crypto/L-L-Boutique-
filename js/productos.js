@@ -949,7 +949,7 @@ const productos = [
     precio: 18900,
     imagen: "img/productos/Cuidado de piel/Avon Care crema de coco loción corporal 1 Litro/1.jpg",
     carpeta: "Avon Care crema de coco loción corporal 1 Litro",
-    cantidadImagenes: 2,
+    cantidadImagenes: 1,
     tipo: "stock"
     }
     },
