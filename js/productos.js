@@ -400,6 +400,25 @@ const productos = [
     }
 },
     {
+    id: 22,
+    nombre: "Catsuit deportivo Cindy",
+    categoria: "Vestimenta deportiva",
+
+    precio: 23300,
+
+    imagen: "img/productos/Vestimenta deportiva/Catsuit deportivo Cindy/1.jpg",
+
+    carpeta: "Catsuit deportivo Cindy",
+    cantidadImagenes: 4,
+
+    tipo: "pedido",
+
+    colores: {
+        "🍇Magenta oscuro": ["XS","S", "M", "L","XXL","XXXL","XXXXL"],
+        "💚Verde militar": ["XS","S","M","L"]
+    }
+},
+    {
     id: 30,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
