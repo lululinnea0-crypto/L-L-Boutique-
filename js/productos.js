@@ -444,7 +444,7 @@ const productos = [
     {
     id: 24,
     nombre: "Top Corset Noir Floral",
-    categoria: "Tos",
+    categoria: "Tops",
     
 
     precio: 11600,
@@ -928,6 +928,26 @@ const productos = [
         "💚Verde":["S","M","L","XL"]
       }
     },
+    {
+    id: 43,
+    nombre: "Vestido de mezclilla",
+    categoria: "vestidos",
+    
+
+    precio: 25000,
+
+    imagen: "img/productos/Vestidos y faldas/Vestido de mezclilla/1.jpg",
+
+    carpeta: "Vestido de mezclilla",
+    cantidadImagenes: 1,
+
+    tipo: "pedido",
+    destacado: true,
+
+    colores: {
+        "🖤Unicolor": ["S", "M", "L","XL"]
+    }
+},
     {
     id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
