@@ -941,4 +941,15 @@ const productos = [
     colores: {}
 
     }
+    },
+    {
+    id: 61,
+    nombre: "Avon Care crema de coco loción corporal 1 Litro",
+    categoria: "Cuidado de piel",
+    precio: 18900,
+    imagen: "img/productos/Cuidado de piel/Avon Care crema de coco loción corporal 1 Litro/1.jpg",
+    carpeta: "Avon Care crema de coco loción corporal 1 Litro",
+    cantidadImagenes: 2,
+    tipo: "stock"
+    }
     ];
