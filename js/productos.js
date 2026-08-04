@@ -780,6 +780,29 @@ const productos = [
         
     }
 },
+    
+    {
+    id: 40,
+    nombre: "Calza con efecto levantador",
+    categoria: "Pantalones",
+    
+
+    precio: 22000,
+
+    imagen: "img/productos/Pantalones/Calza con efecto levantador/1.jpg",
+
+    carpeta: "Calza con efecto levantador",
+    cantidadImagenes: 2,
+
+    tipo: "pedido",
+    
+
+    colores: {
+        
+        "🖤Unicolor": ["XXS","XS","S", "M", "L","XL"]
+        
+    }
+ },
     {
     id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
