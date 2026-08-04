@@ -950,6 +950,7 @@ const productos = [
     carpeta: "Desodorante Antitranspirante Roll On Erva Doce 70 ml",
     cantidadImagenes: 1,
     tipo: "stock"
+}
 },
 {
     id: 62,
@@ -964,14 +965,14 @@ const productos = [
     },
     {
     id: 63,
-    nombre: "Crema Hidratante para Manos Ekos Cacao 75 g",
+    nombre: "Ekos Cacao",
     categoria: "Piel",
     precio: 8500,
-    imagen: "img/productos/Cuidado de piel/Crema Hidratante para Manos Ekos Cacao 75 g/1.jpg",
-    carpeta: "Crema Hidratante para Manos Ekos Cacao 75 g",
+    imagen: "img/productos/Cuidado de piel/Ekos Cacao/1.jpg",
+    carpeta: "Ekos Cacao",
     cantidadImagenes: 1,
     tipo: "stock"
-},
+}
 
 ];
     
