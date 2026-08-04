@@ -60,7 +60,7 @@ const productos = [
     {
     id: 7,
     nombre: "Body galaxy 2 piezas",
-    categoria: "Lencería",
+    categoria: "lenceria",
 
     precio: 21000,
 
@@ -137,7 +137,7 @@ const productos = [
     {
     id: 11,
     nombre: "Conjunto de dos piezas beauty",
-    categoria: "Vestidos y Faldas",
+    categoria: "vestidos",
 
     precio: 23500,
 
