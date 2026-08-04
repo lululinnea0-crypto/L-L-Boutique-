@@ -970,6 +970,25 @@ const productos = [
     }
     },
     {
+    id: 45,
+    nombre: "Top Shadow Grip Halter",
+    categoria: "Tops",
+
+    precio: 16400,
+
+    imagen: "img/productos/Tops/Top Shadow Grip Halter/1.jpg",
+
+    carpeta: "Top Shadow Grip Halter",
+    cantidadImagenes: 3,
+
+    tipo: "pedido",
+
+    colores: {
+        "🖤Negro": ["XXS","XS","S", "M", "L","XL"],
+        
+    }
+    },
+    {
     id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
