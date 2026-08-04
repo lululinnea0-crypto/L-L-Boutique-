@@ -419,6 +419,26 @@ const productos = [
     }
 },
     {
+    id: 23,
+    nombre: "Conjunto dos piezas vivian",
+    categoria: "Vestidos y faldas",
+    
+
+    precio: 25000,
+
+    imagen: "img/productos/Vestidos y faldas/Conjunto dos piezas vivian/1.jpg",
+
+    carpeta: "Conjunto dos piezas vivian",
+    cantidadImagenes: 4,
+
+    tipo: "pedido",
+    destacado: true,
+
+    colores: {
+        "🤍Unicolor": ["XS","S", "M", "L"]
+    }
+},
+    {
     id: 30,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
