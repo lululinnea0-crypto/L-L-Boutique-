@@ -51,23 +51,24 @@ if (!producto) {
 
     // MINIATURAS
 
-    miniaturas.innerHTML = "";
+miniaturas.innerHTML = "";
 
+const rutaCarpeta = producto.subcategoria
+    ? `../img/productos/${producto.categoria}/${producto.subcategoria}/${producto.carpeta}`
+    : `../img/productos/${producto.categoria}/${producto.carpeta}`;
 
-    for(let i = 1; i <= producto.cantidadImagenes; i++){
+for (let i = 1; i <= producto.cantidadImagenes; i++) {
 
+    miniaturas.innerHTML += `
 
-        miniaturas.innerHTML += `
+        <img
+            class="miniatura"
+            src="${rutaCarpeta}/${i}.jpg"
+            onclick="cambiarImagen('${rutaCarpeta}/${i}.jpg')">
 
-        <img 
-        class="miniatura"
-        src="../img/productos/${producto.categoria}/${producto.carpeta}/${i}.jpg"
-        onclick="cambiarImagen('../img/productos/${producto.categoria}/${producto.carpeta}/${i}.jpg')">
+    `;
 
-        `;
-
-
-    }
+}
 
 
 
