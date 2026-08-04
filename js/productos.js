@@ -890,6 +890,24 @@ const productos = [
     }
 },
     {
+    id: 41,
+    nombre: "Body glam",
+    categoria: "Bodys",
+
+    precio: 14000,
+
+    imagen: "img/productos/Bodys/Body glam/1.jpg",
+
+    carpeta: "Body glam",
+    cantidadImagenes: 2,
+
+    tipo: "pedido",
+
+    colores: {
+        "🖤Unicolor": ["XS","S", "M", "L"]
+    }
+},
+    {
     id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
