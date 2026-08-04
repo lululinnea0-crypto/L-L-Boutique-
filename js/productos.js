@@ -522,23 +522,23 @@ const productos = [
 },
     {
     id: 28,
-    nombre: "Body con arnés",
+    nombre: "Body twink",
     categoria: "Lencería",
     
 
-    precio: 25000,
+    precio: 14000,
 
-    imagen: "img/productos/Lencería/Bodys sexys/Body con arnés/1.jpg",
+    imagen: "img/productos/Lencería/Bodys sexys/Body twink/1.jpg",
 
-    carpeta: "Body con arnés",
-    cantidadImagenes: 4,
+    carpeta: "Body twink",
+    cantidadImagenes: 1,
 
     tipo: "pedido",
     
 
     colores: {
-        "🖤Negro": ["XS","S", "M", "L","XL"],
-        "💗Rosa": ["S","M","L","XL"]
+        "🖤unicolor": ["S", "M", "L","XL"],
+        
     }
 },
     {
