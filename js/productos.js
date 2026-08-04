@@ -940,7 +940,6 @@ const productos = [
 
     colores: {}
 
-    }
     },
     {
     id: 61,
@@ -952,5 +951,5 @@ const productos = [
     cantidadImagenes: 1,
     tipo: "stock"
     }
-    },
+    
     ];
