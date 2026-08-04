@@ -603,6 +603,94 @@ const productos = [
         
     }
 },
+        {
+    id: 32,
+    nombre: "Remera coquette",
+    categoria: "Remeras",
+    
+
+    precio: 10000,
+
+    imagen: "img/productos/Remeras/Remera coquette/1.jpg",
+
+    carpeta: "Remera coquette",
+    cantidadImagenes: 4,
+
+    tipo: "pedido",
+    
+
+    colores: {
+        "🤍Blanco": ["S", "M", "L","XL"],
+        "🖤Negro": ["S", "M", "L","XL"]
+        
+    }
+},
+    {
+    id: 33,
+    nombre: "Catsuit largo de tiras y con frunce",
+    categoria: "Vestimenta deportiva",
+    
+
+    precio: 19500,
+
+    imagen: "img/productos/Vestimenta deportiva/Catsuit largo de tiras y con frunce/1.jpg",
+
+    carpeta: "Catsuit largo de tiras y con frunce",
+    cantidadImagenes: 2,
+
+    tipo: "pedido",
+    
+
+    colores: {
+        "🤎Unicolor": ["XS","S", "M", "L"]
+        
+        
+    }
+},
+    {
+    id: 34,
+    nombre: "Conjunto 2 piezas drag Burdeos",
+    categoria: "Vestidos y faldas",
+    
+
+    precio: 25000,
+
+    imagen: "img/productos/Vestidos y faldas/Conjunto drag Burdeos/1.jpg",
+
+    carpeta: "Conjunto drag Burdeos",
+    cantidadImagenes: 4,
+
+    tipo: "pedido",
+    
+
+    colores: {
+        "🍷Unicolor": ["XXS","XS","S", "M", "L"]
+        
+        
+    }
+},
+    {
+    id: 35,
+    nombre: "Falda de mezclilla",
+    categoria: "Vestidos y faldas",
+    
+
+    precio: 21000,
+
+    imagen: "img/productos/Vestidos y faldas/Falda de mezclilla/1.jpg",
+
+    carpeta: "Falda de mezclilla",
+    cantidadImagenes: 4,
+
+    tipo: "pedido",
+    
+
+    colores: {
+        "🔳Gris": ["XS","S", "M", "L"],
+        "💙Celeste": ["XS","S", "M",]
+        
+    }
+},
     {
     id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
