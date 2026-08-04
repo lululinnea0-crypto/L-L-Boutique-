@@ -865,6 +865,25 @@ const productos = [
     }
 },
     {
+    id: 44,
+    nombre: "Campera Plush Coquette",
+    categoria: "Camperas",
+
+    precio: 25700,
+
+    imagen: "img/productos/Camperas/Campera Plush Coquette/1.jpg",
+
+    carpeta: "Campera Plush Coquette",
+    cantidadImagenes: 4,
+
+    tipo: "pedido",
+
+    colores: {
+        "🌚Unicolor": ["S", "M", "L", "XL"],
+        
+    }
+},
+    {
     id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
