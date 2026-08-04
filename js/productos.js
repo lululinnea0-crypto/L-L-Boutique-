@@ -120,7 +120,8 @@ const productos = [
     id: 10,
     nombre: "Catsuit acampanado",
     categoria: "deportiva",
-
+        
+    ruta: "Vestimenta deportiva",
     precio: 27200,
 
     imagen: "img/productos/Vestimenta deportiva/Catsuit acampanado/1.jpg",
