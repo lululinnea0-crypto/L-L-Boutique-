@@ -501,6 +501,47 @@ const productos = [
     }
 },
     {
+    id: 27,
+    nombre: "Calza acampanada",
+    categoria: "Pantalones",
+    
+
+    precio: 19000,
+
+    imagen: "img/productos/Pantalones/Calza acampanada/1.jpg",
+
+    carpeta: "Calza acampanada",
+    cantidadImagenes: 3,
+
+    tipo: "pedido",
+    
+
+    colores: {
+        "🖤Unicolor": ["XXS","XS","S", "M", "L","XL"]
+    }
+},
+    {
+    id: 28,
+    nombre: "Body con arnés",
+    categoria: "Lencería",
+    
+
+    precio: 25000,
+
+    imagen: "img/productos/Lencería/Bodys sexys/Body con arnés/1.jpg",
+
+    carpeta: "Body con arnés",
+    cantidadImagenes: 4,
+
+    tipo: "pedido",
+    
+
+    colores: {
+        "🖤Negro": ["XS","S", "M", "L","XL"],
+        "💗Rosa": ["S","M","L","XL"]
+    }
+},
+    {
     id: 30,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
