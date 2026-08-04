@@ -952,4 +952,5 @@ const productos = [
     cantidadImagenes: 2,
     tipo: "stock"
     }
+    },
     ];
