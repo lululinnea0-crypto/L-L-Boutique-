@@ -804,6 +804,28 @@ const productos = [
     }
  },
     {
+    id: 41,
+    nombre: "Pantalon Sastre Effortless",
+    categoria: "Pantalones",
+    
+
+    precio: 20800,
+
+    imagen: "img/productos/Pantalones/Pantalon Sastre Effortless/1.jpg",
+
+    carpeta: "Pantalon Sastre Effortless",
+    cantidadImagenes: 4,
+
+    tipo: "pedido",
+    
+
+    colores: {
+        "🔳Gris": ["S", "M", "L","XL"],
+        "🖤Negro": ["XS","S", "M", "L","XL","XXL"]
+        
+    }
+ },
+    {
     id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
