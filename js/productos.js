@@ -908,6 +908,27 @@ const productos = [
     }
 },
     {
+    id: 42,
+    nombre: "Conjunto deportivo dos piezas",
+    categoria: "deportiva",
+        
+    ruta: "Vestimenta deportiva",
+    precio: 25200,
+
+    imagen: "img/productos/Vestimenta deportiva/Conjunto deportivo dos piezas/1.jpg",
+
+    carpeta: "Conjunto deportivo dos piezas",
+    cantidadImagenes: 4,
+
+    tipo: "pedido",
+
+    colores: {
+        "🖤Negro": ["S", "M", "L","XL"],
+        "🟣Purpura":["S","M","L","XL"],
+        "💚Verde":["S","M","L","XL"]
+      }
+    },
+    {
     id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
