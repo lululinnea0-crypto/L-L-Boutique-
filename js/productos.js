@@ -119,7 +119,7 @@ const productos = [
     {
     id: 10,
     nombre: "Catsuit acampanado",
-    categoria: "Vestimenta deportiva",
+    categoria: "deportiva",
 
     precio: 27200,
 
@@ -404,7 +404,7 @@ const productos = [
     {
     id: 22,
     nombre: "Catsuit deportivo Cindy",
-    categoria: "Vestimenta deportiva",
+    categoria: "deportiva",
 
     precio: 23300,
 
@@ -631,7 +631,7 @@ const productos = [
     {
     id: 33,
     nombre: "Catsuit largo de tiras y con frunce",
-    categoria: "Vestimenta deportiva",
+    categoria: "deportiva",
     
 
     precio: 19500,
