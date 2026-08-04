@@ -963,4 +963,4 @@ const productos = [
 }
 
 ];
-    ];
+    
