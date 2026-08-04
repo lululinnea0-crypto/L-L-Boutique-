@@ -738,6 +738,27 @@ const productos = [
     }
 },
     {
+    id: 38,
+    nombre: "Top Punk",
+    categoria: "Tops",
+    
+
+    precio: 14600,
+
+    imagen: "img/productos/Tops/Top Punk/1.jpg",
+
+    carpeta: "Top Punk",
+    cantidadImagenes: 2,
+
+    tipo: "pedido",
+    
+
+    colores: {
+     "🖤Unicolor": ["S", "M", "L","XL"]
+        
+    }
+},
+    {
     id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
