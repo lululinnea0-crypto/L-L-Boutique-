@@ -537,12 +537,74 @@ const productos = [
     
 
     colores: {
-        "🖤unicolor": ["S", "M", "L","XL"],
+        "💗unicolor": ["S", "M", "L","XL"]
+        
+    }
+},
+     {
+    id: 29,
+    nombre: "Campera Cloud Zip",
+    categoria: "Camperas",
+    
+
+    precio: 22800,
+
+    imagen: "img/productos/Camperas/Campera Cloud Zip gris/1.jpg",
+
+    carpeta: "Campera Cloud Zip gris",
+    cantidadImagenes: 4,
+
+    tipo: "pedido",
+    
+
+    colores: {
+        "🔳Gris": ["S", "M", "L","XL"]
         
     }
 },
     {
     id: 30,
+    nombre: "Body drag burdeos",
+    categoria: "Bodys",
+    
+
+    precio: 18000,
+
+    imagen: "img/productos/Bodys/Body drag burdeos/1.jpg",
+    carpeta: "Body drag burdeos",
+    cantidadImagenes: 4,
+
+    tipo: "pedido",
+    
+
+    colores: {
+        "🍷unicolor": ["XS","S", "M", "L"]
+        
+    }
+},
+        {
+    id: 31,
+    nombre: "Remera Lily Noir",
+    categoria: "Remeras",
+    
+
+    precio: 17400,
+
+    imagen: "img/productos/Remeras/Remera Lily Noir/1.jpg",
+
+    carpeta: "Remera Lily Noir",
+    cantidadImagenes: 3,
+
+    tipo: "pedido",
+    
+
+    colores: {
+        "🖤unicolor": ["XS","S", "M", "L","XL"]
+        
+    }
+},
+    {
+    id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
     categoria: "Perfumes",
