@@ -452,10 +452,52 @@ const productos = [
     cantidadImagenes: 3,
 
     tipo: "pedido",
-    destacado: true,
+    
 
     colores: {
         "🤍Unicolor": ["S", "M", "L","XL"]
+    }
+},
+    {
+    id: 25,
+    nombre: "Remera Lilith",
+    categoria: "Remeras",
+    
+
+    precio: 20000,
+
+    imagen: "img/productos/Remeras/Remera Lilith/1.jpg",
+
+    carpeta: "Remera Lilith",
+    cantidadImagenes: 2,
+
+    tipo: "pedido",
+    
+
+    colores: {
+        "🤍Blanco": ["XS","S", "M", "L","XL","XXL","XXXL","XXXXL"],
+        "🍷Burdeos": ["XS","S","M","L"]
+    }
+},
+    {
+    id: 26,
+    nombre: "Sueter love love",
+    categoria: "Sueters",
+    
+
+    precio: 29000,
+
+    imagen: "img/productos/Sueters/Sueter love love/1.jpg",
+
+    carpeta: "Sueter love love",
+    cantidadImagenes: 2,
+
+    tipo: "pedido",
+
+
+    colores: {
+        "💗Rosa": ["XS","S", "M", "L","XL"],
+        "🤍Blanco": ["S","M","L","XL]
     }
 },
     {
