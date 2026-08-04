@@ -23,6 +23,7 @@ const nombresCategorias = {
     tops: "Tops",
     bodys: "Bodys",
     lenceria: "Lencería",
+    deportiva: "Vestimenta deportiva",
     maquillaje: "Maquillaje",
     perfumes: "Perfumes",
     cabello: "Cuidado del Cabello",
