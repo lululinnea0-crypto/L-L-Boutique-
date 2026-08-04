@@ -950,7 +950,7 @@ const productos = [
     carpeta: "Desodorante Antitranspirante Roll On Erva Doce 70 ml",
     cantidadImagenes: 1,
     tipo: "stock"
-}
+
 },
 {
     id: 62,
@@ -961,7 +961,7 @@ const productos = [
     carpeta: "Avon Care crema de coco loción corporal 1 Litro",
     cantidadImagenes: 1,
     tipo: "stock"
-}
+
     },
     {
     id: 63,
