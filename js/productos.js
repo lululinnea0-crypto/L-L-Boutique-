@@ -949,6 +949,27 @@ const productos = [
     }
 },
     {
+    id: 44,
+    nombre: "Top Rebecca",
+    categoria: "Tops",
+
+    precio: 12500,
+
+    imagen: "img/productos/Tops/Top Rebecca/1.jpg",
+
+    carpeta: "Top Rebecca",
+    cantidadImagenes: 7,
+
+    tipo: "pedido",
+
+    colores: {
+        "🍷Burdeos": ["XXS","XS","S", "M", "L","XL"],
+        "🖤Negro": ["XXS","XS","S", "M", "L","XL"],
+        "🌺Rosita": ["XXS","XS","S", "M", "L"],
+        "🤍Blanco": ["XXS","XS","S", "M", "L","XXL"]
+    }
+    },
+    {
     id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
