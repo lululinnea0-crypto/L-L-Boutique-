@@ -692,6 +692,31 @@ const productos = [
     }
 },
     {
+    id: 36,
+    nombre: "Sueter princess",
+    categoria: "Sueters",
+    
+
+    precio: 23800,
+
+    imagen: "img/productos/Sueters/Sueter princess/1.jpg",
+
+    carpeta: "Sueter princess",
+    cantidadImagenes: 6,
+
+    tipo: "pedido",
+    
+
+    colores: {
+        "🍷Burdeos": ["XXS","XS","S", "M", "L","XL"],
+        "🔳Gris": ["XXS","XS","S", "M", "L"],
+        "🤍Blanco": ["XXS","XS","S", "M", "L","XL"],
+        "🖤Negro": ["XXS","XS","S", "M", "L"],
+        "🫐Azul": ["XXS","XS","S", "M", "L"]
+        
+    }
+},
+    {
     id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
