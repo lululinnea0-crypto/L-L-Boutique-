@@ -962,4 +962,15 @@ const productos = [
     cantidadImagenes: 1,
     tipo: "stock"
 }
+    },
+    {
+    id: 63,
+    nombre: "Crema Hidratante para Manos Ekos Cacao 75 g",
+    categoria: "Piel",
+    precio: 10000,
+    imagen: "img/productos/Cuidado de piel/Crema Hidratante para Manos Ekos Cacao 75 g/1.jpg",
+    carpeta: "Crema Hidratante para Manos Ekos Cacao 75 g",
+    cantidadImagenes: 1,
+    tipo: "stock"
+}
     ];
