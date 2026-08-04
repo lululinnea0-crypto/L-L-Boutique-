@@ -439,6 +439,26 @@ const productos = [
     }
 },
     {
+    id: 24,
+    nombre: "Top Corset Noir Floral",
+    categoria: "Tos",
+    
+
+    precio: 11600,
+
+    imagen: "img/productos/Tops/Top Corset Noir Floral/1.jpg",
+
+    carpeta: "Top Corset Noir Floral",
+    cantidadImagenes: 3,
+
+    tipo: "pedido",
+    destacado: true,
+
+    colores: {
+        "🤍Unicolor": ["S", "M", "L","XL"]
+    }
+},
+    {
     id: 30,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
