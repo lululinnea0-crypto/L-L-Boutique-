@@ -382,6 +382,24 @@ const productos = [
     }
 },
     {
+    id: 21,
+    nombre: "Cardigan rosa con aplique de fresa",
+    categoria: "cardigans",
+
+    precio: 42000,
+
+    imagen: "img/productos/cardigans/Cardigan rosa con aplique de fresa/1.jpg",
+
+    carpeta: "Cardigan rosa con aplique de fresa",
+    cantidadImagenes: 4,
+
+    tipo: "pedido",
+
+    colores: {
+        "💗unicolor": ["S", "M", "L"]
+    }
+},
+    {
     id: 30,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
