@@ -105,3 +105,21 @@ function toggleBelleza(){
     belleza.classList.toggle("mostrar");
 
 }
+
+// ===============================
+// Ajustar rutas del menú
+// ===============================
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const enCategoria = window.location.pathname.includes("/categorias/");
+
+    if (!enCategoria) return;
+
+    document.querySelectorAll("#lista-categorias a, #lista-belleza a").forEach(link => {
+
+        link.href = link.href.replace("/categorias/categoria.html", "/categoria.html");
+
+    });
+
+});
