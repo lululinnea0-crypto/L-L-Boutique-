@@ -963,16 +963,6 @@ const productos = [
     tipo: "stock"
 
     },
-    {
-    id: 63,
-    nombre: "Ekos Cacao",
-    categoria: "Piel",
-    precio: 8500,
-    imagen: "img/productos/Cuidado de piel/Ekos Cacao/1.jpg",
-    carpeta: "Ekos Cacao",
-    cantidadImagenes: 1,
-    tipo: "stock"
-}
 
 ];
     
