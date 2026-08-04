@@ -497,7 +497,7 @@ const productos = [
 
     colores: {
         "💗Rosa": ["XS","S", "M", "L","XL"],
-        "🤍Blanco": ["S","M","L","XL]
+        "🤍Blanco": ["S","M","L","XL"]
     }
 },
     {
