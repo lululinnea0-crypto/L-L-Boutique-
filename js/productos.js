@@ -717,6 +717,27 @@ const productos = [
     }
 },
     {
+    id: 37,
+    nombre: "Top Plush",
+    categoria: "Tops",
+    
+
+    precio: 24000,
+
+    imagen: "img/productos/Tops/Top Plush/1.jpg",
+
+    carpeta: "Top Plush",
+    cantidadImagenes: 1,
+
+    tipo: "pedido",
+    
+
+    colores: {
+        "🖤Unicolor": ["XXS","XS","S", "M", "L","XL"]
+        
+    }
+},
+    {
     id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
