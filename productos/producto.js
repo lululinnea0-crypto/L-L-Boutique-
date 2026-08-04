@@ -277,7 +277,7 @@ function mostrarPagos(){
         value="50"
         checked>
 
-        📦 Reserva 50%
+        💳Pago 50%
 
         </label>
 
@@ -290,9 +290,9 @@ function mostrarPagos(){
 
         <p>📦 Producto por pedido</p>
 
-        <p>💳 Reserva con 50%</p>
+        <p>💳 Se Reserva Pagando el 100% o con el 50%</p>
 
-        <p>⏳ Entrega 10 a 15 días después del cierre.</p>
+        <p>⏳ Entrega 15 a 20 días después del cierre.</p>
 
         `;
 
