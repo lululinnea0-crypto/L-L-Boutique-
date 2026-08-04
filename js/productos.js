@@ -295,11 +295,12 @@ const productos = [
     id: 16,
     nombre: "Conjunto Pinky",
     categoria: "Lencería",
-    carpetaCategoria: "Conjuntos sexys",
+    
     precio: 16000,
 
     imagen: "img/productos/Lencería/Conjuntos sexys/Conjunto Pinky/1.jpg",
 
+    carpetaCategoria: "Conjuntos sexys",    
     carpeta: "Conjunto Pinky",
     cantidadImagenes: 4,
 
