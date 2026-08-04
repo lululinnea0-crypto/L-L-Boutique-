@@ -527,6 +527,7 @@ const productos = [
     nombre: "Body twink",
     categoria: "Lencería",
     
+    subcategoria: "Bodys sexys",
 
     precio: 14000,
 
@@ -832,6 +833,7 @@ const productos = [
     nombre: "Conjunto lila 5 piezas",
     categoria: "Lencería",
 
+    subcategoria: "Conjuntos sexys",
     precio: 23300,
 
     imagen: "img/productos/Lencería/Conjuntos sexys/Conjunto lila 5 piezas/1.jpg",
@@ -850,6 +852,7 @@ const productos = [
     nombre: "Conjunto 4 piezas malva",
     categoria: "Lencería",
 
+    subcategoria: "Conjuntos sexys",
     precio: 16500,
 
     imagen: "img/productos/Lencería/Conjuntos sexys/Conjunto malva/1.jpg",
