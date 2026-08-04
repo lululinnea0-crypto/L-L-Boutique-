@@ -759,6 +759,28 @@ const productos = [
     }
 },
     {
+    id: 39,
+    nombre: "Remera eclipse",
+    categoria: "Remeras",
+    
+
+    precio: 17000,
+
+    imagen: "img/productos/Remeras/Remera eclipse/1.jpg",
+
+    carpeta: "Remera eclipse",
+    cantidadImagenes: 3,
+
+    tipo: "pedido",
+    
+
+    colores: {
+        
+        "🖤Unicolor": ["XXS","XS","S", "M", "L","XL"]
+        
+    }
+},
+    {
     id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
