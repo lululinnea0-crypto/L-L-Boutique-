@@ -53,10 +53,12 @@ if (!producto) {
 
 miniaturas.innerHTML = "";
 
-const rutaCarpeta = producto.subcategoria
-    ? `../img/productos/${producto.categoria}/${producto.subcategoria}/${producto.carpeta}`
-    : `../img/productos/${producto.categoria}/${producto.carpeta}`;
+const carpetaCategoria = producto.ruta || producto.categoria;
 
+const rutaCarpeta = producto.subcategoria
+    ? `../img/productos/${carpetaCategoria}/${producto.subcategoria}/${producto.carpeta}`
+    : `../img/productos/${carpetaCategoria}/${producto.carpeta}`;
+    
 for (let i = 1; i <= producto.cantidadImagenes; i++) {
 
     miniaturas.innerHTML += `
