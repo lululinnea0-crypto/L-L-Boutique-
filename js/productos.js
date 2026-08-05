@@ -1109,6 +1109,26 @@ const productos = [
     }
 },
     {
+    id: 56,
+    nombre: "Top corset iconic",
+    categoria: "Tops",
+
+    precio: 14500,
+
+    imagen: "img/productos/Tops/Top corset iconic/1.jpg",
+
+    carpeta: "Top corset iconic",
+    cantidadImagenes: 4,
+
+    tipo: "pedido",
+
+    colores: {
+        "🤍Blanco": ["XS","S", "M", "L","XL"],
+        "🖤Negro": ["XXS","XS","S", "M", "L","XL"],
+        "🍷Burdeos": ["XS","S", "M", "L","XL"]
+    }
+    },
+    {
     id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
