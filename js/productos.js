@@ -985,7 +985,27 @@ const productos = [
 
     colores: {
         "🖤Negro": ["XXS","XS","S", "M", "L","XL"],
-        
+    }
+    },
+        {
+    id: 46,
+    nombre: "Top brillo",
+    categoria: "Tops",
+
+    precio: 12500,
+
+    imagen: "img/productos/Tops/Top brillo/1.jpg",
+
+    carpeta: "Top brillo",
+    cantidadImagenes: 5,
+
+    tipo: "pedido",
+
+    colores: {
+        "❤️Rojo": ["XXS","XS","S", "M", "L","XL"],
+        "🖤Negro": ["XXS","XS","S", "M", "L","XL"],
+        "🤍Blanco": ["XXS","XS","S", "M", "L","XL"],
+        "🍷Burdeos": ["XS","S", "M", "L"]
     }
     },
     {
