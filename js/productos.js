@@ -992,20 +992,19 @@ const productos = [
     nombre: "Top brillo",
     categoria: "Tops",
 
-    precio: 12500,
+    precio: 14500,
 
     imagen: "img/productos/Tops/Top brillo/1.jpg",
 
     carpeta: "Top brillo",
-    cantidadImagenes: 5,
+    cantidadImagenes: 4,
 
     tipo: "pedido",
 
     colores: {
-        "❤️Rojo": ["XXS","XS","S", "M", "L","XL"],
         "🖤Negro": ["XXS","XS","S", "M", "L","XL"],
-        "🤍Blanco": ["XXS","XS","S", "M", "L","XL"],
-        "🍷Burdeos": ["XS","S", "M", "L"]
+        "🍷Burdeos": ["XXS","XS","S", "M", "L","XL","2XL","3XL","4XL"],
+        "❤️Rojo": ["S", "M", "L","XL","2XL","3XL","4XL"]
     }
     },
     {
