@@ -1049,6 +1049,27 @@ const productos = [
         
     }
  },
+    
+    {
+    id: 53,
+    nombre: "Conjunto pink heart",
+    categoria: "Lencería",
+    
+    subcategoria: "Conjuntos sexys",
+    precio: 18500,
+
+    imagen: "img/productos/Lencería/Conjuntos sexys/Conjunto pink heart/1.jpg",
+
+        
+    carpeta: "Conjunto pink heart",
+    cantidadImagenes: 2,
+
+    tipo: "pedido",
+
+    colores: {
+        "🌺Rosita": ["XS","S", "M", "L"]
+    }
+},
     {
     id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
