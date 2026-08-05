@@ -1027,6 +1027,28 @@ const productos = [
     }
 },
     {
+    id: 48,
+    nombre: "Pantalón palazzo Georgina",
+    categoria: "Pantalones",
+    
+
+    precio: 25000,
+
+    imagen: "img/productos/Pantalones/Pantalón palazzo Georgina/1.jpg",
+
+    carpeta: "Pantalón palazzo Georgina",
+    cantidadImagenes: 6,
+
+    tipo: "pedido",
+    
+
+    colores: {
+        "🖤Negro": ["XS","S", "M", "L","XL","2XL","3XL","4XL"],
+        "🤍Blanco": ["XXS","XS","S", "M", "L","XL"]
+        
+    }
+ },
+    {
     id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
