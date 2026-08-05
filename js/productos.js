@@ -833,7 +833,7 @@ const productos = [
     {
     id: 42,
     nombre: "Conjunto lila 5 piezas",
-    categoria: "Lencería",
+    categoria: "Lenceria",
 
     subcategoria: "Conjuntos sexys",
     precio: 23300,
@@ -852,7 +852,7 @@ const productos = [
     {
     id: 43,
     nombre: "Conjunto 4 piezas malva",
-    categoria: "Lencería",
+    categoria: "Lenceria",
 
     subcategoria: "Conjuntos sexys",
     precio: 16500,
@@ -1053,7 +1053,7 @@ const productos = [
     {
     id: 53,
     nombre: "Conjunto pink heart",
-    categoria: "Lencería",
+    categoria: "Lenceria",
     
     subcategoria: "Conjuntos sexys",
     precio: 18500,
