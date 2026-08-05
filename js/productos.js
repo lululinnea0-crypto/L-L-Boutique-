@@ -1008,6 +1008,25 @@ const productos = [
     }
     },
     {
+    id: 47,
+    nombre: "Remera musculosa tokyo",
+    categoria: "Remeras",
+
+    precio: 17800,
+
+    imagen: "img/productos/Remeras/Remera musculosa tokyo/1.jpg",
+
+    carpeta: "Remera musculosa tokyo",
+    cantidadImagenes: 2,
+
+    tipo: "pedido",
+
+    colores: {
+        "🤍Unicolor": ["XS","S", "M", "L","XL"]
+        
+    }
+},
+    {
     id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
