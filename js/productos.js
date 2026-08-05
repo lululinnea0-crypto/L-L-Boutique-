@@ -1071,6 +1071,25 @@ const productos = [
     }
 },
     {
+    id: 54,
+    nombre: "Campera baddie Plush",
+    categoria: "Camperas",
+
+    precio: 25000,
+
+    imagen: "img/productos/Camperas/Campera baddie Plush/1.jpg",
+
+    carpeta: "Campera baddie Plush",
+    cantidadImagenes: 4,
+
+    tipo: "pedido",
+
+    colores: {
+        "🖤Unicolor": ["XS", "S", "M", "L", "XL"]
+        
+    }
+},
+    {
     id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
