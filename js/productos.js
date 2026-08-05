@@ -1090,6 +1090,25 @@ const productos = [
     }
 },
     {
+    id: 55,
+    nombre: "Campera de cuerina con corderito",
+    categoria: "Camperas",
+
+    precio: 51600,
+
+    imagen: "img/productos/Camperas/Campera de cuerina con corderito/1.jpg",
+
+    carpeta: "Campera de cuerina con corderito",
+    cantidadImagenes: 3,
+
+    tipo: "pedido",
+
+    colores: {
+        "🖤Unicolor": ["S", "M", "L", "XL"]
+        
+    }
+},
+    {
     id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
