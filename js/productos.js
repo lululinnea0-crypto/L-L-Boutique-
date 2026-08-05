@@ -62,6 +62,7 @@ const productos = [
     nombre: "Body galaxy 2 piezas",
     categoria: "lenceria",
 
+    subcategoria: "Bodys sexys",
     precio: 21000,
 
     imagen: "img/productos/Lencería/Bodys sexys/Body galaxy 2 piezas/1.jpg",
@@ -424,7 +425,7 @@ const productos = [
     {
     id: 23,
     nombre: "Conjunto dos piezas vivian",
-    categoria: "Vestidos y faldas",
+    categoria: "vestidos",
     
 
     precio: 25000,
@@ -654,7 +655,7 @@ const productos = [
     {
     id: 34,
     nombre: "Conjunto 2 piezas drag Burdeos",
-    categoria: "Vestidos y faldas",
+    categoria: "vestidos",
     
 
     precio: 25000,
@@ -676,7 +677,7 @@ const productos = [
     {
     id: 35,
     nombre: "Falda de mezclilla",
-    categoria: "Vestidos y faldas",
+    categoria: "vestidos",
     
 
     precio: 21000,
@@ -890,7 +891,7 @@ const productos = [
     }
 },
     {
-    id: 41,
+    id: 45,
     nombre: "Body glam",
     categoria: "Bodys",
 
@@ -908,7 +909,7 @@ const productos = [
     }
 },
     {
-    id: 42,
+    id: 46,
     nombre: "Conjunto deportivo dos piezas",
     categoria: "deportiva",
         
@@ -929,7 +930,7 @@ const productos = [
       }
     },
     {
-    id: 43,
+    id: 47,
     nombre: "Vestido de mezclilla",
     categoria: "vestidos",
     
@@ -949,7 +950,7 @@ const productos = [
     }
 },
     {
-    id: 44,
+    id: 48,
     nombre: "Top Rebecca",
     categoria: "Tops",
 
@@ -970,7 +971,7 @@ const productos = [
     }
     },
     {
-    id: 45,
+    id: 49,
     nombre: "Top Shadow Grip Halter",
     categoria: "Tops",
 
@@ -988,7 +989,7 @@ const productos = [
     }
     },
         {
-    id: 46,
+    id: 50,
     nombre: "Top brillo",
     categoria: "Tops",
 
@@ -1008,7 +1009,7 @@ const productos = [
     }
     },
     {
-    id: 47,
+    id: 51,
     nombre: "Remera musculosa tokyo",
     categoria: "Remeras",
 
@@ -1027,7 +1028,7 @@ const productos = [
     }
 },
     {
-    id: 48,
+    id: 52,
     nombre: "Pantalón palazzo Georgina",
     categoria: "Pantalones",
     
