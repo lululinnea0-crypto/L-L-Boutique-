@@ -1129,6 +1129,27 @@ const productos = [
     }
     },
     {
+    id: 57,
+    nombre: "Body urban",
+    categoria: "Bodys",
+
+    precio: 18000,
+
+    imagen: "img/productos/Bodys/Body urban/1.jpg",
+
+    carpeta: "Body urban",
+    cantidadImagenes: 4,
+
+    tipo: "pedido",
+
+    colores: {
+        "🍷Burdeos": ["XS","S", "M", "L"],
+        "🖤Negro":["XXS","XS","S","M","L","XL"],
+        "🤍Blanco":["XXS","XS","S","M","L","XL"],
+        "🔳Gris": ["XS","S","M","L"]
+    }
+},
+    {
     id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
