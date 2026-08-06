@@ -1170,6 +1170,24 @@ const productos = [
     }
 },
     {
+    id: 59,
+    nombre: "Campera snow bunny",
+    categoria: "Camperas",
+
+    precio: 23000,
+
+    imagen: "img/productos/Camperas/Campera snow bunny/1.jpg",
+
+    carpeta: "Campera snow bunny",
+    cantidadImagenes: 3,
+
+    tipo: "pedido",
+
+    colores: {
+        "🤍Blanco": ["XXS","XS", "S", "M", "L", "XL"]
+    }
+},
+    {
     id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
