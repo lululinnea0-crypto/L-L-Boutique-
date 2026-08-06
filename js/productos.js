@@ -1189,58 +1189,29 @@ const productos = [
 },
     {
     id: 60,
-    nombre: "KAIAK SONAR EDT MASC 100ML LTM",
+    nombre: "Short pollera Y2K",
+    categoria: "vestidos",
+    
 
-    categoria: "Perfumes",
+    precio: 18600,
 
-    carpeta: "KAIAK SONAR EDT MASC 100ML LTM",
+    imagen: "img/productos/Vestidos y faldas/Short pollera Y2K/1.jpg",
 
-    imagen: "img/productos/Perfumes/KAIAK SONAR EDT MASC 100ML LTM/1.jpg",
+    carpeta: "Short pollera Y2K",
+    cantidadImagenes: 3,
 
-    cantidadImagenes: 1,
+    tipo: "pedido",
+    
 
-    precio: 64000,
-
-    tipo: "stock",
-
-    pagos: {
-
-        contado: true,
-
-        cuotas: [
-            {
-                semanas: 2,
-                interes: 10,
-                total: 70400,
-                cuotaSemanal: 35200
-            },
-            {
-                semanas: 4,
-                interes: 15,
-                total: 73600,
-                cuotaSemanal: 18400
-            },
-            {
-                semanas: 6,
-                interes: 20,
-                total: 76800,
-                cuotaSemanal: 12800
-            },
-            {
-                semanas: 8,
-                interes: 25,
-                total: 80000,
-                cuotaSemanal: 10000
-            }
-        ]
-
-    },
-
-    colores: {}
-
-    },
+    colores: {
+        "🖤Unicolor": ["XS","S", "M", "L","XL","XXL","3XL"]
+        
+        
+    }
+},
+    
 {
-    id: 61,
+    id: 98,
     nombre: "Desodorante Antitranspirante Roll On Erva Doce 70 ml",
     categoria: "Piel",
     precio: 5000,
@@ -1251,7 +1222,7 @@ const productos = [
 
 },
 {
-    id: 62,
+    id: 94,
     nombre: "Avon Care crema de coco loción corporal 1 Litro",
     categoria: "Piel",
     precio: 18900,
