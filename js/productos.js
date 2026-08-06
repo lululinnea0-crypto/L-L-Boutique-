@@ -1150,6 +1150,26 @@ const productos = [
     }
 },
     {
+    id: 58,
+    nombre: "Campera ecocuero urbana",
+    categoria: "Camperas",
+
+    precio: 36000,
+
+    imagen: "img/productos/Camperas/Campera ecocuero urbana/1.jpg",
+
+    carpeta: "Campera ecocuero urbana",
+    cantidadImagenes: 4,
+
+    tipo: "pedido",
+
+    colores: {
+        "🍷Burdeos": ["XS", "S", "M", "L", "XL"],
+        "🖤Negro": ["XS", "S", "M", "L", "XL"],
+        "🤎Marron":["XS", "S", "M", "L", "XL"],
+    }
+},
+    {
     id: 60,
     nombre: "KAIAK SONAR EDT MASC 100ML LTM",
 
