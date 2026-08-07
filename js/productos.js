@@ -1225,9 +1225,9 @@ const productos = [
     tipo: "pedido",
 
     colores: {
-        "🤎Café": ["S", "M", "L"],
+        "🤎Café": ["S", "M", "L","XL","2XL","3XL"],
         "🤍Blanco": ["S", "M", "L"],    
-        "🖤Negro": ["S", "M", "L","XL","2XL","3XL"]
+        "🖤Negro": ["S", "M", "L",]
       }
     },
     
