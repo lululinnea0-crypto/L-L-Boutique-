@@ -1209,6 +1209,27 @@ const productos = [
         
     }
 },
+    {
+    id: 61,
+    nombre: "Conjunto deportivo leopardo",
+    categoria: "deportiva",
+        
+    ruta: "Vestimenta deportiva",
+    precio: 30000,
+
+    imagen: "img/productos/Vestimenta deportiva/Conjunto deportivo leopardo/1.jpg",
+
+    carpeta: "Conjunto deportivo leopardo",
+    cantidadImagenes: 5,
+
+    tipo: "pedido",
+
+    colores: {
+        "🤎Café": ["S", "M", "L"],
+        "🤍Blanco": ["S", "M", "L"],    
+        "🖤Negro": ["S", "M", "L","XL","2XL","3XL"]
+      }
+    },
     
 {
     id: 98,
