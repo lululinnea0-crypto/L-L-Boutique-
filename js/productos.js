@@ -1230,7 +1230,24 @@ const productos = [
         "🖤Negro": ["S", "M", "L",]
       }
     },
-    
+    {
+    id: 62,
+    nombre: "Body blanco forever",
+    categoria: "Bodys",
+
+    precio: 18000,
+
+    imagen: "img/productos/Bodys/Body blanco forever/1.jpg",
+
+    carpeta: "Body blanco forever",
+    cantidadImagenes: 3,
+
+    tipo: "pedido",
+
+    colores: {
+        "🤍unicolor": ["S", "M", "L","XL"]
+    }
+},
 {
     id: 94,
     nombre: "Avon Care crema de coco loción corporal 1 Litro",
