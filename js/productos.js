@@ -102,26 +102,26 @@ const productos = [
         "🍷Burdeos": ["XXS","XS","S", "M", "L"]
     }
 },
-   {
+    {
     id: 9,
-    nombre: "cardigan mariposa",
-    categoria: "cardigans",
+    nombre: "Vestido floral",
+    categoria: "vestidos",
+    
 
-    precio: 25000,
+    precio: 24900,
 
-    imagen: "img/productos/cardigans/cardigan mariposa/1.jpg",
+    imagen: "img/productos/Vestidos y faldas/Vestido floral/1.jpg",
 
-    carpeta: "cardigan mariposa",
-    cantidadImagenes: 5,
+    carpeta: "Vestido floral",
+    cantidadImagenes: 4,
 
     tipo: "pedido",
+    destacado: true,
 
     colores: {
-        "🧡Naranja": ["S", "M", "L","XL","XXL"],
-        "💜Morado":["S", "M", "L","XL","XXL"],
-        "💙Celeste": ["S", "M", "L","XL","XXL"]
+        "print": ["XS","S","M","L"]
     }
- },
+},
     {
     id: 10,
     nombre: "Catsuit acampanado",
