@@ -1266,6 +1266,26 @@ const productos = [
         "🤍blanco": ["S", "M", "L","XL"]
     }
 },
+    {
+    id: 64,
+    nombre: "Body negro simple y encaje",
+    categoria: "Bodys",
+
+    precio: 18000,
+
+    imagen: "img/productos/Bodys/Body negro simple y encaje/1.jpg",
+
+    carpeta: "Body negro simple y encaje",
+    cantidadImagenes: 4,
+
+    tipo: "pedido",
+
+    colores: {
+        "🖤Negro": ["XXS","XS","S", "M", "L","XL"],
+        "encaje": ["XXS","XS","S","L"]
+        
+    }
+},
 {
     id: 94,
     nombre: "Avon Care crema de coco loción corporal 1 Litro",
