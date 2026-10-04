@@ -22,7 +22,6 @@ const productos = [
     }
 },
 
-// NUEVOS PRODUCTOS DEBAJO
 {
     id: 2,
     nombre: "Vestido nini",
