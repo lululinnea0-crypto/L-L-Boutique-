@@ -25,15 +25,15 @@ const productos = [
 // NUEVOS PRODUCTOS DEBAJO
 {
     id: 2,
-    nombre: "vestido nini",
+    nombre: "Vestido nini",
     categoria: "vestidos",
     
 
     precio: 22638,
 
-    imagen: "img/productos/Vestidos y faldas/vestido nini/1.jpg",
+    imagen: "img/productos/Vestidos y faldas/Vestido nini/1.jpg",
 
-    carpeta: "vestido nini",
+    carpeta: "Vestido nini",
     cantidadImagenes: 4,
 
     tipo: "pedido",
