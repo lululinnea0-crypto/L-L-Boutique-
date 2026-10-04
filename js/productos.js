@@ -2,20 +2,23 @@ const productos = [
 
 {
     id: 1,
-    nombre: "Suéter Cheshire",
-    categoria: "sueters",
+    nombre: "Mono corto",
+    categoria: "vestidos",
+    
 
-    precio: 33000,
+    precio: 23900,
 
-    imagen: "img/productos/sueters/Sueter Cheshire/1.jpg",
+    imagen: "img/productos/Vestidos y faldas/Mono corto/1.jpg",
 
-    carpeta: "Sueter Cheshire",
-    cantidadImagenes: 3,
+    carpeta: "Mono corto",
+    cantidadImagenes: 4,
 
     tipo: "pedido",
+    destacado: true,
 
     colores: {
-        "💗 Rosa": ["S", "M", "L"]
+        "Burdeos": ["XS","S", "M", "L"],
+        "print": ["XXS","XS","S","M","L"]
     }
 },
 
