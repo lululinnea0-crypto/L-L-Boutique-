@@ -160,23 +160,26 @@ const productos = [
         "🤍Blanco": ["XS","S", "L"],
         "🍷Burdeos": ["XXS","XS","S", "M", "L","XL"]
     }
- },
-      {
+        
+    },
+ {
     id: 4,
-    nombre: "Buzo cherry child",
-    categoria: "Buzos",
+    nombre: "Vestido blanco encaje",
+    categoria: "vestidos",
+    
 
-    precio: 20000,
+    precio: 26300,
 
-    imagen: "img/productos/Buzos/Buzo cherry chile/1.jpg",
+    imagen: "img/productos/Vestidos y faldas/Vestido blanco encaje/1.jpg",
 
-    carpeta: "Buzo cherry chile",
+    carpeta: "Vestido blanco encaje",
     cantidadImagenes: 4,
 
     tipo: "pedido",
+    destacado: true,
 
     colores: {
-        "♦️Bordo": ["XS","S","M","L","XL","XXL"]
+        "Burdeos": ["XS","S", "M", "L"]
     }
 },
 
