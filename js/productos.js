@@ -183,23 +183,24 @@ const productos = [
     }
 },
 
-
 {
     id: 5,
-    nombre: "Abrigo Athleisure",
-    categoria: "abrigos",
+    nombre: "Vestido carli",
+    categoria: "vestidos",
+    
 
-    precio: 45000,
+    precio: 19900,
 
-    imagen: "img/productos/abrigos/Abrigo Athleisure/1.jpg",
+    imagen: "img/productos/Vestidos y faldas/Vestido carli/1.jpg",
 
-    carpeta: "Abrigo Athleisure",
-    cantidadImagenes: 4,
+    carpeta: "Vestido carli",
+    cantidadImagenes: 3,
 
     tipo: "pedido",
+    destacado: true,
 
     colores: {
-        "Gris": ["S", "M", "L","XL"]
+        "amarillo": ["XS","S", "M", "L"]
     }
 },
 
