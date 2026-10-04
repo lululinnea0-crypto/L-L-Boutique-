@@ -1248,6 +1248,24 @@ const productos = [
         "🤍unicolor": ["S", "M", "L","XL"]
     }
 },
+    {
+    id: 63,
+    nombre: "Body blanco con strass",
+    categoria: "Bodys",
+
+    precio: 18000,
+
+    imagen: "img/productos/Bodys/Body blanco con strass/1.jpg",
+
+    carpeta: "Body blanco con strass",
+    cantidadImagenes: 3,
+
+    tipo: "pedido",
+
+    colores: {
+        "🤍blanco": ["S", "M", "L","XL"]
+    }
+},
 {
     id: 94,
     nombre: "Avon Care crema de coco loción corporal 1 Litro",
