@@ -6,7 +6,7 @@ const productos = [
     categoria: "vestidos",
     
 
-    precio: 23900,
+    precio: 24900,
 
     imagen: "img/productos/Vestidos y faldas/Mono corto/1.jpg",
 
@@ -25,20 +25,23 @@ const productos = [
 // NUEVOS PRODUCTOS DEBAJO
 {
     id: 2,
-    nombre: "Abrigo Duffel Coat",
-    categoria: "abrigos",
+    nombre: "vestido nini",
+    categoria: "vestidos",
+    
 
-    precio: 50000,
+    precio: 22638,
 
-    imagen: "img/productos/abrigos/Abrigo Duffel Coat/1.jpg",
+    imagen: "img/productos/Vestidos y faldas/vestido nini/1.jpg",
 
-    carpeta: "Abrigo Duffel Coat",
+    carpeta: "vestido nini",
     cantidadImagenes: 4,
 
     tipo: "pedido",
+    destacado: true,
 
     colores: {
-        "🤎marron": ["S", "M", "L","XL"]
+        "🖤negro": ["XS","S", "M", "L"],
+        "🤍blanco": ["M","L"]
     }
 },
 
