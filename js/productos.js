@@ -248,42 +248,43 @@ const productos = [
     },
     {
     id: 13,
-    nombre: "Sueter Antonieta",
-    categoria: "Sueters",
+    nombre: "Vestido Jamaica",
+    categoria: "vestidos",
+    
 
-    precio: 20000,
+    precio: 24900,
 
-    imagen: "img/productos/Sueters/Sueter Antonieta/3.jpg",
+    imagen: "img/productos/Vestidos y faldas/Vestido Jamaica/1.jpg",
 
-    carpeta: "Sueter Antonieta",
-    cantidadImagenes: 2,
+    carpeta: "Vestido Jamaica",
+    cantidadImagenes: 4,
 
     tipo: "pedido",
 
     colores: {
-        "🖤Negro": ["XS","S", "M", "L","XL"],
-        "💗Rosa":["XS","S", "M", "L","XL"]
-
+        "durazno": ["XXS","XS","S", "M", "L","XL"],
+        "Café": ["S","M","L"]
     }
  },
     {
     id: 14,
-    nombre: "Remera Cleo",
-    categoria: "Remeras",
+    nombre: "Vestido rossy",
+    categoria: "vestidos",
+    
 
-    precio: 15000,
+    precio: 25300,
 
-    imagen: "img/productos/Remeras/Remera Cleo/1.jpg",
+    imagen: "img/productos/Vestidos y faldas/Vestido rossy/1.jpg",
 
-    carpeta: "Remera Cleo",
-    cantidadImagenes: 5,
+    carpeta: "Vestido rossy",
+    cantidadImagenes: 2,
 
     tipo: "pedido",
+    destacado: true,
 
     colores: {
-        "🖤Negro": ["XXS","S", "M", "L","XL"],
-        "🍷Burdeos":["S", "M", "L"],
-        "🌺Rosita": ["S", "M", "L","XL"]
+        "Blanco": ["XS","S", "M", "L"]
+
     }
  },
     {
@@ -326,20 +327,23 @@ const productos = [
 },
     {
     id: 17,
-    nombre: "Campera Chrome Venom Zip Unisex",
-    categoria: "Camperas",
+    nombre: "Vestido lirio",
+    categoria: "vestidos",
+    
 
-    precio: 19200,
+    precio: 28900,
 
-    imagen: "img/productos/Camperas/Campera Chrome Venom Zip/1.jpg",
+    imagen: "img/productos/Vestidos y faldas/Vestido lirio/1.jpg",
 
-    carpeta: "Campera Chrome Venom Zip",
-    cantidadImagenes: 4,
+    carpeta: "Vestido lirio",
+    cantidadImagenes: 6,
 
     tipo: "pedido",
 
     colores: {
-        "unicolor": ["S", "M", "L","XL","XXL"]
+        "rosa": ["S", "M", "L"],
+        "burdeos": ["XXS","XS","M","XL"],
+        "naranja": ["XXS","XS","S","M","L"]
     }
 },
     {
