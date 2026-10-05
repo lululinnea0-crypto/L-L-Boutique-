@@ -495,27 +495,6 @@ const productos = [
     }
 },
     {
-    id: 26,
-    nombre: "Sueter love love",
-    categoria: "Sueters",
-    
-
-    precio: 29000,
-
-    imagen: "img/productos/Sueters/Sueter love love/1.jpg",
-
-    carpeta: "Sueter love love",
-    cantidadImagenes: 2,
-
-    tipo: "pedido",
-
-
-    colores: {
-        "💗Rosa": ["XS","S", "M", "L","XL"],
-        "🤍Blanco": ["S","M","L","XL"]
-    }
-},
-    {
     id: 27,
     nombre: "Calza acampanada",
     categoria: "Pantalones",
@@ -557,27 +536,7 @@ const productos = [
         
     }
 },
-     {
-    id: 29,
-    nombre: "Campera Cloud Zip",
-    categoria: "Camperas",
     
-
-    precio: 22800,
-
-    imagen: "img/productos/Camperas/Campera Cloud Zip gris/1.jpg",
-
-    carpeta: "Campera Cloud Zip gris",
-    cantidadImagenes: 4,
-
-    tipo: "pedido",
-    
-
-    colores: {
-        "🔳Gris": ["S", "M", "L","XL"]
-        
-    }
-},
     {
     id: 30,
     nombre: "Body drag burdeos",
@@ -708,31 +667,6 @@ const productos = [
     }
 },
     {
-    id: 36,
-    nombre: "Sueter princess",
-    categoria: "Sueters",
-    
-
-    precio: 23800,
-
-    imagen: "img/productos/Sueters/Sueter princess/1.jpg",
-
-    carpeta: "Sueter princess",
-    cantidadImagenes: 6,
-
-    tipo: "pedido",
-    
-
-    colores: {
-        "🍷Burdeos": ["XXS","XS","S", "M", "L","XL"],
-        "🔳Gris": ["XXS","XS","S", "M", "L"],
-        "🤍Blanco": ["XXS","XS","S", "M", "L","XL"],
-        "🖤Negro": ["XXS","XS","S", "M", "L"],
-        "🫐Azul": ["XXS","XS","S", "M", "L"]
-        
-    }
-},
-    {
     id: 37,
     nombre: "Top Plush",
     categoria: "Tops",
@@ -771,28 +705,6 @@ const productos = [
 
     colores: {
      "🖤Unicolor": ["S", "M", "L","XL"]
-        
-    }
-},
-    {
-    id: 39,
-    nombre: "Remera eclipse",
-    categoria: "Remeras",
-    
-
-    precio: 17000,
-
-    imagen: "img/productos/Remeras/Remera eclipse/1.jpg",
-
-    carpeta: "Remera eclipse",
-    cantidadImagenes: 3,
-
-    tipo: "pedido",
-    
-
-    colores: {
-        
-        "🖤Unicolor": ["XXS","XS","S", "M", "L","XL"]
         
     }
 },
@@ -882,25 +794,7 @@ const productos = [
         "🌺Rosita": ["XS","S", "M", "L","XL","XXL"]
     }
 },
-    {
-    id: 44,
-    nombre: "Campera Plush Coquette",
-    categoria: "Camperas",
-
-    precio: 25700,
-
-    imagen: "img/productos/Camperas/Campera Plush Coquette/1.jpg",
-
-    carpeta: "Campera Plush Coquette",
-    cantidadImagenes: 4,
-
-    tipo: "pedido",
-
-    colores: {
-        "🌚Unicolor": ["S", "M", "L", "XL"]
-        
-    }
-},
+    
     {
     id: 45,
     nombre: "Body glam",
