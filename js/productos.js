@@ -26,7 +26,7 @@ const productos = [
     id: 2,
     nombre: "Vestido nini",
     categoria: "vestidos",
-    
+     ruta: "Vestidos y faldas",
 
     precio: 22638,
 
@@ -47,6 +47,7 @@ const productos = [
     id: 3,
     nombre: "Body chic",
     categoria: "Bodys",
+         ruta: "Bodys",
 
     precio: 18000,
 
@@ -67,6 +68,7 @@ const productos = [
     categoria: "lenceria",
 
     subcategoria: "Bodys sexys",
+         ruta: "Bodys sexys",
     precio: 21000,
 
     imagen: "img/productos/Lencería/Bodys sexys/Body galaxy 2 piezas/1.jpg",
@@ -103,7 +105,7 @@ const productos = [
     id: 9,
     nombre: "Vestido floral",
     categoria: "vestidos",
-    
+     ruta: "Vestidos y faldas",
 
     precio: 24900,
 
@@ -144,6 +146,7 @@ const productos = [
     id: 11,
     nombre: "Conjunto de dos piezas beauty",
     categoria: "vestidos",
+         ruta: "Vestidos y faldas",
 
     precio: 23500,
 
@@ -165,6 +168,7 @@ const productos = [
     id: 4,
     nombre: "Vestido blanco encaje",
     categoria: "vestidos",
+      ruta: "Vestidos y faldas",
     
 
     precio: 26300,
@@ -186,6 +190,7 @@ const productos = [
     id: 5,
     nombre: "Vestido carli",
     categoria: "vestidos",
+     ruta: "Vestidos y faldas",
     
 
     precio: 19900,
@@ -207,6 +212,7 @@ const productos = [
     id: 6,
     nombre: "Conjunto dos piezas sole",
     categoria: "vestidos",
+     ruta: "Vestidos y faldas",
     
 
     precio: 26900,
@@ -251,7 +257,7 @@ const productos = [
     id: 13,
     nombre: "Vestido Jamaica",
     categoria: "vestidos",
-    
+     ruta: "Vestidos y faldas",
 
     precio: 24900,
 
@@ -271,6 +277,7 @@ const productos = [
     id: 14,
     nombre: "Vestido rossy",
     categoria: "vestidos",
+         ruta: "Vestidos y faldas",
     
 
     precio: 25300,
@@ -330,6 +337,7 @@ const productos = [
     id: 17,
     nombre: "Vestido lirio",
     categoria: "vestidos",
+         ruta: "Vestidos y faldas",
     
 
     precio: 28900,
@@ -387,6 +395,7 @@ const productos = [
     id: 20,
     nombre: "Body drag black",
     categoria: "Bodys",
+         ruta: "Bodys",
 
     precio: 19500,
 
@@ -442,6 +451,7 @@ const productos = [
     id: 23,
     nombre: "Conjunto dos piezas vivian",
     categoria: "vestidos",
+         ruta: "Vestidos y faldas",
     
 
     precio: 25000,
@@ -546,6 +556,7 @@ const productos = [
     id: 30,
     nombre: "Body drag burdeos",
     categoria: "Bodys",
+         ruta: "Bodys",
     
 
     precio: 18000,
@@ -630,6 +641,7 @@ const productos = [
     id: 34,
     nombre: "Conjunto 2 piezas drag Burdeos",
     categoria: "vestidos",
+         ruta: "Vestidos y faldas",
     
 
     precio: 25000,
@@ -652,6 +664,7 @@ const productos = [
     id: 35,
     nombre: "Falda de mezclilla",
     categoria: "vestidos",
+         ruta: "Vestidos y faldas",
     
 
     precio: 21000,
@@ -803,6 +816,7 @@ const productos = [
     id: 45,
     nombre: "Body glam",
     categoria: "Bodys",
+         ruta: "Bodys",
 
     precio: 14000,
 
@@ -844,6 +858,7 @@ const productos = [
     id: 47,
     nombre: "Vestido de mezclilla",
     categoria: "vestidos",
+         ruta: "Vestidos y faldas",
     
 
     precio: 25000,
@@ -1050,7 +1065,7 @@ const productos = [
     id: 57,
     nombre: "Body urban",
     categoria: "Bodys",
-
+ ruta: "Bodys",
     precio: 18000,
 
     imagen: "img/productos/Bodys/Body urban/1.jpg",
@@ -1109,7 +1124,7 @@ const productos = [
     id: 60,
     nombre: "Short pollera Y2K",
     categoria: "vestidos",
-    
+     ruta: "Vestidos y faldas",
 
     precio: 18600,
 
@@ -1152,6 +1167,7 @@ const productos = [
     id: 62,
     nombre: "Body blanco forever",
     categoria: "Bodys",
+         ruta: "Bodys",
 
     precio: 18000,
 
@@ -1170,6 +1186,7 @@ const productos = [
     id: 63,
     nombre: "Body blanco con strass",
     categoria: "Bodys",
+         ruta: "Bodys",
 
     precio: 18000,
 
@@ -1188,6 +1205,7 @@ const productos = [
     id: 64,
     nombre: "Body negro simple y encaje",
     categoria: "Bodys",
+         ruta: "Bodys",
 
     precio: 18000,
 
@@ -1204,17 +1222,6 @@ const productos = [
         
     }
 },
-{
-    id: 94,
-    nombre: "Avon Care crema de coco loción corporal 1 Litro",
-    categoria: "Piel",
-    precio: 15000,
-    imagen: "img/productos/Cuidado de piel/Avon Care crema de coco loción corporal 1 Litro/1.jpg",
-    carpeta: "Avon Care crema de coco loción corporal 1 Litro",
-    cantidadImagenes: 1,
-    tipo: "stock"
-
-    },
 
 ];
     
