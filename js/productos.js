@@ -14,7 +14,7 @@ const productos = [
     cantidadImagenes: 4,
 
     tipo: "pedido",
-    destacado: true,
+
 
     colores: {
         "Burdeos": ["XS","S", "M", "L"],
@@ -36,7 +36,6 @@ const productos = [
     cantidadImagenes: 4,
 
     tipo: "pedido",
-    destacado: true,
 
     colores: {
         "🖤negro": ["XS","S", "M", "L"],
@@ -114,7 +113,7 @@ const productos = [
     cantidadImagenes: 4,
 
     tipo: "pedido",
-    destacado: true,
+
 
     colores: {
         "print": ["XS","S","M","L"]
@@ -176,7 +175,7 @@ const productos = [
     cantidadImagenes: 4,
 
     tipo: "pedido",
-    destacado: true,
+
 
     colores: {
         "Burdeos": ["XS","S", "M", "L"]
@@ -197,7 +196,7 @@ const productos = [
     cantidadImagenes: 3,
 
     tipo: "pedido",
-    destacado: true,
+
 
     colores: {
         "amarillo": ["XS","S", "M", "L"]
@@ -212,9 +211,9 @@ const productos = [
 
     precio: 26900,
 
-    imagen: "img/productos/Vestidos y faldas/conjunto dos piezas sole/1.jpg",
+    imagen: "img/productos/Vestidos y faldas/Conjunto dos piezas sole/1.jpg",
 
-    carpeta: "conjunto dos piezas sole",
+    carpeta: "Conjunto dos piezas sole",
     cantidadImagenes: 4,
 
     tipo: "pedido",
@@ -259,7 +258,7 @@ const productos = [
     imagen: "img/productos/Vestidos y faldas/Vestido Jamaica/1.jpg",
 
     carpeta: "Vestido Jamaica",
-    cantidadImagenes: 4,
+    cantidadImagenes: 3,
 
     tipo: "pedido",
 
@@ -282,7 +281,7 @@ const productos = [
     cantidadImagenes: 2,
 
     tipo: "pedido",
-    destacado: true,
+
 
     colores: {
         "Blanco": ["XS","S", "M", "L"]
