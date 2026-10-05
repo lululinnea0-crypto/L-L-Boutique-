@@ -4,7 +4,7 @@ const productos = [
     id: 1,
     nombre: "Mono corto",
     categoria: "vestidos",
-    
+    ruta: "Vestidos y faldas",
 
     precio: 24900,
 
