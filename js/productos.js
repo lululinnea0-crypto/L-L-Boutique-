@@ -98,6 +98,7 @@ const productos = [
 
     colores: {
         "Blanco": ["XS","S", "M", "L"]
+    }
 },
     {
     id: 9,
@@ -137,7 +138,9 @@ const productos = [
     colores: {
         "🖤Negro": ["XXS","XS","S", "M", "L","XL"]
       }
+        
     },
+    
     {
     id: 11,
     nombre: "Conjunto de dos piezas beauty",
@@ -242,7 +245,9 @@ const productos = [
         "🤍Blanco": ["XXS","XS","S", "M", "L","XL"],
         "🍷Burdeos": ["XS","S", "M", "L"]
     }
+        
     },
+    
     {
     id: 13,
     nombre: "Vestido Jamaica",
@@ -359,6 +364,7 @@ const productos = [
 
     colores: {
         "Prin": ["XS","S", "M", "L"]
+    }
 },
     {
     id: 19,
@@ -619,7 +625,6 @@ const productos = [
     colores: {
         "🤎Unicolor": ["XS","S", "M", "L"]
         
-        
     }
 },
     {
@@ -833,7 +838,9 @@ const productos = [
         "🟣Purpura":["S","M","L","XL"],
         "💚Verde":["S","M","L","XL"]
       }
+        
     },
+    
     {
     id: 47,
     nombre: "Vestido de mezclilla",
@@ -874,7 +881,9 @@ const productos = [
         "🌺Rosita": ["XXS","XS","S", "M", "L"],
         "🤍Blanco": ["XXS","XS","S", "M", "L","XXL"]
     }
+        
     },
+    
     {
     id: 49,
     nombre: "Top Shadow Grip Halter",
@@ -892,6 +901,7 @@ const productos = [
     colores: {
         "🖤Negro": ["XXS","XS","S", "M", "L","XL"],
     }
+        
     },
         {
     id: 50,
@@ -912,7 +922,9 @@ const productos = [
         "🍷Burdeos": ["XXS","XS","S", "M", "L","XL","2XL","3XL","4XL"],
         "❤️Rojo": ["S", "M", "L","XL","2XL","3XL","4XL"]
     }
+            
     },
+    
     {
     id: 51,
     nombre: "Remera musculosa tokyo",
@@ -1032,7 +1044,9 @@ const productos = [
         "🖤Negro": ["XXS","XS","S", "M", "L","XL"],
         "🍷Burdeos": ["XS","S", "M", "L","XL"]
     }
+        
     },
+    
     {
     id: 57,
     nombre: "Body urban",
