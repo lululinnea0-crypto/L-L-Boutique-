@@ -84,23 +84,20 @@ const productos = [
 },
     {
     id: 8,
-    nombre: "Remera con encaje",
-    categoria: "Remeras",
+    nombre: "Top White",
+    categoria: "Tops",
 
-    precio: 13500,
+    precio: 16900,
 
-    imagen: "img/productos/Remeras/Remera con encaje/1.jpg",
+    imagen: "img/productos/Tops/Top White/1.jpg",
 
-    carpeta: "Remera con encaje",
+    carpeta: "Top White",
     cantidadImagenes: 3,
 
     tipo: "pedido",
 
     colores: {
-        "🖤Negro": ["XXS","XS","S", "M", "L"],
-        "🤍Blanco": ["XXS","XS","S", "M", "L"],
-        "🍷Burdeos": ["XXS","XS","S", "M", "L"]
-    }
+        "Blanco": ["XS","S", "M", "L"]
 },
     {
     id: 9,
@@ -348,21 +345,20 @@ const productos = [
 },
     {
     id: 18,
-    nombre: "Buzo brilli brilli",
-    categoria: "Buzos",
+    nombre: "Top con lazo",
+    categoria: "Tops",
 
-    precio: 19000,
+    precio: 13900,
 
-    imagen: "img/productos/Buzos/Buzo brilli brilli/1.jpg",
+    imagen: "img/productos/Tops/Top con lazo/1.jpg",
 
-    carpeta: "Buzo brilli brilli",
-    cantidadImagenes: 2,
+    carpeta: "Top con lazo",
+    cantidadImagenes: 3,
 
     tipo: "pedido",
 
     colores: {
-        "🖤Negro": ["S", "M", "L","XL"]
-    }
+        "Prin": ["XS","S", "M", "L"]
 },
     {
     id: 19,
