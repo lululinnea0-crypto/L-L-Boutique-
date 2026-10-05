@@ -203,24 +203,26 @@ const productos = [
         "amarillo": ["XS","S", "M", "L"]
     }
 },
-
-    {
+    
+{
     id: 6,
-    nombre: "Campera AONW",
-    categoria: "Camperas",
+    nombre: "Conjunto dos piezas sole",
+    categoria: "vestidos",
+    
 
-    precio: 50000,
+    precio: 26900,
 
-    imagen: "img/productos/Camperas/Campera AONW/1.jpg",
+    imagen: "img/productos/Vestidos y faldas/conjunto dos piezas sole/1.jpg",
 
-    carpeta: "Campera AONW",
+    carpeta: "conjunto dos piezas sole",
     cantidadImagenes: 4,
 
     tipo: "pedido",
 
     colores: {
-        "💗 Rosa fucsia": ["XS", "S", "M", "L", "XL"],
-        "🤍 Blanco": ["XS", "S", "L"]
+        "negro": ["XXS","XS","S", "M", "L","XL","XXL"],
+        "blanco": ["XXS","XS","S","M","L","XL"],
+        "burdeos":["XXS","XS","S","M","L","XL","XXL"]
     }
 },
     {
